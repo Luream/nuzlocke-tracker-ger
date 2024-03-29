@@ -1,9 +1,8 @@
 const pkmnData = [
 	{
-		name: "Bulbasaur",
-		value: "bulbasaur",
+		name: "Bisasam",
+		value: "bisasam",
 		icon: "bulbasaur",
-		id: "1",
 		exclude: [
 			"sv"
 		]
@@ -12,7 +11,6 @@ const pkmnData = [
 		name: "Ivysaur",
 		value: "ivysaur",
 		icon: "ivysaur",
-		id: "2",
 		exclude: [
 			"sv"
 		]
@@ -21,7 +19,6 @@ const pkmnData = [
 		name: "Venusaur",
 		value: "venusaur",
 		icon: "venusaur",
-		id: "3",
 		exclude: [
 			"sv"
 		]
@@ -29,26 +26,22 @@ const pkmnData = [
 	{
 		name: "Charmander",
 		value: "charmander",
-		icon: "charmander",
-		id: "4"
+		icon: "charmander"
 	},
 	{
 		name: "Charmeleon",
 		value: "charmeleon",
-		icon: "charmeleon",
-		id: "5"
+		icon: "charmeleon"
 	},
 	{
 		name: "Charizard",
 		value: "charizard",
-		icon: "charizard",
-		id: "6"
+		icon: "charizard"
 	},
 	{
 		name: "Squirtle",
 		value: "squirtle",
 		icon: "squirtle",
-		id: "7",
 		exclude: [
 			"sv"
 		]
@@ -57,7 +50,6 @@ const pkmnData = [
 		name: "Wartortle",
 		value: "wartortle",
 		icon: "wartortle",
-		id: "8",
 		exclude: [
 			"sv"
 		]
@@ -66,7 +58,6 @@ const pkmnData = [
 		name: "Blastoise",
 		value: "blastoise",
 		icon: "blastoise",
-		id: "9",
 		exclude: [
 			"sv"
 		]
@@ -75,7 +66,6 @@ const pkmnData = [
 		name: "Caterpie",
 		value: "caterpie",
 		icon: "caterpie",
-		id: "10",
 		exclude: [
 			"sv"
 		]
@@ -84,7 +74,6 @@ const pkmnData = [
 		name: "Metapod",
 		value: "metapod",
 		icon: "metapod",
-		id: "11",
 		exclude: [
 			"sv"
 		]
@@ -93,7 +82,6 @@ const pkmnData = [
 		name: "Butterfree",
 		value: "butterfree",
 		icon: "butterfree",
-		id: "12",
 		exclude: [
 			"sv"
 		]
@@ -102,7 +90,6 @@ const pkmnData = [
 		name: "Weedle",
 		value: "weedle",
 		icon: "weedle",
-		id: "13",
 		exclude: [
 			"swsh",
 			"sv"
@@ -112,7 +99,6 @@ const pkmnData = [
 		name: "Kakuna",
 		value: "kakuna",
 		icon: "kakuna",
-		id: "14",
 		exclude: [
 			"swsh",
 			"sv"
@@ -122,7 +108,6 @@ const pkmnData = [
 		name: "Beedrill",
 		value: "beedrill",
 		icon: "beedrill",
-		id: "15",
 		exclude: [
 			"swsh",
 			"sv"
@@ -132,7 +117,6 @@ const pkmnData = [
 		name: "Pidgey",
 		value: "pidgey",
 		icon: "pidgey",
-		id: "16",
 		exclude: [
 			"swsh",
 			"sv"
@@ -142,7 +126,6 @@ const pkmnData = [
 		name: "Pidgeotto",
 		value: "pidgeotto",
 		icon: "pidgeotto",
-		id: "17",
 		exclude: [
 			"swsh",
 			"sv"
@@ -152,7 +135,6 @@ const pkmnData = [
 		name: "Pidgeot",
 		value: "pidgeot",
 		icon: "pidgeot",
-		id: "18",
 		exclude: [
 			"swsh",
 			"sv"
@@ -162,7 +144,6 @@ const pkmnData = [
 		name: "Rattata",
 		value: "rattata",
 		icon: "rattata",
-		id: "19",
 		exclude: [
 			"swsh",
 			"sv"
@@ -172,7 +153,6 @@ const pkmnData = [
 		name: "Raticate",
 		value: "raticate",
 		icon: "raticate",
-		id: "20",
 		exclude: [
 			"swsh",
 			"sv"
@@ -182,7 +162,6 @@ const pkmnData = [
 		name: "Spearow",
 		value: "spearow",
 		icon: "spearow",
-		id: "21",
 		exclude: [
 			"swsh",
 			"sv"
@@ -192,7 +171,6 @@ const pkmnData = [
 		name: "Fearow",
 		value: "fearow",
 		icon: "fearow",
-		id: "22",
 		exclude: [
 			"swsh",
 			"sv"
@@ -202,7 +180,6 @@ const pkmnData = [
 		name: "Ekans",
 		value: "ekans",
 		icon: "ekans",
-		id: "23",
 		exclude: [
 			"swsh",
 			"sv"
@@ -212,7 +189,6 @@ const pkmnData = [
 		name: "Arbok",
 		value: "arbok",
 		icon: "arbok",
-		id: "24",
 		exclude: [
 			"swsh",
 			"sv"
@@ -221,20 +197,17 @@ const pkmnData = [
 	{
 		name: "Pikachu",
 		value: "pikachu",
-		icon: "pikachu",
-		id: "25"
+		icon: "pikachu"
 	},
 	{
 		name: "Raichu",
 		value: "raichu",
-		icon: "raichu",
-		id: "26"
+		icon: "raichu"
 	},
 	{
 		name: "Sandshrew",
 		value: "sandshrew",
 		icon: "sandshrew",
-		id: "27",
 		exclude: [
 			"sv"
 		]
@@ -243,7 +216,6 @@ const pkmnData = [
 		name: "Sandslash",
 		value: "sandslash",
 		icon: "sandslash",
-		id: "28",
 		exclude: [
 			"sv"
 		]
@@ -252,7 +224,6 @@ const pkmnData = [
 		name: "Nidoran♀",
 		value: "nidoran-f",
 		icon: "nidoran-f",
-		id: "29",
 		exclude: [
 			"sv"
 		]
@@ -261,7 +232,6 @@ const pkmnData = [
 		name: "Nidorina",
 		value: "nidorina",
 		icon: "nidorina",
-		id: "30",
 		exclude: [
 			"sv"
 		]
@@ -270,7 +240,6 @@ const pkmnData = [
 		name: "Nidoqueen",
 		value: "nidoqueen",
 		icon: "nidoqueen",
-		id: "31",
 		exclude: [
 			"sv"
 		]
@@ -279,7 +248,6 @@ const pkmnData = [
 		name: "Nidoran♂",
 		value: "nidoran-m",
 		icon: "nidoran-m",
-		id: "32",
 		exclude: [
 			"sv"
 		]
@@ -288,7 +256,6 @@ const pkmnData = [
 		name: "Nidorino",
 		value: "nidorino",
 		icon: "nidorino",
-		id: "33",
 		exclude: [
 			"sv"
 		]
@@ -297,7 +264,6 @@ const pkmnData = [
 		name: "Nidoking",
 		value: "nidoking",
 		icon: "nidoking",
-		id: "34",
 		exclude: [
 			"sv"
 		]
@@ -306,7 +272,6 @@ const pkmnData = [
 		name: "Clefairy",
 		value: "clefairy",
 		icon: "clefairy",
-		id: "35",
 		exclude: [
 			"sv"
 		]
@@ -315,7 +280,6 @@ const pkmnData = [
 		name: "Clefable",
 		value: "clefable",
 		icon: "clefable",
-		id: "36",
 		exclude: [
 			"sv"
 		]
@@ -324,7 +288,6 @@ const pkmnData = [
 		name: "Vulpix",
 		value: "vulpix",
 		icon: "vulpix",
-		id: "37",
 		exclude: [
 			"sv"
 		]
@@ -333,7 +296,6 @@ const pkmnData = [
 		name: "Ninetales",
 		value: "ninetales",
 		icon: "ninetales",
-		id: "38",
 		exclude: [
 			"sv"
 		]
@@ -341,20 +303,17 @@ const pkmnData = [
 	{
 		name: "Jigglypuff",
 		value: "jigglypuff",
-		icon: "jigglypuff",
-		id: "39"
+		icon: "jigglypuff"
 	},
 	{
 		name: "Wigglytuff",
 		value: "wigglytuff",
-		icon: "wigglytuff",
-		id: "40"
+		icon: "wigglytuff"
 	},
 	{
 		name: "Zubat",
 		value: "zubat",
 		icon: "zubat",
-		id: "41",
 		exclude: [
 			"sv"
 		]
@@ -363,7 +322,6 @@ const pkmnData = [
 		name: "Golbat",
 		value: "golbat",
 		icon: "golbat",
-		id: "42",
 		exclude: [
 			"sv"
 		]
@@ -372,7 +330,6 @@ const pkmnData = [
 		name: "Oddish",
 		value: "oddish",
 		icon: "oddish",
-		id: "43",
 		exclude: [
 			"sv"
 		]
@@ -381,7 +338,6 @@ const pkmnData = [
 		name: "Gloom",
 		value: "gloom",
 		icon: "gloom",
-		id: "44",
 		exclude: [
 			"sv"
 		]
@@ -390,7 +346,6 @@ const pkmnData = [
 		name: "Vileplume",
 		value: "vileplume",
 		icon: "vileplume",
-		id: "45",
 		exclude: [
 			"sv"
 		]
@@ -399,7 +354,6 @@ const pkmnData = [
 		name: "Paras",
 		value: "paras",
 		icon: "paras",
-		id: "46",
 		exclude: [
 			"swsh",
 			"sv"
@@ -409,7 +363,6 @@ const pkmnData = [
 		name: "Parasect",
 		value: "parasect",
 		icon: "parasect",
-		id: "47",
 		exclude: [
 			"swsh",
 			"sv"
@@ -419,7 +372,6 @@ const pkmnData = [
 		name: "Venonat",
 		value: "venonat",
 		icon: "venonat",
-		id: "48",
 		exclude: [
 			"swsh"
 		]
@@ -428,7 +380,6 @@ const pkmnData = [
 		name: "Venomoth",
 		value: "venomoth",
 		icon: "venomoth",
-		id: "49",
 		exclude: [
 			"swsh"
 		]
@@ -436,44 +387,37 @@ const pkmnData = [
 	{
 		name: "Diglett",
 		value: "diglett",
-		icon: "diglett",
-		id: "50"
+		icon: "diglett"
 	},
 	{
 		name: "Dugtrio",
 		value: "dugtrio",
-		icon: "dugtrio",
-		id: "51"
+		icon: "dugtrio"
 	},
 	{
 		name: "Meowth",
 		value: "meowth",
-		icon: "meowth",
-		id: "52"
+		icon: "meowth"
 	},
 	{
 		name: "Persian",
 		value: "persian",
-		icon: "persian",
-		id: "53"
+		icon: "persian"
 	},
 	{
 		name: "Psyduck",
 		value: "psyduck",
-		icon: "psyduck",
-		id: "54"
+		icon: "psyduck"
 	},
 	{
 		name: "Golduck",
 		value: "golduck",
-		icon: "golduck",
-		id: "55"
+		icon: "golduck"
 	},
 	{
 		name: "Mankey",
 		value: "mankey",
 		icon: "mankey",
-		id: "56",
 		exclude: [
 			"swsh"
 		]
@@ -482,7 +426,6 @@ const pkmnData = [
 		name: "Primeape",
 		value: "primeape",
 		icon: "primeape",
-		id: "57",
 		exclude: [
 			"swsh"
 		]
@@ -490,20 +433,17 @@ const pkmnData = [
 	{
 		name: "Growlithe",
 		value: "growlithe",
-		icon: "growlithe",
-		id: "58"
+		icon: "growlithe"
 	},
 	{
 		name: "Arcanine",
 		value: "arcanine",
-		icon: "arcanine",
-		id: "59"
+		icon: "arcanine"
 	},
 	{
 		name: "Poliwag",
 		value: "poliwag",
 		icon: "poliwag",
-		id: "60",
 		exclude: [
 			"sv"
 		]
@@ -512,7 +452,6 @@ const pkmnData = [
 		name: "Poliwhirl",
 		value: "poliwhirl",
 		icon: "poliwhirl",
-		id: "61",
 		exclude: [
 			"sv"
 		]
@@ -521,7 +460,6 @@ const pkmnData = [
 		name: "Poliwrath",
 		value: "poliwrath",
 		icon: "poliwrath",
-		id: "62",
 		exclude: [
 			"sv"
 		]
@@ -530,7 +468,6 @@ const pkmnData = [
 		name: "Abra",
 		value: "abra",
 		icon: "abra",
-		id: "63",
 		exclude: [
 			"sv"
 		]
@@ -539,7 +476,6 @@ const pkmnData = [
 		name: "Kadabra",
 		value: "kadabra",
 		icon: "kadabra",
-		id: "64",
 		exclude: [
 			"sv"
 		]
@@ -548,7 +484,6 @@ const pkmnData = [
 		name: "Alakazam",
 		value: "alakazam",
 		icon: "alakazam",
-		id: "65",
 		exclude: [
 			"sv"
 		]
@@ -557,7 +492,6 @@ const pkmnData = [
 		name: "Machop",
 		value: "machop",
 		icon: "machop",
-		id: "66",
 		exclude: [
 			"sv"
 		]
@@ -566,7 +500,6 @@ const pkmnData = [
 		name: "Machoke",
 		value: "machoke",
 		icon: "machoke",
-		id: "67",
 		exclude: [
 			"sv"
 		]
@@ -575,7 +508,6 @@ const pkmnData = [
 		name: "Machamp",
 		value: "machamp",
 		icon: "machamp",
-		id: "68",
 		exclude: [
 			"sv"
 		]
@@ -584,7 +516,6 @@ const pkmnData = [
 		name: "Bellsprout",
 		value: "bellsprout",
 		icon: "bellsprout",
-		id: "69",
 		exclude: [
 			"swsh",
 			"sv"
@@ -594,7 +525,6 @@ const pkmnData = [
 		name: "Weepinbell",
 		value: "weepinbell",
 		icon: "weepinbell",
-		id: "70",
 		exclude: [
 			"swsh",
 			"sv"
@@ -604,7 +534,6 @@ const pkmnData = [
 		name: "Victreebel",
 		value: "victreebel",
 		icon: "victreebel",
-		id: "71",
 		exclude: [
 			"swsh",
 			"sv"
@@ -614,7 +543,6 @@ const pkmnData = [
 		name: "Tentacool",
 		value: "tentacool",
 		icon: "tentacool",
-		id: "72",
 		exclude: [
 			"sv"
 		]
@@ -623,7 +551,6 @@ const pkmnData = [
 		name: "Tentacruel",
 		value: "tentacruel",
 		icon: "tentacruel",
-		id: "73",
 		exclude: [
 			"sv"
 		]
@@ -632,7 +559,6 @@ const pkmnData = [
 		name: "Geodude",
 		value: "geodude",
 		icon: "geodude",
-		id: "74",
 		exclude: [
 			"swsh",
 			"sv"
@@ -642,7 +568,6 @@ const pkmnData = [
 		name: "Graveler",
 		value: "graveler",
 		icon: "graveler",
-		id: "75",
 		exclude: [
 			"swsh",
 			"sv"
@@ -652,7 +577,6 @@ const pkmnData = [
 		name: "Golem",
 		value: "golem",
 		icon: "golem",
-		id: "76",
 		exclude: [
 			"swsh",
 			"sv"
@@ -662,7 +586,6 @@ const pkmnData = [
 		name: "Ponyta",
 		value: "ponyta",
 		icon: "ponyta",
-		id: "77",
 		exclude: [
 			"sv"
 		]
@@ -671,7 +594,6 @@ const pkmnData = [
 		name: "Rapidash",
 		value: "rapidash",
 		icon: "rapidash",
-		id: "78",
 		exclude: [
 			"sv"
 		]
@@ -679,32 +601,27 @@ const pkmnData = [
 	{
 		name: "Slowpoke",
 		value: "slowpoke",
-		icon: "slowpoke",
-		id: "79"
+		icon: "slowpoke"
 	},
 	{
 		name: "Slowbro",
 		value: "slowbro",
-		icon: "slowbro",
-		id: "80"
+		icon: "slowbro"
 	},
 	{
 		name: "Magnemite",
 		value: "magnemite",
-		icon: "magnemite",
-		id: "81"
+		icon: "magnemite"
 	},
 	{
 		name: "Magneton",
 		value: "magneton",
-		icon: "magneton",
-		id: "82"
+		icon: "magneton"
 	},
 	{
 		name: "Farfetch'd",
 		value: "farfetchd",
 		icon: "farfetchd",
-		id: "83",
 		exclude: [
 			"sv"
 		]
@@ -713,7 +630,6 @@ const pkmnData = [
 		name: "Doduo",
 		value: "doduo",
 		icon: "doduo",
-		id: "84",
 		exclude: [
 			"swsh",
 			"sv"
@@ -723,7 +639,6 @@ const pkmnData = [
 		name: "Dodrio",
 		value: "dodrio",
 		icon: "dodrio",
-		id: "85",
 		exclude: [
 			"swsh",
 			"sv"
@@ -733,7 +648,6 @@ const pkmnData = [
 		name: "Seel",
 		value: "seel",
 		icon: "seel",
-		id: "86",
 		exclude: [
 			"swsh",
 			"sv"
@@ -743,7 +657,6 @@ const pkmnData = [
 		name: "Dewgong",
 		value: "dewgong",
 		icon: "dewgong",
-		id: "87",
 		exclude: [
 			"swsh",
 			"sv"
@@ -753,7 +666,6 @@ const pkmnData = [
 		name: "Grimer",
 		value: "grimer",
 		icon: "grimer",
-		id: "88",
 		exclude: [
 			"swsh"
 		]
@@ -762,7 +674,6 @@ const pkmnData = [
 		name: "Muk",
 		value: "muk",
 		icon: "muk",
-		id: "89",
 		exclude: [
 			"swsh"
 		]
@@ -770,38 +681,32 @@ const pkmnData = [
 	{
 		name: "Shellder",
 		value: "shellder",
-		icon: "shellder",
-		id: "90"
+		icon: "shellder"
 	},
 	{
 		name: "Cloyster",
 		value: "cloyster",
-		icon: "cloyster",
-		id: "91"
+		icon: "cloyster"
 	},
 	{
 		name: "Gastly",
 		value: "gastly",
-		icon: "gastly",
-		id: "92"
+		icon: "gastly"
 	},
 	{
 		name: "Haunter",
 		value: "haunter",
-		icon: "haunter",
-		id: "93"
+		icon: "haunter"
 	},
 	{
 		name: "Gengar",
 		value: "gengar",
-		icon: "gengar",
-		id: "94"
+		icon: "gengar"
 	},
 	{
 		name: "Onix",
 		value: "onix",
 		icon: "onix",
-		id: "95",
 		exclude: [
 			"sv"
 		]
@@ -810,7 +715,6 @@ const pkmnData = [
 		name: "Drowzee",
 		value: "drowzee",
 		icon: "drowzee",
-		id: "96",
 		exclude: [
 			"swsh"
 		]
@@ -819,7 +723,6 @@ const pkmnData = [
 		name: "Hypno",
 		value: "hypno",
 		icon: "hypno",
-		id: "97",
 		exclude: [
 			"swsh"
 		]
@@ -828,7 +731,6 @@ const pkmnData = [
 		name: "Krabby",
 		value: "krabby",
 		icon: "krabby",
-		id: "98",
 		exclude: [
 			"sv"
 		]
@@ -837,7 +739,6 @@ const pkmnData = [
 		name: "Kingler",
 		value: "kingler",
 		icon: "kingler",
-		id: "99",
 		exclude: [
 			"sv"
 		]
@@ -846,7 +747,6 @@ const pkmnData = [
 		name: "Voltorb",
 		value: "voltorb",
 		icon: "voltorb",
-		id: "100",
 		exclude: [
 			"swsh"
 		]
@@ -855,7 +755,6 @@ const pkmnData = [
 		name: "Electrode",
 		value: "electrode",
 		icon: "electrode",
-		id: "101",
 		exclude: [
 			"swsh"
 		]
@@ -864,7 +763,6 @@ const pkmnData = [
 		name: "Exeggcute",
 		value: "exeggcute",
 		icon: "exeggcute",
-		id: "102",
 		exclude: [
 			"sv"
 		]
@@ -873,7 +771,6 @@ const pkmnData = [
 		name: "Exeggutor",
 		value: "exeggutor",
 		icon: "exeggutor",
-		id: "103",
 		exclude: [
 			"sv"
 		]
@@ -882,7 +779,6 @@ const pkmnData = [
 		name: "Cubone",
 		value: "cubone",
 		icon: "cubone",
-		id: "104",
 		exclude: [
 			"sv"
 		]
@@ -891,7 +787,6 @@ const pkmnData = [
 		name: "Marowak",
 		value: "marowak",
 		icon: "marowak",
-		id: "105",
 		exclude: [
 			"sv"
 		]
@@ -900,7 +795,6 @@ const pkmnData = [
 		name: "Hitmonlee",
 		value: "hitmonlee",
 		icon: "hitmonlee",
-		id: "106",
 		exclude: [
 			"sv"
 		]
@@ -909,7 +803,6 @@ const pkmnData = [
 		name: "Hitmonchan",
 		value: "hitmonchan",
 		icon: "hitmonchan",
-		id: "107",
 		exclude: [
 			"sv"
 		]
@@ -918,7 +811,6 @@ const pkmnData = [
 		name: "Lickitung",
 		value: "lickitung",
 		icon: "lickitung",
-		id: "108",
 		exclude: [
 			"sv"
 		]
@@ -927,7 +819,6 @@ const pkmnData = [
 		name: "Koffing",
 		value: "koffing",
 		icon: "koffing",
-		id: "109",
 		exclude: [
 			"sv"
 		]
@@ -936,7 +827,6 @@ const pkmnData = [
 		name: "Weezing",
 		value: "weezing",
 		icon: "weezing",
-		id: "110",
 		exclude: [
 			"sv"
 		]
@@ -945,7 +835,6 @@ const pkmnData = [
 		name: "Rhyhorn",
 		value: "rhyhorn",
 		icon: "rhyhorn",
-		id: "111",
 		exclude: [
 			"sv"
 		]
@@ -954,7 +843,6 @@ const pkmnData = [
 		name: "Rhydon",
 		value: "rhydon",
 		icon: "rhydon",
-		id: "112",
 		exclude: [
 			"sv"
 		]
@@ -962,14 +850,12 @@ const pkmnData = [
 	{
 		name: "Chansey",
 		value: "chansey",
-		icon: "chansey",
-		id: "113"
+		icon: "chansey"
 	},
 	{
 		name: "Tangela",
 		value: "tangela",
 		icon: "tangela",
-		id: "114",
 		exclude: [
 			"sv"
 		]
@@ -978,7 +864,6 @@ const pkmnData = [
 		name: "Kangaskhan",
 		value: "kangaskhan",
 		icon: "kangaskhan",
-		id: "115",
 		exclude: [
 			"sv"
 		]
@@ -987,7 +872,6 @@ const pkmnData = [
 		name: "Horsea",
 		value: "horsea",
 		icon: "horsea",
-		id: "116",
 		exclude: [
 			"sv"
 		]
@@ -996,7 +880,6 @@ const pkmnData = [
 		name: "Seadra",
 		value: "seadra",
 		icon: "seadra",
-		id: "117",
 		exclude: [
 			"sv"
 		]
@@ -1005,7 +888,6 @@ const pkmnData = [
 		name: "Goldeen",
 		value: "goldeen",
 		icon: "goldeen",
-		id: "118",
 		exclude: [
 			"sv"
 		]
@@ -1014,7 +896,6 @@ const pkmnData = [
 		name: "Seaking",
 		value: "seaking",
 		icon: "seaking",
-		id: "119",
 		exclude: [
 			"sv"
 		]
@@ -1023,7 +904,6 @@ const pkmnData = [
 		name: "Staryu",
 		value: "staryu",
 		icon: "staryu",
-		id: "120",
 		exclude: [
 			"sv"
 		]
@@ -1032,7 +912,6 @@ const pkmnData = [
 		name: "Starmie",
 		value: "starmie",
 		icon: "starmie",
-		id: "121",
 		exclude: [
 			"sv"
 		]
@@ -1041,7 +920,6 @@ const pkmnData = [
 		name: "Mr. Mime",
 		value: "mr-mime",
 		icon: "mr-mime",
-		id: "122",
 		exclude: [
 			"sv"
 		]
@@ -1049,14 +927,12 @@ const pkmnData = [
 	{
 		name: "Scyther",
 		value: "scyther",
-		icon: "scyther",
-		id: "123"
+		icon: "scyther"
 	},
 	{
 		name: "Jynx",
 		value: "jynx",
 		icon: "jynx",
-		id: "124",
 		exclude: [
 			"sv"
 		]
@@ -1065,7 +941,6 @@ const pkmnData = [
 		name: "Electabuzz",
 		value: "electabuzz",
 		icon: "electabuzz",
-		id: "125",
 		exclude: [
 			"sv"
 		]
@@ -1074,7 +949,6 @@ const pkmnData = [
 		name: "Magmar",
 		value: "magmar",
 		icon: "magmar",
-		id: "126",
 		exclude: [
 			"sv"
 		]
@@ -1083,7 +957,6 @@ const pkmnData = [
 		name: "Pinsir",
 		value: "pinsir",
 		icon: "pinsir",
-		id: "127",
 		exclude: [
 			"sv"
 		]
@@ -1091,26 +964,22 @@ const pkmnData = [
 	{
 		name: "Tauros",
 		value: "tauros",
-		icon: "tauros",
-		id: "128"
+		icon: "tauros"
 	},
 	{
 		name: "Magikarp",
 		value: "magikarp",
-		icon: "magikarp",
-		id: "129"
+		icon: "magikarp"
 	},
 	{
 		name: "Gyarados",
 		value: "gyarados",
-		icon: "gyarados",
-		id: "130"
+		icon: "gyarados"
 	},
 	{
 		name: "Lapras",
 		value: "lapras",
 		icon: "lapras",
-		id: "131",
 		exclude: [
 			"sv"
 		]
@@ -1118,38 +987,32 @@ const pkmnData = [
 	{
 		name: "Ditto",
 		value: "ditto",
-		icon: "ditto",
-		id: "132"
+		icon: "ditto"
 	},
 	{
 		name: "Eevee",
 		value: "eevee",
-		icon: "eevee",
-		id: "133"
+		icon: "eevee"
 	},
 	{
 		name: "Vaporeon",
 		value: "vaporeon",
-		icon: "vaporeon",
-		id: "134"
+		icon: "vaporeon"
 	},
 	{
 		name: "Jolteon",
 		value: "jolteon",
-		icon: "jolteon",
-		id: "135"
+		icon: "jolteon"
 	},
 	{
 		name: "Flareon",
 		value: "flareon",
-		icon: "flareon",
-		id: "136"
+		icon: "flareon"
 	},
 	{
 		name: "Porygon",
 		value: "porygon",
 		icon: "porygon",
-		id: "137",
 		exclude: [
 			"sv"
 		]
@@ -1158,7 +1021,6 @@ const pkmnData = [
 		name: "Omanyte",
 		value: "omanyte",
 		icon: "omanyte",
-		id: "138",
 		exclude: [
 			"sv"
 		]
@@ -1167,7 +1029,6 @@ const pkmnData = [
 		name: "Omastar",
 		value: "omastar",
 		icon: "omastar",
-		id: "139",
 		exclude: [
 			"sv"
 		]
@@ -1176,7 +1037,6 @@ const pkmnData = [
 		name: "Kabuto",
 		value: "kabuto",
 		icon: "kabuto",
-		id: "140",
 		exclude: [
 			"sv"
 		]
@@ -1185,7 +1045,6 @@ const pkmnData = [
 		name: "Kabutops",
 		value: "kabutops",
 		icon: "kabutops",
-		id: "141",
 		exclude: [
 			"sv"
 		]
@@ -1194,7 +1053,6 @@ const pkmnData = [
 		name: "Aerodactyl",
 		value: "aerodactyl",
 		icon: "aerodactyl",
-		id: "142",
 		exclude: [
 			"sv"
 		]
@@ -1203,7 +1061,6 @@ const pkmnData = [
 		name: "Snorlax",
 		value: "snorlax",
 		icon: "snorlax",
-		id: "143",
 		exclude: [
 			"sv"
 		]
@@ -1211,56 +1068,47 @@ const pkmnData = [
 	{
 		name: "Articuno",
 		value: "articuno",
-		icon: "articuno",
-		id: "144"
+		icon: "articuno"
 	},
 	{
 		name: "Zapdos",
 		value: "zapdos",
-		icon: "zapdos",
-		id: "145"
+		icon: "zapdos"
 	},
 	{
 		name: "Moltres",
 		value: "moltres",
-		icon: "moltres",
-		id: "146"
+		icon: "moltres"
 	},
 	{
 		name: "Dratini",
 		value: "dratini",
-		icon: "dratini",
-		id: "147"
+		icon: "dratini"
 	},
 	{
 		name: "Dragonair",
 		value: "dragonair",
-		icon: "dragonair",
-		id: "148"
+		icon: "dragonair"
 	},
 	{
 		name: "Dragonite",
 		value: "dragonite",
-		icon: "dragonite",
-		id: "149"
+		icon: "dragonite"
 	},
 	{
 		name: "Mewtwo",
 		value: "mewtwo",
-		icon: "mewtwo",
-		id: "150"
+		icon: "mewtwo"
 	},
 	{
 		name: "Mew",
 		value: "mew",
-		icon: "mew",
-		id: "151"
+		icon: "mew"
 	},
 	{
 		name: "Chikorita",
 		value: "chikorita",
 		icon: "chikorita",
-		id: "152",
 		exclude: [
 			"swsh",
 			"sv"
@@ -1270,7 +1118,6 @@ const pkmnData = [
 		name: "Bayleef",
 		value: "bayleef",
 		icon: "bayleef",
-		id: "153",
 		exclude: [
 			"swsh",
 			"sv"
@@ -1280,7 +1127,6 @@ const pkmnData = [
 		name: "Meganium",
 		value: "meganium",
 		icon: "meganium",
-		id: "154",
 		exclude: [
 			"swsh",
 			"sv"
@@ -1290,7 +1136,6 @@ const pkmnData = [
 		name: "Cyndaquil",
 		value: "cyndaquil",
 		icon: "cyndaquil",
-		id: "155",
 		exclude: [
 			"swsh"
 		]
@@ -1299,7 +1144,6 @@ const pkmnData = [
 		name: "Quilava",
 		value: "quilava",
 		icon: "quilava",
-		id: "156",
 		exclude: [
 			"swsh"
 		]
@@ -1308,7 +1152,6 @@ const pkmnData = [
 		name: "Typhlosion",
 		value: "typhlosion",
 		icon: "typhlosion",
-		id: "157",
 		exclude: [
 			"swsh"
 		]
@@ -1317,7 +1160,6 @@ const pkmnData = [
 		name: "Totodile",
 		value: "totodile",
 		icon: "totodile",
-		id: "158",
 		exclude: [
 			"swsh",
 			"sv"
@@ -1327,7 +1169,6 @@ const pkmnData = [
 		name: "Croconaw",
 		value: "croconaw",
 		icon: "croconaw",
-		id: "159",
 		exclude: [
 			"swsh",
 			"sv"
@@ -1337,7 +1178,6 @@ const pkmnData = [
 		name: "Feraligatr",
 		value: "feraligatr",
 		icon: "feraligatr",
-		id: "160",
 		exclude: [
 			"swsh",
 			"sv"
@@ -1347,7 +1187,6 @@ const pkmnData = [
 		name: "Sentret",
 		value: "sentret",
 		icon: "sentret",
-		id: "161",
 		exclude: [
 			"swsh",
 			"sv"
@@ -1357,7 +1196,6 @@ const pkmnData = [
 		name: "Furret",
 		value: "furret",
 		icon: "furret",
-		id: "162",
 		exclude: [
 			"swsh",
 			"sv"
@@ -1367,7 +1205,6 @@ const pkmnData = [
 		name: "Hoothoot",
 		value: "hoothoot",
 		icon: "hoothoot",
-		id: "163",
 		exclude: [
 			"sv"
 		]
@@ -1376,7 +1213,6 @@ const pkmnData = [
 		name: "Noctowl",
 		value: "noctowl",
 		icon: "noctowl",
-		id: "164",
 		exclude: [
 			"sv"
 		]
@@ -1385,7 +1221,6 @@ const pkmnData = [
 		name: "Ledyba",
 		value: "ledyba",
 		icon: "ledyba",
-		id: "165",
 		exclude: [
 			"swsh",
 			"sv"
@@ -1395,7 +1230,6 @@ const pkmnData = [
 		name: "Ledian",
 		value: "ledian",
 		icon: "ledian",
-		id: "166",
 		exclude: [
 			"swsh",
 			"sv"
@@ -1405,7 +1239,6 @@ const pkmnData = [
 		name: "Spinarak",
 		value: "spinarak",
 		icon: "spinarak",
-		id: "167",
 		exclude: [
 			"swsh",
 			"sv"
@@ -1415,7 +1248,6 @@ const pkmnData = [
 		name: "Ariados",
 		value: "ariados",
 		icon: "ariados",
-		id: "168",
 		exclude: [
 			"swsh",
 			"sv"
@@ -1425,7 +1257,6 @@ const pkmnData = [
 		name: "Crobat",
 		value: "crobat",
 		icon: "crobat",
-		id: "169",
 		exclude: [
 			"sv"
 		]
@@ -1434,7 +1265,6 @@ const pkmnData = [
 		name: "Chinchou",
 		value: "chinchou",
 		icon: "chinchou",
-		id: "170",
 		exclude: [
 			"sv"
 		]
@@ -1443,7 +1273,6 @@ const pkmnData = [
 		name: "Lanturn",
 		value: "lanturn",
 		icon: "lanturn",
-		id: "171",
 		exclude: [
 			"sv"
 		]
@@ -1451,14 +1280,12 @@ const pkmnData = [
 	{
 		name: "Pichu",
 		value: "pichu",
-		icon: "pichu",
-		id: "172"
+		icon: "pichu"
 	},
 	{
 		name: "Cleffa",
 		value: "cleffa",
 		icon: "cleffa",
-		id: "173",
 		exclude: [
 			"sv"
 		]
@@ -1466,14 +1293,12 @@ const pkmnData = [
 	{
 		name: "Igglybuff",
 		value: "igglybuff",
-		icon: "igglybuff",
-		id: "174"
+		icon: "igglybuff"
 	},
 	{
 		name: "Togepi",
 		value: "togepi",
 		icon: "togepi",
-		id: "175",
 		exclude: [
 			"sv"
 		]
@@ -1482,7 +1307,6 @@ const pkmnData = [
 		name: "Togetic",
 		value: "togetic",
 		icon: "togetic",
-		id: "176",
 		exclude: [
 			"sv"
 		]
@@ -1491,7 +1315,6 @@ const pkmnData = [
 		name: "Natu",
 		value: "natu",
 		icon: "natu",
-		id: "177",
 		exclude: [
 			"sv"
 		]
@@ -1500,7 +1323,6 @@ const pkmnData = [
 		name: "Xatu",
 		value: "xatu",
 		icon: "xatu",
-		id: "178",
 		exclude: [
 			"sv"
 		]
@@ -1509,7 +1331,6 @@ const pkmnData = [
 		name: "Mareep",
 		value: "mareep",
 		icon: "mareep",
-		id: "179",
 		exclude: [
 			"swsh"
 		]
@@ -1518,7 +1339,6 @@ const pkmnData = [
 		name: "Flaaffy",
 		value: "flaaffy",
 		icon: "flaaffy",
-		id: "180",
 		exclude: [
 			"swsh"
 		]
@@ -1527,7 +1347,6 @@ const pkmnData = [
 		name: "Ampharos",
 		value: "ampharos",
 		icon: "ampharos",
-		id: "181",
 		exclude: [
 			"swsh"
 		]
@@ -1536,7 +1355,6 @@ const pkmnData = [
 		name: "Bellossom",
 		value: "bellossom",
 		icon: "bellossom",
-		id: "182",
 		exclude: [
 			"sv"
 		]
@@ -1544,26 +1362,22 @@ const pkmnData = [
 	{
 		name: "Marill",
 		value: "marill",
-		icon: "marill",
-		id: "183"
+		icon: "marill"
 	},
 	{
 		name: "Azumarill",
 		value: "azumarill",
-		icon: "azumarill",
-		id: "184"
+		icon: "azumarill"
 	},
 	{
 		name: "Sudowoodo",
 		value: "sudowoodo",
-		icon: "sudowoodo",
-		id: "185"
+		icon: "sudowoodo"
 	},
 	{
 		name: "Politoed",
 		value: "politoed",
 		icon: "politoed",
-		id: "186",
 		exclude: [
 			"sv"
 		]
@@ -1572,7 +1386,6 @@ const pkmnData = [
 		name: "Hoppip",
 		value: "hoppip",
 		icon: "hoppip",
-		id: "187",
 		exclude: [
 			"swsh"
 		]
@@ -1581,7 +1394,6 @@ const pkmnData = [
 		name: "Skiploom",
 		value: "skiploom",
 		icon: "skiploom",
-		id: "188",
 		exclude: [
 			"swsh"
 		]
@@ -1590,7 +1402,6 @@ const pkmnData = [
 		name: "Jumpluff",
 		value: "jumpluff",
 		icon: "jumpluff",
-		id: "189",
 		exclude: [
 			"swsh"
 		]
@@ -1599,7 +1410,6 @@ const pkmnData = [
 		name: "Aipom",
 		value: "aipom",
 		icon: "aipom",
-		id: "190",
 		exclude: [
 			"swsh",
 			"sv"
@@ -1609,7 +1419,6 @@ const pkmnData = [
 		name: "Sunkern",
 		value: "sunkern",
 		icon: "sunkern",
-		id: "191",
 		exclude: [
 			"swsh"
 		]
@@ -1618,7 +1427,6 @@ const pkmnData = [
 		name: "Sunflora",
 		value: "sunflora",
 		icon: "sunflora",
-		id: "192",
 		exclude: [
 			"swsh"
 		]
@@ -1627,7 +1435,6 @@ const pkmnData = [
 		name: "Yanma",
 		value: "yanma",
 		icon: "yanma",
-		id: "193",
 		exclude: [
 			"swsh",
 			"sv"
@@ -1636,32 +1443,27 @@ const pkmnData = [
 	{
 		name: "Wooper",
 		value: "wooper",
-		icon: "wooper",
-		id: "194"
+		icon: "wooper"
 	},
 	{
 		name: "Quagsire",
 		value: "quagsire",
-		icon: "quagsire",
-		id: "195"
+		icon: "quagsire"
 	},
 	{
 		name: "Espeon",
 		value: "espeon",
-		icon: "espeon",
-		id: "196"
+		icon: "espeon"
 	},
 	{
 		name: "Umbreon",
 		value: "umbreon",
-		icon: "umbreon",
-		id: "197"
+		icon: "umbreon"
 	},
 	{
 		name: "Murkrow",
 		value: "murkrow",
 		icon: "murkrow",
-		id: "198",
 		exclude: [
 			"swsh"
 		]
@@ -1669,14 +1471,12 @@ const pkmnData = [
 	{
 		name: "Slowking",
 		value: "slowking",
-		icon: "slowking",
-		id: "199"
+		icon: "slowking"
 	},
 	{
 		name: "Misdreavus",
 		value: "misdreavus",
 		icon: "misdreavus",
-		id: "200",
 		exclude: [
 			"swsh"
 		]
@@ -1685,7 +1485,6 @@ const pkmnData = [
 		name: "Unown",
 		value: "unown",
 		icon: "unown",
-		id: "201",
 		exclude: [
 			"swsh",
 			"sv"
@@ -1695,7 +1494,6 @@ const pkmnData = [
 		name: "Wobbuffet",
 		value: "wobbuffet",
 		icon: "wobbuffet",
-		id: "202",
 		exclude: [
 			"sv"
 		]
@@ -1704,7 +1502,6 @@ const pkmnData = [
 		name: "Girafarig",
 		value: "girafarig",
 		icon: "girafarig",
-		id: "203",
 		exclude: [
 			"swsh"
 		]
@@ -1713,7 +1510,6 @@ const pkmnData = [
 		name: "Pineco",
 		value: "pineco",
 		icon: "pineco",
-		id: "204",
 		exclude: [
 			"swsh"
 		]
@@ -1722,7 +1518,6 @@ const pkmnData = [
 		name: "Forretress",
 		value: "forretress",
 		icon: "forretress",
-		id: "205",
 		exclude: [
 			"swsh"
 		]
@@ -1730,14 +1525,12 @@ const pkmnData = [
 	{
 		name: "Dunsparce",
 		value: "dunsparce",
-		icon: "dunsparce",
-		id: "206"
+		icon: "dunsparce"
 	},
 	{
 		name: "Gligar",
 		value: "gligar",
 		icon: "gligar",
-		id: "207",
 		exclude: [
 			"swsh",
 			"sv"
@@ -1747,7 +1540,6 @@ const pkmnData = [
 		name: "Steelix",
 		value: "steelix",
 		icon: "steelix",
-		id: "208",
 		exclude: [
 			"sv"
 		]
@@ -1756,7 +1548,6 @@ const pkmnData = [
 		name: "Snubbull",
 		value: "snubbull",
 		icon: "snubbull",
-		id: "209",
 		exclude: [
 			"swsh",
 			"sv"
@@ -1766,7 +1557,6 @@ const pkmnData = [
 		name: "Granbull",
 		value: "granbull",
 		icon: "granbull",
-		id: "210",
 		exclude: [
 			"swsh",
 			"sv"
@@ -1775,20 +1565,17 @@ const pkmnData = [
 	{
 		name: "Qwilfish",
 		value: "qwilfish",
-		icon: "qwilfish",
-		id: "211"
+		icon: "qwilfish"
 	},
 	{
 		name: "Scizor",
 		value: "scizor",
-		icon: "scizor",
-		id: "212"
+		icon: "scizor"
 	},
 	{
 		name: "Shuckle",
 		value: "shuckle",
 		icon: "shuckle",
-		id: "213",
 		exclude: [
 			"sv"
 		]
@@ -1796,20 +1583,17 @@ const pkmnData = [
 	{
 		name: "Heracross",
 		value: "heracross",
-		icon: "heracross",
-		id: "214"
+		icon: "heracross"
 	},
 	{
 		name: "Sneasel",
 		value: "sneasel",
-		icon: "sneasel",
-		id: "215"
+		icon: "sneasel"
 	},
 	{
 		name: "Teddiursa",
 		value: "teddiursa",
 		icon: "teddiursa",
-		id: "216",
 		exclude: [
 			"swsh"
 		]
@@ -1818,7 +1602,6 @@ const pkmnData = [
 		name: "Ursaring",
 		value: "ursaring",
 		icon: "ursaring",
-		id: "217",
 		exclude: [
 			"swsh"
 		]
@@ -1827,7 +1610,6 @@ const pkmnData = [
 		name: "Slugma",
 		value: "slugma",
 		icon: "slugma",
-		id: "218",
 		exclude: [
 			"swsh",
 			"sv"
@@ -1837,7 +1619,6 @@ const pkmnData = [
 		name: "Magcargo",
 		value: "magcargo",
 		icon: "magcargo",
-		id: "219",
 		exclude: [
 			"swsh",
 			"sv"
@@ -1847,7 +1628,6 @@ const pkmnData = [
 		name: "Swinub",
 		value: "swinub",
 		icon: "swinub",
-		id: "220",
 		exclude: [
 			"sv"
 		]
@@ -1856,7 +1636,6 @@ const pkmnData = [
 		name: "Piloswine",
 		value: "piloswine",
 		icon: "piloswine",
-		id: "221",
 		exclude: [
 			"sv"
 		]
@@ -1865,7 +1644,6 @@ const pkmnData = [
 		name: "Corsola",
 		value: "corsola",
 		icon: "corsola",
-		id: "222",
 		exclude: [
 			"sv"
 		]
@@ -1874,7 +1652,6 @@ const pkmnData = [
 		name: "Remoraid",
 		value: "remoraid",
 		icon: "remoraid",
-		id: "223",
 		exclude: [
 			"sv"
 		]
@@ -1883,7 +1660,6 @@ const pkmnData = [
 		name: "Octillery",
 		value: "octillery",
 		icon: "octillery",
-		id: "224",
 		exclude: [
 			"sv"
 		]
@@ -1891,14 +1667,12 @@ const pkmnData = [
 	{
 		name: "Delibird",
 		value: "delibird",
-		icon: "delibird",
-		id: "225"
+		icon: "delibird"
 	},
 	{
 		name: "Mantine",
 		value: "mantine",
 		icon: "mantine",
-		id: "226",
 		exclude: [
 			"sv"
 		]
@@ -1907,7 +1681,6 @@ const pkmnData = [
 		name: "Skarmory",
 		value: "skarmory",
 		icon: "skarmory",
-		id: "227",
 		exclude: [
 			"sv"
 		]
@@ -1916,7 +1689,6 @@ const pkmnData = [
 		name: "Houndour",
 		value: "houndour",
 		icon: "houndour",
-		id: "228",
 		exclude: [
 			"swsh"
 		]
@@ -1925,7 +1697,6 @@ const pkmnData = [
 		name: "Houndoom",
 		value: "houndoom",
 		icon: "houndoom",
-		id: "229",
 		exclude: [
 			"swsh"
 		]
@@ -1934,7 +1705,6 @@ const pkmnData = [
 		name: "Kingdra",
 		value: "kingdra",
 		icon: "kingdra",
-		id: "230",
 		exclude: [
 			"sv"
 		]
@@ -1943,7 +1713,6 @@ const pkmnData = [
 		name: "Phanpy",
 		value: "phanpy",
 		icon: "phanpy",
-		id: "231",
 		exclude: [
 			"swsh"
 		]
@@ -1952,7 +1721,6 @@ const pkmnData = [
 		name: "Donphan",
 		value: "donphan",
 		icon: "donphan",
-		id: "232",
 		exclude: [
 			"swsh"
 		]
@@ -1961,7 +1729,6 @@ const pkmnData = [
 		name: "Porygon2",
 		value: "porygon2",
 		icon: "porygon2",
-		id: "233",
 		exclude: [
 			"sv"
 		]
@@ -1970,7 +1737,6 @@ const pkmnData = [
 		name: "Stantler",
 		value: "stantler",
 		icon: "stantler",
-		id: "234",
 		exclude: [
 			"swsh"
 		]
@@ -1979,7 +1745,6 @@ const pkmnData = [
 		name: "Smeargle",
 		value: "smeargle",
 		icon: "smeargle",
-		id: "235",
 		exclude: [
 			"swsh",
 			"sv"
@@ -1989,7 +1754,6 @@ const pkmnData = [
 		name: "Tyrogue",
 		value: "tyrogue",
 		icon: "tyrogue",
-		id: "236",
 		exclude: [
 			"sv"
 		]
@@ -1998,7 +1762,6 @@ const pkmnData = [
 		name: "Hitmontop",
 		value: "hitmontop",
 		icon: "hitmontop",
-		id: "237",
 		exclude: [
 			"sv"
 		]
@@ -2007,7 +1770,6 @@ const pkmnData = [
 		name: "Smoochum",
 		value: "smoochum",
 		icon: "smoochum",
-		id: "238",
 		exclude: [
 			"sv"
 		]
@@ -2016,7 +1778,6 @@ const pkmnData = [
 		name: "Elekid",
 		value: "elekid",
 		icon: "elekid",
-		id: "239",
 		exclude: [
 			"sv"
 		]
@@ -2025,7 +1786,6 @@ const pkmnData = [
 		name: "Magby",
 		value: "magby",
 		icon: "magby",
-		id: "240",
 		exclude: [
 			"sv"
 		]
@@ -2034,7 +1794,6 @@ const pkmnData = [
 		name: "Miltank",
 		value: "miltank",
 		icon: "miltank",
-		id: "241",
 		exclude: [
 			"sv"
 		]
@@ -2042,14 +1801,12 @@ const pkmnData = [
 	{
 		name: "Blissey",
 		value: "blissey",
-		icon: "blissey",
-		id: "242"
+		icon: "blissey"
 	},
 	{
 		name: "Raikou",
 		value: "raikou",
 		icon: "raikou",
-		id: "243",
 		exclude: [
 			"sv"
 		]
@@ -2058,7 +1815,6 @@ const pkmnData = [
 		name: "Entei",
 		value: "entei",
 		icon: "entei",
-		id: "244",
 		exclude: [
 			"sv"
 		]
@@ -2067,7 +1823,6 @@ const pkmnData = [
 		name: "Suicune",
 		value: "suicune",
 		icon: "suicune",
-		id: "245",
 		exclude: [
 			"sv"
 		]
@@ -2075,26 +1830,22 @@ const pkmnData = [
 	{
 		name: "Larvitar",
 		value: "larvitar",
-		icon: "larvitar",
-		id: "246"
+		icon: "larvitar"
 	},
 	{
 		name: "Pupitar",
 		value: "pupitar",
-		icon: "pupitar",
-		id: "247"
+		icon: "pupitar"
 	},
 	{
 		name: "Tyranitar",
 		value: "tyranitar",
-		icon: "tyranitar",
-		id: "248"
+		icon: "tyranitar"
 	},
 	{
 		name: "Lugia",
 		value: "lugia",
 		icon: "lugia",
-		id: "249",
 		exclude: [
 			"sv"
 		]
@@ -2103,7 +1854,6 @@ const pkmnData = [
 		name: "Ho-Oh",
 		value: "ho-oh",
 		icon: "ho-oh",
-		id: "250",
 		exclude: [
 			"sv"
 		]
@@ -2112,7 +1862,6 @@ const pkmnData = [
 		name: "Celebi",
 		value: "celebi",
 		icon: "celebi",
-		id: "251",
 		exclude: [
 			"sv"
 		]
@@ -2121,7 +1870,6 @@ const pkmnData = [
 		name: "Treecko",
 		value: "treecko",
 		icon: "treecko",
-		id: "252",
 		exclude: [
 			"sv"
 		]
@@ -2130,7 +1878,6 @@ const pkmnData = [
 		name: "Grovyle",
 		value: "grovyle",
 		icon: "grovyle",
-		id: "253",
 		exclude: [
 			"sv"
 		]
@@ -2139,7 +1886,6 @@ const pkmnData = [
 		name: "Sceptile",
 		value: "sceptile",
 		icon: "sceptile",
-		id: "254",
 		exclude: [
 			"sv"
 		]
@@ -2148,7 +1894,6 @@ const pkmnData = [
 		name: "Torchic",
 		value: "torchic",
 		icon: "torchic",
-		id: "255",
 		exclude: [
 			"sv"
 		]
@@ -2157,7 +1902,6 @@ const pkmnData = [
 		name: "Combusken",
 		value: "combusken",
 		icon: "combusken",
-		id: "256",
 		exclude: [
 			"sv"
 		]
@@ -2166,7 +1910,6 @@ const pkmnData = [
 		name: "Blaziken",
 		value: "blaziken",
 		icon: "blaziken",
-		id: "257",
 		exclude: [
 			"sv"
 		]
@@ -2175,7 +1918,6 @@ const pkmnData = [
 		name: "Mudkip",
 		value: "mudkip",
 		icon: "mudkip",
-		id: "258",
 		exclude: [
 			"sv"
 		]
@@ -2184,7 +1926,6 @@ const pkmnData = [
 		name: "Marshtomp",
 		value: "marshtomp",
 		icon: "marshtomp",
-		id: "259",
 		exclude: [
 			"sv"
 		]
@@ -2193,7 +1934,6 @@ const pkmnData = [
 		name: "Swampert",
 		value: "swampert",
 		icon: "swampert",
-		id: "260",
 		exclude: [
 			"sv"
 		]
@@ -2202,7 +1942,6 @@ const pkmnData = [
 		name: "Poochyena",
 		value: "poochyena",
 		icon: "poochyena",
-		id: "261",
 		exclude: [
 			"swsh",
 			"sv"
@@ -2212,7 +1951,6 @@ const pkmnData = [
 		name: "Mightyena",
 		value: "mightyena",
 		icon: "mightyena",
-		id: "262",
 		exclude: [
 			"swsh",
 			"sv"
@@ -2222,7 +1960,6 @@ const pkmnData = [
 		name: "Zigzagoon",
 		value: "zigzagoon",
 		icon: "zigzagoon",
-		id: "263",
 		exclude: [
 			"sv"
 		]
@@ -2231,7 +1968,6 @@ const pkmnData = [
 		name: "Linoone",
 		value: "linoone",
 		icon: "linoone",
-		id: "264",
 		exclude: [
 			"sv"
 		]
@@ -2240,7 +1976,6 @@ const pkmnData = [
 		name: "Wurmple",
 		value: "wurmple",
 		icon: "wurmple",
-		id: "265",
 		exclude: [
 			"swsh",
 			"sv"
@@ -2250,7 +1985,6 @@ const pkmnData = [
 		name: "Silcoon",
 		value: "silcoon",
 		icon: "silcoon",
-		id: "266",
 		exclude: [
 			"swsh",
 			"sv"
@@ -2260,7 +1994,6 @@ const pkmnData = [
 		name: "Beautifly",
 		value: "beautifly",
 		icon: "beautifly",
-		id: "267",
 		exclude: [
 			"swsh",
 			"sv"
@@ -2270,7 +2003,6 @@ const pkmnData = [
 		name: "Cascoon",
 		value: "cascoon",
 		icon: "cascoon",
-		id: "268",
 		exclude: [
 			"swsh",
 			"sv"
@@ -2280,7 +2012,6 @@ const pkmnData = [
 		name: "Dustox",
 		value: "dustox",
 		icon: "dustox",
-		id: "269",
 		exclude: [
 			"swsh",
 			"sv"
@@ -2290,7 +2021,6 @@ const pkmnData = [
 		name: "Lotad",
 		value: "lotad",
 		icon: "lotad",
-		id: "270",
 		exclude: [
 			"sv"
 		]
@@ -2299,7 +2029,6 @@ const pkmnData = [
 		name: "Lombre",
 		value: "lombre",
 		icon: "lombre",
-		id: "271",
 		exclude: [
 			"sv"
 		]
@@ -2308,7 +2037,6 @@ const pkmnData = [
 		name: "Ludicolo",
 		value: "ludicolo",
 		icon: "ludicolo",
-		id: "272",
 		exclude: [
 			"sv"
 		]
@@ -2317,7 +2045,6 @@ const pkmnData = [
 		name: "Seedot",
 		value: "seedot",
 		icon: "seedot",
-		id: "273",
 		exclude: [
 			"sv"
 		]
@@ -2326,7 +2053,6 @@ const pkmnData = [
 		name: "Nuzleaf",
 		value: "nuzleaf",
 		icon: "nuzleaf",
-		id: "274",
 		exclude: [
 			"sv"
 		]
@@ -2335,7 +2061,6 @@ const pkmnData = [
 		name: "Shiftry",
 		value: "shiftry",
 		icon: "shiftry",
-		id: "275",
 		exclude: [
 			"sv"
 		]
@@ -2344,7 +2069,6 @@ const pkmnData = [
 		name: "Taillow",
 		value: "taillow",
 		icon: "taillow",
-		id: "276",
 		exclude: [
 			"swsh",
 			"sv"
@@ -2354,7 +2078,6 @@ const pkmnData = [
 		name: "Swellow",
 		value: "swellow",
 		icon: "swellow",
-		id: "277",
 		exclude: [
 			"swsh",
 			"sv"
@@ -2363,38 +2086,32 @@ const pkmnData = [
 	{
 		name: "Wingull",
 		value: "wingull",
-		icon: "wingull",
-		id: "278"
+		icon: "wingull"
 	},
 	{
 		name: "Pelipper",
 		value: "pelipper",
-		icon: "pelipper",
-		id: "279"
+		icon: "pelipper"
 	},
 	{
 		name: "Ralts",
 		value: "ralts",
-		icon: "ralts",
-		id: "280"
+		icon: "ralts"
 	},
 	{
 		name: "Kirlia",
 		value: "kirlia",
-		icon: "kirlia",
-		id: "281"
+		icon: "kirlia"
 	},
 	{
 		name: "Gardevoir",
 		value: "gardevoir",
-		icon: "gardevoir",
-		id: "282"
+		icon: "gardevoir"
 	},
 	{
 		name: "Surskit",
 		value: "surskit",
 		icon: "surskit",
-		id: "283",
 		exclude: [
 			"swsh"
 		]
@@ -2403,7 +2120,6 @@ const pkmnData = [
 		name: "Masquerain",
 		value: "masquerain",
 		icon: "masquerain",
-		id: "284",
 		exclude: [
 			"swsh"
 		]
@@ -2412,7 +2128,6 @@ const pkmnData = [
 		name: "Shroomish",
 		value: "shroomish",
 		icon: "shroomish",
-		id: "285",
 		exclude: [
 			"swsh"
 		]
@@ -2421,7 +2136,6 @@ const pkmnData = [
 		name: "Breloom",
 		value: "breloom",
 		icon: "breloom",
-		id: "286",
 		exclude: [
 			"swsh"
 		]
@@ -2430,7 +2144,6 @@ const pkmnData = [
 		name: "Slakoth",
 		value: "slakoth",
 		icon: "slakoth",
-		id: "287",
 		exclude: [
 			"swsh"
 		]
@@ -2439,7 +2152,6 @@ const pkmnData = [
 		name: "Vigoroth",
 		value: "vigoroth",
 		icon: "vigoroth",
-		id: "288",
 		exclude: [
 			"swsh"
 		]
@@ -2448,7 +2160,6 @@ const pkmnData = [
 		name: "Slaking",
 		value: "slaking",
 		icon: "slaking",
-		id: "289",
 		exclude: [
 			"swsh"
 		]
@@ -2457,7 +2168,6 @@ const pkmnData = [
 		name: "Nincada",
 		value: "nincada",
 		icon: "nincada",
-		id: "290",
 		exclude: [
 			"sv"
 		]
@@ -2466,7 +2176,6 @@ const pkmnData = [
 		name: "Ninjask",
 		value: "ninjask",
 		icon: "ninjask",
-		id: "291",
 		exclude: [
 			"sv"
 		]
@@ -2475,7 +2184,6 @@ const pkmnData = [
 		name: "Shedinja",
 		value: "shedinja",
 		icon: "shedinja",
-		id: "292",
 		exclude: [
 			"sv"
 		]
@@ -2484,7 +2192,6 @@ const pkmnData = [
 		name: "Whismur",
 		value: "whismur",
 		icon: "whismur",
-		id: "293",
 		exclude: [
 			"sv"
 		]
@@ -2493,7 +2200,6 @@ const pkmnData = [
 		name: "Loudred",
 		value: "loudred",
 		icon: "loudred",
-		id: "294",
 		exclude: [
 			"sv"
 		]
@@ -2502,7 +2208,6 @@ const pkmnData = [
 		name: "Exploud",
 		value: "exploud",
 		icon: "exploud",
-		id: "295",
 		exclude: [
 			"sv"
 		]
@@ -2511,7 +2216,6 @@ const pkmnData = [
 		name: "Makuhita",
 		value: "makuhita",
 		icon: "makuhita",
-		id: "296",
 		exclude: [
 			"swsh"
 		]
@@ -2520,7 +2224,6 @@ const pkmnData = [
 		name: "Hariyama",
 		value: "hariyama",
 		icon: "hariyama",
-		id: "297",
 		exclude: [
 			"swsh"
 		]
@@ -2528,14 +2231,12 @@ const pkmnData = [
 	{
 		name: "Azurill",
 		value: "azurill",
-		icon: "azurill",
-		id: "298"
+		icon: "azurill"
 	},
 	{
 		name: "Nosepass",
 		value: "nosepass",
 		icon: "nosepass",
-		id: "299",
 		exclude: [
 			"swsh",
 			"sv"
@@ -2545,7 +2246,6 @@ const pkmnData = [
 		name: "Skitty",
 		value: "skitty",
 		icon: "skitty",
-		id: "300",
 		exclude: [
 			"swsh",
 			"sv"
@@ -2555,7 +2255,6 @@ const pkmnData = [
 		name: "Delcatty",
 		value: "delcatty",
 		icon: "delcatty",
-		id: "301",
 		exclude: [
 			"swsh",
 			"sv"
@@ -2564,14 +2263,12 @@ const pkmnData = [
 	{
 		name: "Sableye",
 		value: "sableye",
-		icon: "sableye",
-		id: "302"
+		icon: "sableye"
 	},
 	{
 		name: "Mawile",
 		value: "mawile",
 		icon: "mawile",
-		id: "303",
 		exclude: [
 			"sv"
 		]
@@ -2580,7 +2277,6 @@ const pkmnData = [
 		name: "Aron",
 		value: "aron",
 		icon: "aron",
-		id: "304",
 		exclude: [
 			"sv"
 		]
@@ -2589,7 +2285,6 @@ const pkmnData = [
 		name: "Lairon",
 		value: "lairon",
 		icon: "lairon",
-		id: "305",
 		exclude: [
 			"sv"
 		]
@@ -2598,7 +2293,6 @@ const pkmnData = [
 		name: "Aggron",
 		value: "aggron",
 		icon: "aggron",
-		id: "306",
 		exclude: [
 			"sv"
 		]
@@ -2607,7 +2301,6 @@ const pkmnData = [
 		name: "Meditite",
 		value: "meditite",
 		icon: "meditite",
-		id: "307",
 		exclude: [
 			"swsh"
 		]
@@ -2616,7 +2309,6 @@ const pkmnData = [
 		name: "Medicham",
 		value: "medicham",
 		icon: "medicham",
-		id: "308",
 		exclude: [
 			"swsh"
 		]
@@ -2625,7 +2317,6 @@ const pkmnData = [
 		name: "Electrike",
 		value: "electrike",
 		icon: "electrike",
-		id: "309",
 		exclude: [
 			"sv"
 		]
@@ -2634,7 +2325,6 @@ const pkmnData = [
 		name: "Manectric",
 		value: "manectric",
 		icon: "manectric",
-		id: "310",
 		exclude: [
 			"sv"
 		]
@@ -2643,7 +2333,6 @@ const pkmnData = [
 		name: "Plusle",
 		value: "plusle",
 		icon: "plusle",
-		id: "311",
 		exclude: [
 			"swsh",
 			"sv"
@@ -2653,7 +2342,6 @@ const pkmnData = [
 		name: "Minun",
 		value: "minun",
 		icon: "minun",
-		id: "312",
 		exclude: [
 			"swsh",
 			"sv"
@@ -2663,7 +2351,6 @@ const pkmnData = [
 		name: "Volbeat",
 		value: "volbeat",
 		icon: "volbeat",
-		id: "313",
 		exclude: [
 			"swsh",
 			"sv"
@@ -2673,7 +2360,6 @@ const pkmnData = [
 		name: "Illumise",
 		value: "illumise",
 		icon: "illumise",
-		id: "314",
 		exclude: [
 			"swsh",
 			"sv"
@@ -2683,7 +2369,6 @@ const pkmnData = [
 		name: "Roselia",
 		value: "roselia",
 		icon: "roselia",
-		id: "315",
 		exclude: [
 			"sv"
 		]
@@ -2692,7 +2377,6 @@ const pkmnData = [
 		name: "Gulpin",
 		value: "gulpin",
 		icon: "gulpin",
-		id: "316",
 		exclude: [
 			"swsh"
 		]
@@ -2701,7 +2385,6 @@ const pkmnData = [
 		name: "Swalot",
 		value: "swalot",
 		icon: "swalot",
-		id: "317",
 		exclude: [
 			"swsh"
 		]
@@ -2710,7 +2393,6 @@ const pkmnData = [
 		name: "Carvanha",
 		value: "carvanha",
 		icon: "carvanha",
-		id: "318",
 		exclude: [
 			"sv"
 		]
@@ -2719,7 +2401,6 @@ const pkmnData = [
 		name: "Sharpedo",
 		value: "sharpedo",
 		icon: "sharpedo",
-		id: "319",
 		exclude: [
 			"sv"
 		]
@@ -2728,7 +2409,6 @@ const pkmnData = [
 		name: "Wailmer",
 		value: "wailmer",
 		icon: "wailmer",
-		id: "320",
 		exclude: [
 			"sv"
 		]
@@ -2737,7 +2417,6 @@ const pkmnData = [
 		name: "Wailord",
 		value: "wailord",
 		icon: "wailord",
-		id: "321",
 		exclude: [
 			"sv"
 		]
@@ -2746,7 +2425,6 @@ const pkmnData = [
 		name: "Numel",
 		value: "numel",
 		icon: "numel",
-		id: "322",
 		exclude: [
 			"swsh"
 		]
@@ -2755,7 +2433,6 @@ const pkmnData = [
 		name: "Camerupt",
 		value: "camerupt",
 		icon: "camerupt",
-		id: "323",
 		exclude: [
 			"swsh"
 		]
@@ -2763,14 +2440,12 @@ const pkmnData = [
 	{
 		name: "Torkoal",
 		value: "torkoal",
-		icon: "torkoal",
-		id: "324"
+		icon: "torkoal"
 	},
 	{
 		name: "Spoink",
 		value: "spoink",
 		icon: "spoink",
-		id: "325",
 		exclude: [
 			"swsh"
 		]
@@ -2779,7 +2454,6 @@ const pkmnData = [
 		name: "Grumpig",
 		value: "grumpig",
 		icon: "grumpig",
-		id: "326",
 		exclude: [
 			"swsh"
 		]
@@ -2788,7 +2462,6 @@ const pkmnData = [
 		name: "Spinda",
 		value: "spinda",
 		icon: "spinda",
-		id: "327",
 		exclude: [
 			"swsh",
 			"sv"
@@ -2798,7 +2471,6 @@ const pkmnData = [
 		name: "Trapinch",
 		value: "trapinch",
 		icon: "trapinch",
-		id: "328",
 		exclude: [
 			"sv"
 		]
@@ -2807,7 +2479,6 @@ const pkmnData = [
 		name: "Vibrava",
 		value: "vibrava",
 		icon: "vibrava",
-		id: "329",
 		exclude: [
 			"sv"
 		]
@@ -2816,7 +2487,6 @@ const pkmnData = [
 		name: "Flygon",
 		value: "flygon",
 		icon: "flygon",
-		id: "330",
 		exclude: [
 			"sv"
 		]
@@ -2825,7 +2495,6 @@ const pkmnData = [
 		name: "Cacnea",
 		value: "cacnea",
 		icon: "cacnea",
-		id: "331",
 		exclude: [
 			"swsh"
 		]
@@ -2834,7 +2503,6 @@ const pkmnData = [
 		name: "Cacturne",
 		value: "cacturne",
 		icon: "cacturne",
-		id: "332",
 		exclude: [
 			"swsh"
 		]
@@ -2842,20 +2510,17 @@ const pkmnData = [
 	{
 		name: "Swablu",
 		value: "swablu",
-		icon: "swablu",
-		id: "333"
+		icon: "swablu"
 	},
 	{
 		name: "Altaria",
 		value: "altaria",
-		icon: "altaria",
-		id: "334"
+		icon: "altaria"
 	},
 	{
 		name: "Zangoose",
 		value: "zangoose",
 		icon: "zangoose",
-		id: "335",
 		exclude: [
 			"swsh"
 		]
@@ -2864,7 +2529,6 @@ const pkmnData = [
 		name: "Seviper",
 		value: "seviper",
 		icon: "seviper",
-		id: "336",
 		exclude: [
 			"swsh"
 		]
@@ -2873,7 +2537,6 @@ const pkmnData = [
 		name: "Lunatone",
 		value: "lunatone",
 		icon: "lunatone",
-		id: "337",
 		exclude: [
 			"sv"
 		]
@@ -2882,7 +2545,6 @@ const pkmnData = [
 		name: "Solrock",
 		value: "solrock",
 		icon: "solrock",
-		id: "338",
 		exclude: [
 			"sv"
 		]
@@ -2890,20 +2552,17 @@ const pkmnData = [
 	{
 		name: "Barboach",
 		value: "barboach",
-		icon: "barboach",
-		id: "339"
+		icon: "barboach"
 	},
 	{
 		name: "Whiscash",
 		value: "whiscash",
-		icon: "whiscash",
-		id: "340"
+		icon: "whiscash"
 	},
 	{
 		name: "Corphish",
 		value: "corphish",
 		icon: "corphish",
-		id: "341",
 		exclude: [
 			"sv"
 		]
@@ -2912,7 +2571,6 @@ const pkmnData = [
 		name: "Crawdaunt",
 		value: "crawdaunt",
 		icon: "crawdaunt",
-		id: "342",
 		exclude: [
 			"sv"
 		]
@@ -2921,7 +2579,6 @@ const pkmnData = [
 		name: "Baltoy",
 		value: "baltoy",
 		icon: "baltoy",
-		id: "343",
 		exclude: [
 			"sv"
 		]
@@ -2930,7 +2587,6 @@ const pkmnData = [
 		name: "Claydol",
 		value: "claydol",
 		icon: "claydol",
-		id: "344",
 		exclude: [
 			"sv"
 		]
@@ -2939,7 +2595,6 @@ const pkmnData = [
 		name: "Lileep",
 		value: "lileep",
 		icon: "lileep",
-		id: "345",
 		exclude: [
 			"sv"
 		]
@@ -2948,7 +2603,6 @@ const pkmnData = [
 		name: "Cradily",
 		value: "cradily",
 		icon: "cradily",
-		id: "346",
 		exclude: [
 			"sv"
 		]
@@ -2957,7 +2611,6 @@ const pkmnData = [
 		name: "Anorith",
 		value: "anorith",
 		icon: "anorith",
-		id: "347",
 		exclude: [
 			"sv"
 		]
@@ -2966,7 +2619,6 @@ const pkmnData = [
 		name: "Armaldo",
 		value: "armaldo",
 		icon: "armaldo",
-		id: "348",
 		exclude: [
 			"sv"
 		]
@@ -2975,7 +2627,6 @@ const pkmnData = [
 		name: "Feebas",
 		value: "feebas",
 		icon: "feebas",
-		id: "349",
 		exclude: [
 			"sv"
 		]
@@ -2984,7 +2635,6 @@ const pkmnData = [
 		name: "Milotic",
 		value: "milotic",
 		icon: "milotic",
-		id: "350",
 		exclude: [
 			"sv"
 		]
@@ -2993,7 +2643,6 @@ const pkmnData = [
 		name: "Castform",
 		value: "castform",
 		icon: "castform",
-		id: "351",
 		exclude: [
 			"swsh",
 			"sv"
@@ -3003,7 +2652,6 @@ const pkmnData = [
 		name: "Kecleon",
 		value: "kecleon",
 		icon: "kecleon",
-		id: "352",
 		exclude: [
 			"swsh",
 			"sv"
@@ -3013,7 +2661,6 @@ const pkmnData = [
 		name: "Shuppet",
 		value: "shuppet",
 		icon: "shuppet",
-		id: "353",
 		exclude: [
 			"swsh"
 		]
@@ -3022,7 +2669,6 @@ const pkmnData = [
 		name: "Banette",
 		value: "banette",
 		icon: "banette",
-		id: "354",
 		exclude: [
 			"swsh"
 		]
@@ -3031,7 +2677,6 @@ const pkmnData = [
 		name: "Duskull",
 		value: "duskull",
 		icon: "duskull",
-		id: "355",
 		exclude: [
 			"sv"
 		]
@@ -3040,7 +2685,6 @@ const pkmnData = [
 		name: "Dusclops",
 		value: "dusclops",
 		icon: "dusclops",
-		id: "356",
 		exclude: [
 			"sv"
 		]
@@ -3049,7 +2693,6 @@ const pkmnData = [
 		name: "Tropius",
 		value: "tropius",
 		icon: "tropius",
-		id: "357",
 		exclude: [
 			"swsh"
 		]
@@ -3058,7 +2701,6 @@ const pkmnData = [
 		name: "Chimecho",
 		value: "chimecho",
 		icon: "chimecho",
-		id: "358",
 		exclude: [
 			"swsh",
 			"sv"
@@ -3068,7 +2710,6 @@ const pkmnData = [
 		name: "Absol",
 		value: "absol",
 		icon: "absol",
-		id: "359",
 		exclude: [
 			"sv"
 		]
@@ -3077,7 +2718,6 @@ const pkmnData = [
 		name: "Wynaut",
 		value: "wynaut",
 		icon: "wynaut",
-		id: "360",
 		exclude: [
 			"sv"
 		]
@@ -3085,20 +2725,17 @@ const pkmnData = [
 	{
 		name: "Snorunt",
 		value: "snorunt",
-		icon: "snorunt",
-		id: "361"
+		icon: "snorunt"
 	},
 	{
 		name: "Glalie",
 		value: "glalie",
-		icon: "glalie",
-		id: "362"
+		icon: "glalie"
 	},
 	{
 		name: "Spheal",
 		value: "spheal",
 		icon: "spheal",
-		id: "363",
 		exclude: [
 			"sv"
 		]
@@ -3107,7 +2744,6 @@ const pkmnData = [
 		name: "Sealeo",
 		value: "sealeo",
 		icon: "sealeo",
-		id: "364",
 		exclude: [
 			"sv"
 		]
@@ -3116,7 +2752,6 @@ const pkmnData = [
 		name: "Walrein",
 		value: "walrein",
 		icon: "walrein",
-		id: "365",
 		exclude: [
 			"sv"
 		]
@@ -3125,7 +2760,6 @@ const pkmnData = [
 		name: "Clamperl",
 		value: "clamperl",
 		icon: "clamperl",
-		id: "366",
 		exclude: [
 			"swsh",
 			"sv"
@@ -3135,7 +2769,6 @@ const pkmnData = [
 		name: "Huntail",
 		value: "huntail",
 		icon: "huntail",
-		id: "367",
 		exclude: [
 			"swsh",
 			"sv"
@@ -3145,7 +2778,6 @@ const pkmnData = [
 		name: "Gorebyss",
 		value: "gorebyss",
 		icon: "gorebyss",
-		id: "368",
 		exclude: [
 			"swsh",
 			"sv"
@@ -3155,7 +2787,6 @@ const pkmnData = [
 		name: "Relicanth",
 		value: "relicanth",
 		icon: "relicanth",
-		id: "369",
 		exclude: [
 			"sv"
 		]
@@ -3164,7 +2795,6 @@ const pkmnData = [
 		name: "Luvdisc",
 		value: "luvdisc",
 		icon: "luvdisc",
-		id: "370",
 		exclude: [
 			"swsh"
 		]
@@ -3172,26 +2802,22 @@ const pkmnData = [
 	{
 		name: "Bagon",
 		value: "bagon",
-		icon: "bagon",
-		id: "371"
+		icon: "bagon"
 	},
 	{
 		name: "Shelgon",
 		value: "shelgon",
-		icon: "shelgon",
-		id: "372"
+		icon: "shelgon"
 	},
 	{
 		name: "Salamence",
 		value: "salamence",
-		icon: "salamence",
-		id: "373"
+		icon: "salamence"
 	},
 	{
 		name: "Beldum",
 		value: "beldum",
 		icon: "beldum",
-		id: "374",
 		exclude: [
 			"sv"
 		]
@@ -3200,7 +2826,6 @@ const pkmnData = [
 		name: "Metang",
 		value: "metang",
 		icon: "metang",
-		id: "375",
 		exclude: [
 			"sv"
 		]
@@ -3209,7 +2834,6 @@ const pkmnData = [
 		name: "Metagross",
 		value: "metagross",
 		icon: "metagross",
-		id: "376",
 		exclude: [
 			"sv"
 		]
@@ -3218,7 +2842,6 @@ const pkmnData = [
 		name: "Regirock",
 		value: "regirock",
 		icon: "regirock",
-		id: "377",
 		exclude: [
 			"sv"
 		]
@@ -3227,7 +2850,6 @@ const pkmnData = [
 		name: "Regice",
 		value: "regice",
 		icon: "regice",
-		id: "378",
 		exclude: [
 			"sv"
 		]
@@ -3236,7 +2858,6 @@ const pkmnData = [
 		name: "Registeel",
 		value: "registeel",
 		icon: "registeel",
-		id: "379",
 		exclude: [
 			"sv"
 		]
@@ -3245,7 +2866,6 @@ const pkmnData = [
 		name: "Latias",
 		value: "latias",
 		icon: "latias",
-		id: "380",
 		exclude: [
 			"sv"
 		]
@@ -3254,7 +2874,6 @@ const pkmnData = [
 		name: "Latios",
 		value: "latios",
 		icon: "latios",
-		id: "381",
 		exclude: [
 			"sv"
 		]
@@ -3262,26 +2881,22 @@ const pkmnData = [
 	{
 		name: "Kyogre",
 		value: "kyogre",
-		icon: "kyogre",
-		id: "382"
+		icon: "kyogre"
 	},
 	{
 		name: "Groudon",
 		value: "groudon",
-		icon: "groudon",
-		id: "383"
+		icon: "groudon"
 	},
 	{
 		name: "Rayquaza",
 		value: "rayquaza",
-		icon: "rayquaza",
-		id: "384"
+		icon: "rayquaza"
 	},
 	{
 		name: "Jirachi",
 		value: "jirachi",
 		icon: "jirachi",
-		id: "385",
 		exclude: [
 			"sv"
 		]
@@ -3290,7 +2905,6 @@ const pkmnData = [
 		name: "Deoxys",
 		value: "deoxys",
 		icon: "deoxys",
-		id: "386",
 		exclude: [
 			"swsh",
 			"sv"
@@ -3300,7 +2914,6 @@ const pkmnData = [
 		name: "Turtwig",
 		value: "turtwig",
 		icon: "turtwig",
-		id: "387",
 		exclude: [
 			"swsh",
 			"sv"
@@ -3310,7 +2923,6 @@ const pkmnData = [
 		name: "Grotle",
 		value: "grotle",
 		icon: "grotle",
-		id: "388",
 		exclude: [
 			"swsh",
 			"sv"
@@ -3320,7 +2932,6 @@ const pkmnData = [
 		name: "Torterra",
 		value: "torterra",
 		icon: "torterra",
-		id: "389",
 		exclude: [
 			"swsh",
 			"sv"
@@ -3330,7 +2941,6 @@ const pkmnData = [
 		name: "Chimchar",
 		value: "chimchar",
 		icon: "chimchar",
-		id: "390",
 		exclude: [
 			"swsh",
 			"sv"
@@ -3340,7 +2950,6 @@ const pkmnData = [
 		name: "Monferno",
 		value: "monferno",
 		icon: "monferno",
-		id: "391",
 		exclude: [
 			"swsh",
 			"sv"
@@ -3350,7 +2959,6 @@ const pkmnData = [
 		name: "Infernape",
 		value: "infernape",
 		icon: "infernape",
-		id: "392",
 		exclude: [
 			"swsh",
 			"sv"
@@ -3360,7 +2968,6 @@ const pkmnData = [
 		name: "Piplup",
 		value: "piplup",
 		icon: "piplup",
-		id: "393",
 		exclude: [
 			"swsh",
 			"sv"
@@ -3370,7 +2977,6 @@ const pkmnData = [
 		name: "Prinplup",
 		value: "prinplup",
 		icon: "prinplup",
-		id: "394",
 		exclude: [
 			"swsh",
 			"sv"
@@ -3380,7 +2986,6 @@ const pkmnData = [
 		name: "Empoleon",
 		value: "empoleon",
 		icon: "empoleon",
-		id: "395",
 		exclude: [
 			"swsh",
 			"sv"
@@ -3390,7 +2995,6 @@ const pkmnData = [
 		name: "Starly",
 		value: "starly",
 		icon: "starly",
-		id: "396",
 		exclude: [
 			"swsh"
 		]
@@ -3399,7 +3003,6 @@ const pkmnData = [
 		name: "Staravia",
 		value: "staravia",
 		icon: "staravia",
-		id: "397",
 		exclude: [
 			"swsh"
 		]
@@ -3408,7 +3011,6 @@ const pkmnData = [
 		name: "Staraptor",
 		value: "staraptor",
 		icon: "staraptor",
-		id: "398",
 		exclude: [
 			"swsh"
 		]
@@ -3417,7 +3019,6 @@ const pkmnData = [
 		name: "Bidoof",
 		value: "bidoof",
 		icon: "bidoof",
-		id: "399",
 		exclude: [
 			"swsh",
 			"sv"
@@ -3427,7 +3028,6 @@ const pkmnData = [
 		name: "Bibarel",
 		value: "bibarel",
 		icon: "bibarel",
-		id: "400",
 		exclude: [
 			"swsh",
 			"sv"
@@ -3437,7 +3037,6 @@ const pkmnData = [
 		name: "Kricketot",
 		value: "kricketot",
 		icon: "kricketot",
-		id: "401",
 		exclude: [
 			"swsh"
 		]
@@ -3446,7 +3045,6 @@ const pkmnData = [
 		name: "Kricketune",
 		value: "kricketune",
 		icon: "kricketune",
-		id: "402",
 		exclude: [
 			"swsh"
 		]
@@ -3454,26 +3052,22 @@ const pkmnData = [
 	{
 		name: "Shinx",
 		value: "shinx",
-		icon: "shinx",
-		id: "403"
+		icon: "shinx"
 	},
 	{
 		name: "Luxio",
 		value: "luxio",
-		icon: "luxio",
-		id: "404"
+		icon: "luxio"
 	},
 	{
 		name: "Luxray",
 		value: "luxray",
-		icon: "luxray",
-		id: "405"
+		icon: "luxray"
 	},
 	{
 		name: "Budew",
 		value: "budew",
 		icon: "budew",
-		id: "406",
 		exclude: [
 			"sv"
 		]
@@ -3482,7 +3076,6 @@ const pkmnData = [
 		name: "Roserade",
 		value: "roserade",
 		icon: "roserade",
-		id: "407",
 		exclude: [
 			"sv"
 		]
@@ -3491,7 +3084,6 @@ const pkmnData = [
 		name: "Cranidos",
 		value: "cranidos",
 		icon: "cranidos",
-		id: "408",
 		exclude: [
 			"swsh",
 			"sv"
@@ -3501,7 +3093,6 @@ const pkmnData = [
 		name: "Rampardos",
 		value: "rampardos",
 		icon: "rampardos",
-		id: "409",
 		exclude: [
 			"swsh",
 			"sv"
@@ -3511,7 +3102,6 @@ const pkmnData = [
 		name: "Shieldon",
 		value: "shieldon",
 		icon: "shieldon",
-		id: "410",
 		exclude: [
 			"swsh",
 			"sv"
@@ -3521,7 +3111,6 @@ const pkmnData = [
 		name: "Bastiodon",
 		value: "bastiodon",
 		icon: "bastiodon",
-		id: "411",
 		exclude: [
 			"swsh",
 			"sv"
@@ -3531,7 +3120,6 @@ const pkmnData = [
 		name: "Burmy",
 		value: "burmy",
 		icon: "burmy",
-		id: "412",
 		exclude: [
 			"swsh",
 			"sv"
@@ -3541,7 +3129,6 @@ const pkmnData = [
 		name: "Wormadam",
 		value: "wormadam",
 		icon: "wormadam",
-		id: "413",
 		exclude: [
 			"swsh",
 			"sv"
@@ -3551,7 +3138,6 @@ const pkmnData = [
 		name: "Mothim",
 		value: "mothim",
 		icon: "mothim",
-		id: "414",
 		exclude: [
 			"swsh",
 			"sv"
@@ -3560,20 +3146,17 @@ const pkmnData = [
 	{
 		name: "Combee",
 		value: "combee",
-		icon: "combee",
-		id: "415"
+		icon: "combee"
 	},
 	{
 		name: "Vespiquen",
 		value: "vespiquen",
-		icon: "vespiquen",
-		id: "416"
+		icon: "vespiquen"
 	},
 	{
 		name: "Pachirisu",
 		value: "pachirisu",
 		icon: "pachirisu",
-		id: "417",
 		exclude: [
 			"swsh"
 		]
@@ -3582,7 +3165,6 @@ const pkmnData = [
 		name: "Buizel",
 		value: "buizel",
 		icon: "buizel",
-		id: "418",
 		exclude: [
 			"swsh"
 		]
@@ -3591,7 +3173,6 @@ const pkmnData = [
 		name: "Floatzel",
 		value: "floatzel",
 		icon: "floatzel",
-		id: "419",
 		exclude: [
 			"swsh"
 		]
@@ -3600,7 +3181,6 @@ const pkmnData = [
 		name: "Cherubi",
 		value: "cherubi",
 		icon: "cherubi",
-		id: "420",
 		exclude: [
 			"sv"
 		]
@@ -3609,7 +3189,6 @@ const pkmnData = [
 		name: "Cherrim",
 		value: "cherrim",
 		icon: "cherrim",
-		id: "421",
 		exclude: [
 			"sv"
 		]
@@ -3617,20 +3196,17 @@ const pkmnData = [
 	{
 		name: "Shellos",
 		value: "shellos",
-		icon: "shellos",
-		id: "422"
+		icon: "shellos"
 	},
 	{
 		name: "Gastrodon",
 		value: "gastrodon",
-		icon: "gastrodon",
-		id: "423"
+		icon: "gastrodon"
 	},
 	{
 		name: "Ambipom",
 		value: "ambipom",
 		icon: "ambipom",
-		id: "424",
 		exclude: [
 			"swsh",
 			"sv"
@@ -3639,20 +3215,17 @@ const pkmnData = [
 	{
 		name: "Drifloon",
 		value: "drifloon",
-		icon: "drifloon",
-		id: "425"
+		icon: "drifloon"
 	},
 	{
 		name: "Drifblim",
 		value: "drifblim",
-		icon: "drifblim",
-		id: "426"
+		icon: "drifblim"
 	},
 	{
 		name: "Buneary",
 		value: "buneary",
 		icon: "buneary",
-		id: "427",
 		exclude: [
 			"sv"
 		]
@@ -3661,7 +3234,6 @@ const pkmnData = [
 		name: "Lopunny",
 		value: "lopunny",
 		icon: "lopunny",
-		id: "428",
 		exclude: [
 			"sv"
 		]
@@ -3670,7 +3242,6 @@ const pkmnData = [
 		name: "Mismagius",
 		value: "mismagius",
 		icon: "mismagius",
-		id: "429",
 		exclude: [
 			"swsh"
 		]
@@ -3679,7 +3250,6 @@ const pkmnData = [
 		name: "Honchkrow",
 		value: "honchkrow",
 		icon: "honchkrow",
-		id: "430",
 		exclude: [
 			"swsh"
 		]
@@ -3688,7 +3258,6 @@ const pkmnData = [
 		name: "Glameow",
 		value: "glameow",
 		icon: "glameow",
-		id: "431",
 		exclude: [
 			"swsh",
 			"sv"
@@ -3698,7 +3267,6 @@ const pkmnData = [
 		name: "Purugly",
 		value: "purugly",
 		icon: "purugly",
-		id: "432",
 		exclude: [
 			"swsh",
 			"sv"
@@ -3708,7 +3276,6 @@ const pkmnData = [
 		name: "Chingling",
 		value: "chingling",
 		icon: "chingling",
-		id: "433",
 		exclude: [
 			"swsh",
 			"sv"
@@ -3717,38 +3284,32 @@ const pkmnData = [
 	{
 		name: "Stunky",
 		value: "stunky",
-		icon: "stunky",
-		id: "434"
+		icon: "stunky"
 	},
 	{
 		name: "Skuntank",
 		value: "skuntank",
-		icon: "skuntank",
-		id: "435"
+		icon: "skuntank"
 	},
 	{
 		name: "Bronzor",
 		value: "bronzor",
-		icon: "bronzor",
-		id: "436"
+		icon: "bronzor"
 	},
 	{
 		name: "Bronzong",
 		value: "bronzong",
-		icon: "bronzong",
-		id: "437"
+		icon: "bronzong"
 	},
 	{
 		name: "Bonsly",
 		value: "bonsly",
-		icon: "bonsly",
-		id: "438"
+		icon: "bonsly"
 	},
 	{
 		name: "Mime Jr.",
 		value: "mime-jr",
 		icon: "mime-jr",
-		id: "439",
 		exclude: [
 			"sv"
 		]
@@ -3756,14 +3317,12 @@ const pkmnData = [
 	{
 		name: "Happiny",
 		value: "happiny",
-		icon: "happiny",
-		id: "440"
+		icon: "happiny"
 	},
 	{
 		name: "Chatot",
 		value: "chatot",
 		icon: "chatot",
-		id: "441",
 		exclude: [
 			"swsh",
 			"sv"
@@ -3772,32 +3331,27 @@ const pkmnData = [
 	{
 		name: "Spiritomb",
 		value: "spiritomb",
-		icon: "spiritomb",
-		id: "442"
+		icon: "spiritomb"
 	},
 	{
 		name: "Gible",
 		value: "gible",
-		icon: "gible",
-		id: "443"
+		icon: "gible"
 	},
 	{
 		name: "Gabite",
 		value: "gabite",
-		icon: "gabite",
-		id: "444"
+		icon: "gabite"
 	},
 	{
 		name: "Garchomp",
 		value: "garchomp",
-		icon: "garchomp",
-		id: "445"
+		icon: "garchomp"
 	},
 	{
 		name: "Munchlax",
 		value: "munchlax",
 		icon: "munchlax",
-		id: "446",
 		exclude: [
 			"sv"
 		]
@@ -3805,32 +3359,27 @@ const pkmnData = [
 	{
 		name: "Riolu",
 		value: "riolu",
-		icon: "riolu",
-		id: "447"
+		icon: "riolu"
 	},
 	{
 		name: "Lucario",
 		value: "lucario",
-		icon: "lucario",
-		id: "448"
+		icon: "lucario"
 	},
 	{
 		name: "Hippopotas",
 		value: "hippopotas",
-		icon: "hippopotas",
-		id: "449"
+		icon: "hippopotas"
 	},
 	{
 		name: "Hippowdon",
 		value: "hippowdon",
-		icon: "hippowdon",
-		id: "450"
+		icon: "hippowdon"
 	},
 	{
 		name: "Skorupi",
 		value: "skorupi",
 		icon: "skorupi",
-		id: "451",
 		exclude: [
 			"sv"
 		]
@@ -3839,7 +3388,6 @@ const pkmnData = [
 		name: "Drapion",
 		value: "drapion",
 		icon: "drapion",
-		id: "452",
 		exclude: [
 			"sv"
 		]
@@ -3847,20 +3395,17 @@ const pkmnData = [
 	{
 		name: "Croagunk",
 		value: "croagunk",
-		icon: "croagunk",
-		id: "453"
+		icon: "croagunk"
 	},
 	{
 		name: "Toxicroak",
 		value: "toxicroak",
-		icon: "toxicroak",
-		id: "454"
+		icon: "toxicroak"
 	},
 	{
 		name: "Carnivine",
 		value: "carnivine",
 		icon: "carnivine",
-		id: "455",
 		exclude: [
 			"swsh",
 			"sv"
@@ -3870,7 +3415,6 @@ const pkmnData = [
 		name: "Finneon",
 		value: "finneon",
 		icon: "finneon",
-		id: "456",
 		exclude: [
 			"swsh"
 		]
@@ -3879,7 +3423,6 @@ const pkmnData = [
 		name: "Lumineon",
 		value: "lumineon",
 		icon: "lumineon",
-		id: "457",
 		exclude: [
 			"swsh"
 		]
@@ -3888,7 +3431,6 @@ const pkmnData = [
 		name: "Mantyke",
 		value: "mantyke",
 		icon: "mantyke",
-		id: "458",
 		exclude: [
 			"sv"
 		]
@@ -3896,32 +3438,27 @@ const pkmnData = [
 	{
 		name: "Snover",
 		value: "snover",
-		icon: "snover",
-		id: "459"
+		icon: "snover"
 	},
 	{
 		name: "Abomasnow",
 		value: "abomasnow",
-		icon: "abomasnow",
-		id: "460"
+		icon: "abomasnow"
 	},
 	{
 		name: "Weavile",
 		value: "weavile",
-		icon: "weavile",
-		id: "461"
+		icon: "weavile"
 	},
 	{
 		name: "Magnezone",
 		value: "magnezone",
-		icon: "magnezone",
-		id: "462"
+		icon: "magnezone"
 	},
 	{
 		name: "Lickilicky",
 		value: "lickilicky",
 		icon: "lickilicky",
-		id: "463",
 		exclude: [
 			"sv"
 		]
@@ -3930,7 +3467,6 @@ const pkmnData = [
 		name: "Rhyperior",
 		value: "rhyperior",
 		icon: "rhyperior",
-		id: "464",
 		exclude: [
 			"sv"
 		]
@@ -3939,7 +3475,6 @@ const pkmnData = [
 		name: "Tangrowth",
 		value: "tangrowth",
 		icon: "tangrowth",
-		id: "465",
 		exclude: [
 			"sv"
 		]
@@ -3948,7 +3483,6 @@ const pkmnData = [
 		name: "Electivire",
 		value: "electivire",
 		icon: "electivire",
-		id: "466",
 		exclude: [
 			"sv"
 		]
@@ -3957,7 +3491,6 @@ const pkmnData = [
 		name: "Magmortar",
 		value: "magmortar",
 		icon: "magmortar",
-		id: "467",
 		exclude: [
 			"sv"
 		]
@@ -3966,7 +3499,6 @@ const pkmnData = [
 		name: "Togekiss",
 		value: "togekiss",
 		icon: "togekiss",
-		id: "468",
 		exclude: [
 			"sv"
 		]
@@ -3975,7 +3507,6 @@ const pkmnData = [
 		name: "Yanmega",
 		value: "yanmega",
 		icon: "yanmega",
-		id: "469",
 		exclude: [
 			"swsh",
 			"sv"
@@ -3984,20 +3515,17 @@ const pkmnData = [
 	{
 		name: "Leafeon",
 		value: "leafeon",
-		icon: "leafeon",
-		id: "470"
+		icon: "leafeon"
 	},
 	{
 		name: "Glaceon",
 		value: "glaceon",
-		icon: "glaceon",
-		id: "471"
+		icon: "glaceon"
 	},
 	{
 		name: "Gliscor",
 		value: "gliscor",
 		icon: "gliscor",
-		id: "472",
 		exclude: [
 			"swsh",
 			"sv"
@@ -4007,7 +3535,6 @@ const pkmnData = [
 		name: "Mamoswine",
 		value: "mamoswine",
 		icon: "mamoswine",
-		id: "473",
 		exclude: [
 			"sv"
 		]
@@ -4016,7 +3543,6 @@ const pkmnData = [
 		name: "Porygon-Z",
 		value: "porygon-z",
 		icon: "porygon-z",
-		id: "474",
 		exclude: [
 			"sv"
 		]
@@ -4024,14 +3550,12 @@ const pkmnData = [
 	{
 		name: "Gallade",
 		value: "gallade",
-		icon: "gallade",
-		id: "475"
+		icon: "gallade"
 	},
 	{
 		name: "Probopass",
 		value: "probopass",
 		icon: "probopass",
-		id: "476",
 		exclude: [
 			"swsh",
 			"sv"
@@ -4041,7 +3565,6 @@ const pkmnData = [
 		name: "Dusknoir",
 		value: "dusknoir",
 		icon: "dusknoir",
-		id: "477",
 		exclude: [
 			"sv"
 		]
@@ -4049,56 +3572,47 @@ const pkmnData = [
 	{
 		name: "Froslass",
 		value: "froslass",
-		icon: "froslass",
-		id: "478"
+		icon: "froslass"
 	},
 	{
 		name: "Rotom",
 		value: "rotom",
-		icon: "rotom",
-		id: "479"
+		icon: "rotom"
 	},
 	{
 		name: "Uxie",
 		value: "uxie",
-		icon: "uxie",
-		id: "480"
+		icon: "uxie"
 	},
 	{
 		name: "Mesprit",
 		value: "mesprit",
-		icon: "mesprit",
-		id: "481"
+		icon: "mesprit"
 	},
 	{
 		name: "Azelf",
 		value: "azelf",
-		icon: "azelf",
-		id: "482"
+		icon: "azelf"
 	},
 	{
 		name: "Dialga",
 		value: "dialga",
-		icon: "dialga",
-		id: "483"
+		icon: "dialga"
 	},
 	{
 		name: "Palkia",
 		value: "palkia",
-		icon: "palkia",
-		id: "484"
+		icon: "palkia"
 	},
 	{
 		name: "Heatran",
 		value: "heatran",
-		icon: "heatran",
-		id: "485"
+		icon: "heatran"
 	},
 	{
 		name: "Regigigas",
 		value: "regigigas",
 		icon: "regigigas",
-		id: "486",
 		exclude: [
 			"sv"
 		]
@@ -4106,20 +3620,17 @@ const pkmnData = [
 	{
 		name: "Giratina",
 		value: "giratina",
-		icon: "giratina",
-		id: "487"
+		icon: "giratina"
 	},
 	{
 		name: "Cresselia",
 		value: "cresselia",
-		icon: "cresselia",
-		id: "488"
+		icon: "cresselia"
 	},
 	{
 		name: "Phione",
 		value: "phione",
 		icon: "phione",
-		id: "489",
 		exclude: [
 			"swsh",
 			"sv"
@@ -4129,7 +3640,6 @@ const pkmnData = [
 		name: "Manaphy",
 		value: "manaphy",
 		icon: "manaphy",
-		id: "490",
 		exclude: [
 			"swsh",
 			"sv"
@@ -4139,7 +3649,6 @@ const pkmnData = [
 		name: "Darkrai",
 		value: "darkrai",
 		icon: "darkrai",
-		id: "491",
 		exclude: [
 			"swsh",
 			"sv"
@@ -4149,7 +3658,6 @@ const pkmnData = [
 		name: "Shaymin",
 		value: "shaymin",
 		icon: "shaymin",
-		id: "492",
 		exclude: [
 			"swsh",
 			"sv"
@@ -4159,7 +3667,6 @@ const pkmnData = [
 		name: "Arceus",
 		value: "arceus",
 		icon: "arceus",
-		id: "493",
 		exclude: [
 			"swsh"
 		]
@@ -4168,7 +3675,6 @@ const pkmnData = [
 		name: "Victini",
 		value: "victini",
 		icon: "victini",
-		id: "494",
 		exclude: [
 			"sv"
 		]
@@ -4177,7 +3683,6 @@ const pkmnData = [
 		name: "Snivy",
 		value: "snivy",
 		icon: "snivy",
-		id: "495",
 		exclude: [
 			"swsh",
 			"sv"
@@ -4187,7 +3692,6 @@ const pkmnData = [
 		name: "Servine",
 		value: "servine",
 		icon: "servine",
-		id: "496",
 		exclude: [
 			"swsh",
 			"sv"
@@ -4197,7 +3701,6 @@ const pkmnData = [
 		name: "Serperior",
 		value: "serperior",
 		icon: "serperior",
-		id: "497",
 		exclude: [
 			"swsh",
 			"sv"
@@ -4207,7 +3710,6 @@ const pkmnData = [
 		name: "Tepig",
 		value: "tepig",
 		icon: "tepig",
-		id: "498",
 		exclude: [
 			"swsh",
 			"sv"
@@ -4217,7 +3719,6 @@ const pkmnData = [
 		name: "Pignite",
 		value: "pignite",
 		icon: "pignite",
-		id: "499",
 		exclude: [
 			"swsh",
 			"sv"
@@ -4227,7 +3728,6 @@ const pkmnData = [
 		name: "Emboar",
 		value: "emboar",
 		icon: "emboar",
-		id: "500",
 		exclude: [
 			"swsh",
 			"sv"
@@ -4237,7 +3737,6 @@ const pkmnData = [
 		name: "Oshawott",
 		value: "oshawott",
 		icon: "oshawott",
-		id: "501",
 		exclude: [
 			"swsh"
 		]
@@ -4246,7 +3745,6 @@ const pkmnData = [
 		name: "Dewott",
 		value: "dewott",
 		icon: "dewott",
-		id: "502",
 		exclude: [
 			"swsh"
 		]
@@ -4255,7 +3753,6 @@ const pkmnData = [
 		name: "Samurott",
 		value: "samurott",
 		icon: "samurott",
-		id: "503",
 		exclude: [
 			"swsh"
 		]
@@ -4264,7 +3761,6 @@ const pkmnData = [
 		name: "Patrat",
 		value: "patrat",
 		icon: "patrat",
-		id: "504",
 		exclude: [
 			"swsh",
 			"sv"
@@ -4274,7 +3770,6 @@ const pkmnData = [
 		name: "Watchog",
 		value: "watchog",
 		icon: "watchog",
-		id: "505",
 		exclude: [
 			"swsh",
 			"sv"
@@ -4284,7 +3779,6 @@ const pkmnData = [
 		name: "Lillipup",
 		value: "lillipup",
 		icon: "lillipup",
-		id: "506",
 		exclude: [
 			"sv"
 		]
@@ -4293,7 +3787,6 @@ const pkmnData = [
 		name: "Herdier",
 		value: "herdier",
 		icon: "herdier",
-		id: "507",
 		exclude: [
 			"sv"
 		]
@@ -4302,7 +3795,6 @@ const pkmnData = [
 		name: "Stoutland",
 		value: "stoutland",
 		icon: "stoutland",
-		id: "508",
 		exclude: [
 			"sv"
 		]
@@ -4311,7 +3803,6 @@ const pkmnData = [
 		name: "Purrloin",
 		value: "purrloin",
 		icon: "purrloin",
-		id: "509",
 		exclude: [
 			"sv"
 		]
@@ -4320,7 +3811,6 @@ const pkmnData = [
 		name: "Liepard",
 		value: "liepard",
 		icon: "liepard",
-		id: "510",
 		exclude: [
 			"sv"
 		]
@@ -4329,7 +3819,6 @@ const pkmnData = [
 		name: "Pansage",
 		value: "pansage",
 		icon: "pansage",
-		id: "511",
 		exclude: [
 			"swsh",
 			"sv"
@@ -4339,7 +3828,6 @@ const pkmnData = [
 		name: "Simisage",
 		value: "simisage",
 		icon: "simisage",
-		id: "512",
 		exclude: [
 			"swsh",
 			"sv"
@@ -4349,7 +3837,6 @@ const pkmnData = [
 		name: "Pansear",
 		value: "pansear",
 		icon: "pansear",
-		id: "513",
 		exclude: [
 			"swsh",
 			"sv"
@@ -4359,7 +3846,6 @@ const pkmnData = [
 		name: "Simisear",
 		value: "simisear",
 		icon: "simisear",
-		id: "514",
 		exclude: [
 			"swsh",
 			"sv"
@@ -4369,7 +3855,6 @@ const pkmnData = [
 		name: "Panpour",
 		value: "panpour",
 		icon: "panpour",
-		id: "515",
 		exclude: [
 			"swsh",
 			"sv"
@@ -4379,7 +3864,6 @@ const pkmnData = [
 		name: "Simipour",
 		value: "simipour",
 		icon: "simipour",
-		id: "516",
 		exclude: [
 			"swsh",
 			"sv"
@@ -4389,7 +3873,6 @@ const pkmnData = [
 		name: "Munna",
 		value: "munna",
 		icon: "munna",
-		id: "517",
 		exclude: [
 			"sv"
 		]
@@ -4398,7 +3881,6 @@ const pkmnData = [
 		name: "Musharna",
 		value: "musharna",
 		icon: "musharna",
-		id: "518",
 		exclude: [
 			"sv"
 		]
@@ -4407,7 +3889,6 @@ const pkmnData = [
 		name: "Pidove",
 		value: "pidove",
 		icon: "pidove",
-		id: "519",
 		exclude: [
 			"sv"
 		]
@@ -4416,7 +3897,6 @@ const pkmnData = [
 		name: "Tranquill",
 		value: "tranquill",
 		icon: "tranquill",
-		id: "520",
 		exclude: [
 			"sv"
 		]
@@ -4425,7 +3905,6 @@ const pkmnData = [
 		name: "Unfezant",
 		value: "unfezant",
 		icon: "unfezant",
-		id: "521",
 		exclude: [
 			"sv"
 		]
@@ -4434,7 +3913,6 @@ const pkmnData = [
 		name: "Blitzle",
 		value: "blitzle",
 		icon: "blitzle",
-		id: "522",
 		exclude: [
 			"swsh",
 			"sv"
@@ -4444,7 +3922,6 @@ const pkmnData = [
 		name: "Zebstrika",
 		value: "zebstrika",
 		icon: "zebstrika",
-		id: "523",
 		exclude: [
 			"swsh",
 			"sv"
@@ -4454,7 +3931,6 @@ const pkmnData = [
 		name: "Roggenrola",
 		value: "roggenrola",
 		icon: "roggenrola",
-		id: "524",
 		exclude: [
 			"sv"
 		]
@@ -4463,7 +3939,6 @@ const pkmnData = [
 		name: "Boldore",
 		value: "boldore",
 		icon: "boldore",
-		id: "525",
 		exclude: [
 			"sv"
 		]
@@ -4472,7 +3947,6 @@ const pkmnData = [
 		name: "Gigalith",
 		value: "gigalith",
 		icon: "gigalith",
-		id: "526",
 		exclude: [
 			"sv"
 		]
@@ -4481,7 +3955,6 @@ const pkmnData = [
 		name: "Woobat",
 		value: "woobat",
 		icon: "woobat",
-		id: "527",
 		exclude: [
 			"sv"
 		]
@@ -4490,7 +3963,6 @@ const pkmnData = [
 		name: "Swoobat",
 		value: "swoobat",
 		icon: "swoobat",
-		id: "528",
 		exclude: [
 			"sv"
 		]
@@ -4499,7 +3971,6 @@ const pkmnData = [
 		name: "Drilbur",
 		value: "drilbur",
 		icon: "drilbur",
-		id: "529",
 		exclude: [
 			"sv"
 		]
@@ -4508,7 +3979,6 @@ const pkmnData = [
 		name: "Excadrill",
 		value: "excadrill",
 		icon: "excadrill",
-		id: "530",
 		exclude: [
 			"sv"
 		]
@@ -4517,7 +3987,6 @@ const pkmnData = [
 		name: "Audino",
 		value: "audino",
 		icon: "audino",
-		id: "531",
 		exclude: [
 			"sv"
 		]
@@ -4526,7 +3995,6 @@ const pkmnData = [
 		name: "Timburr",
 		value: "timburr",
 		icon: "timburr",
-		id: "532",
 		exclude: [
 			"sv"
 		]
@@ -4535,7 +4003,6 @@ const pkmnData = [
 		name: "Gurdurr",
 		value: "gurdurr",
 		icon: "gurdurr",
-		id: "533",
 		exclude: [
 			"sv"
 		]
@@ -4544,7 +4011,6 @@ const pkmnData = [
 		name: "Conkeldurr",
 		value: "conkeldurr",
 		icon: "conkeldurr",
-		id: "534",
 		exclude: [
 			"sv"
 		]
@@ -4553,7 +4019,6 @@ const pkmnData = [
 		name: "Tympole",
 		value: "tympole",
 		icon: "tympole",
-		id: "535",
 		exclude: [
 			"sv"
 		]
@@ -4562,7 +4027,6 @@ const pkmnData = [
 		name: "Palpitoad",
 		value: "palpitoad",
 		icon: "palpitoad",
-		id: "536",
 		exclude: [
 			"sv"
 		]
@@ -4571,7 +4035,6 @@ const pkmnData = [
 		name: "Seismitoad",
 		value: "seismitoad",
 		icon: "seismitoad",
-		id: "537",
 		exclude: [
 			"sv"
 		]
@@ -4580,7 +4043,6 @@ const pkmnData = [
 		name: "Throh",
 		value: "throh",
 		icon: "throh",
-		id: "538",
 		exclude: [
 			"sv"
 		]
@@ -4589,7 +4051,6 @@ const pkmnData = [
 		name: "Sawk",
 		value: "sawk",
 		icon: "sawk",
-		id: "539",
 		exclude: [
 			"sv"
 		]
@@ -4598,7 +4059,6 @@ const pkmnData = [
 		name: "Sewaddle",
 		value: "sewaddle",
 		icon: "sewaddle",
-		id: "540",
 		exclude: [
 			"swsh",
 			"sv"
@@ -4608,7 +4068,6 @@ const pkmnData = [
 		name: "Swadloon",
 		value: "swadloon",
 		icon: "swadloon",
-		id: "541",
 		exclude: [
 			"swsh",
 			"sv"
@@ -4618,7 +4077,6 @@ const pkmnData = [
 		name: "Leavanny",
 		value: "leavanny",
 		icon: "leavanny",
-		id: "542",
 		exclude: [
 			"swsh",
 			"sv"
@@ -4628,7 +4086,6 @@ const pkmnData = [
 		name: "Venipede",
 		value: "venipede",
 		icon: "venipede",
-		id: "543",
 		exclude: [
 			"sv"
 		]
@@ -4637,7 +4094,6 @@ const pkmnData = [
 		name: "Whirlipede",
 		value: "whirlipede",
 		icon: "whirlipede",
-		id: "544",
 		exclude: [
 			"sv"
 		]
@@ -4646,7 +4102,6 @@ const pkmnData = [
 		name: "Scolipede",
 		value: "scolipede",
 		icon: "scolipede",
-		id: "545",
 		exclude: [
 			"sv"
 		]
@@ -4655,7 +4110,6 @@ const pkmnData = [
 		name: "Cottonee",
 		value: "cottonee",
 		icon: "cottonee",
-		id: "546",
 		exclude: [
 			"sv"
 		]
@@ -4664,7 +4118,6 @@ const pkmnData = [
 		name: "Whimsicott",
 		value: "whimsicott",
 		icon: "whimsicott",
-		id: "547",
 		exclude: [
 			"sv"
 		]
@@ -4672,44 +4125,37 @@ const pkmnData = [
 	{
 		name: "Petilil",
 		value: "petilil",
-		icon: "petilil",
-		id: "548"
+		icon: "petilil"
 	},
 	{
 		name: "Lilligant",
 		value: "lilligant",
-		icon: "lilligant",
-		id: "549"
+		icon: "lilligant"
 	},
 	{
 		name: "Basculin",
 		value: "basculin",
-		icon: "basculin",
-		id: "550"
+		icon: "basculin"
 	},
 	{
 		name: "Sandile",
 		value: "sandile",
-		icon: "sandile",
-		id: "551"
+		icon: "sandile"
 	},
 	{
 		name: "Krokorok",
 		value: "krokorok",
-		icon: "krokorok",
-		id: "552"
+		icon: "krokorok"
 	},
 	{
 		name: "Krookodile",
 		value: "krookodile",
-		icon: "krookodile",
-		id: "553"
+		icon: "krookodile"
 	},
 	{
 		name: "Darumaka",
 		value: "darumaka",
 		icon: "darumaka",
-		id: "554",
 		exclude: [
 			"sv"
 		]
@@ -4718,7 +4164,6 @@ const pkmnData = [
 		name: "Darmanitan",
 		value: "darmanitan",
 		icon: "darmanitan",
-		id: "555",
 		exclude: [
 			"sv"
 		]
@@ -4727,7 +4172,6 @@ const pkmnData = [
 		name: "Maractus",
 		value: "maractus",
 		icon: "maractus",
-		id: "556",
 		exclude: [
 			"sv"
 		]
@@ -4736,7 +4180,6 @@ const pkmnData = [
 		name: "Dwebble",
 		value: "dwebble",
 		icon: "dwebble",
-		id: "557",
 		exclude: [
 			"sv"
 		]
@@ -4745,7 +4188,6 @@ const pkmnData = [
 		name: "Crustle",
 		value: "crustle",
 		icon: "crustle",
-		id: "558",
 		exclude: [
 			"sv"
 		]
@@ -4754,7 +4196,6 @@ const pkmnData = [
 		name: "Scraggy",
 		value: "scraggy",
 		icon: "scraggy",
-		id: "559",
 		exclude: [
 			"sv"
 		]
@@ -4763,7 +4204,6 @@ const pkmnData = [
 		name: "Scrafty",
 		value: "scrafty",
 		icon: "scrafty",
-		id: "560",
 		exclude: [
 			"sv"
 		]
@@ -4772,7 +4212,6 @@ const pkmnData = [
 		name: "Sigilyph",
 		value: "sigilyph",
 		icon: "sigilyph",
-		id: "561",
 		exclude: [
 			"sv"
 		]
@@ -4781,7 +4220,6 @@ const pkmnData = [
 		name: "Yamask",
 		value: "yamask",
 		icon: "yamask",
-		id: "562",
 		exclude: [
 			"sv"
 		]
@@ -4790,7 +4228,6 @@ const pkmnData = [
 		name: "Cofagrigus",
 		value: "cofagrigus",
 		icon: "cofagrigus",
-		id: "563",
 		exclude: [
 			"sv"
 		]
@@ -4799,7 +4236,6 @@ const pkmnData = [
 		name: "Tirtouga",
 		value: "tirtouga",
 		icon: "tirtouga",
-		id: "564",
 		exclude: [
 			"sv"
 		]
@@ -4808,7 +4244,6 @@ const pkmnData = [
 		name: "Carracosta",
 		value: "carracosta",
 		icon: "carracosta",
-		id: "565",
 		exclude: [
 			"sv"
 		]
@@ -4817,7 +4252,6 @@ const pkmnData = [
 		name: "Archen",
 		value: "archen",
 		icon: "archen",
-		id: "566",
 		exclude: [
 			"sv"
 		]
@@ -4826,7 +4260,6 @@ const pkmnData = [
 		name: "Archeops",
 		value: "archeops",
 		icon: "archeops",
-		id: "567",
 		exclude: [
 			"sv"
 		]
@@ -4835,7 +4268,6 @@ const pkmnData = [
 		name: "Trubbish",
 		value: "trubbish",
 		icon: "trubbish",
-		id: "568",
 		exclude: [
 			"sv"
 		]
@@ -4844,7 +4276,6 @@ const pkmnData = [
 		name: "Garbodor",
 		value: "garbodor",
 		icon: "garbodor",
-		id: "569",
 		exclude: [
 			"sv"
 		]
@@ -4852,20 +4283,17 @@ const pkmnData = [
 	{
 		name: "Zorua",
 		value: "zorua",
-		icon: "zorua",
-		id: "570"
+		icon: "zorua"
 	},
 	{
 		name: "Zoroark",
 		value: "zoroark",
-		icon: "zoroark",
-		id: "571"
+		icon: "zoroark"
 	},
 	{
 		name: "Minccino",
 		value: "minccino",
 		icon: "minccino",
-		id: "572",
 		exclude: [
 			"sv"
 		]
@@ -4874,7 +4302,6 @@ const pkmnData = [
 		name: "Cinccino",
 		value: "cinccino",
 		icon: "cinccino",
-		id: "573",
 		exclude: [
 			"sv"
 		]
@@ -4882,26 +4309,22 @@ const pkmnData = [
 	{
 		name: "Gothita",
 		value: "gothita",
-		icon: "gothita",
-		id: "574"
+		icon: "gothita"
 	},
 	{
 		name: "Gothorita",
 		value: "gothorita",
-		icon: "gothorita",
-		id: "575"
+		icon: "gothorita"
 	},
 	{
 		name: "Gothitelle",
 		value: "gothitelle",
-		icon: "gothitelle",
-		id: "576"
+		icon: "gothitelle"
 	},
 	{
 		name: "Solosis",
 		value: "solosis",
 		icon: "solosis",
-		id: "577",
 		exclude: [
 			"sv"
 		]
@@ -4910,7 +4333,6 @@ const pkmnData = [
 		name: "Duosion",
 		value: "duosion",
 		icon: "duosion",
-		id: "578",
 		exclude: [
 			"sv"
 		]
@@ -4919,7 +4341,6 @@ const pkmnData = [
 		name: "Reuniclus",
 		value: "reuniclus",
 		icon: "reuniclus",
-		id: "579",
 		exclude: [
 			"sv"
 		]
@@ -4928,7 +4349,6 @@ const pkmnData = [
 		name: "Ducklett",
 		value: "ducklett",
 		icon: "ducklett",
-		id: "580",
 		exclude: [
 			"swsh",
 			"sv"
@@ -4938,7 +4358,6 @@ const pkmnData = [
 		name: "Swanna",
 		value: "swanna",
 		icon: "swanna",
-		id: "581",
 		exclude: [
 			"swsh",
 			"sv"
@@ -4948,7 +4367,6 @@ const pkmnData = [
 		name: "Vanillite",
 		value: "vanillite",
 		icon: "vanillite",
-		id: "582",
 		exclude: [
 			"sv"
 		]
@@ -4957,7 +4375,6 @@ const pkmnData = [
 		name: "Vanillish",
 		value: "vanillish",
 		icon: "vanillish",
-		id: "583",
 		exclude: [
 			"sv"
 		]
@@ -4966,7 +4383,6 @@ const pkmnData = [
 		name: "Vanilluxe",
 		value: "vanilluxe",
 		icon: "vanilluxe",
-		id: "584",
 		exclude: [
 			"sv"
 		]
@@ -4975,7 +4391,6 @@ const pkmnData = [
 		name: "Deerling",
 		value: "deerling",
 		icon: "deerling",
-		id: "585",
 		exclude: [
 			"swsh"
 		]
@@ -4984,7 +4399,6 @@ const pkmnData = [
 		name: "Sawsbuck",
 		value: "sawsbuck",
 		icon: "sawsbuck",
-		id: "586",
 		exclude: [
 			"swsh"
 		]
@@ -4993,7 +4407,6 @@ const pkmnData = [
 		name: "Emolga",
 		value: "emolga",
 		icon: "emolga",
-		id: "587",
 		exclude: [
 			"sv"
 		]
@@ -5002,7 +4415,6 @@ const pkmnData = [
 		name: "Karrablast",
 		value: "karrablast",
 		icon: "karrablast",
-		id: "588",
 		exclude: [
 			"sv"
 		]
@@ -5011,7 +4423,6 @@ const pkmnData = [
 		name: "Escavalier",
 		value: "escavalier",
 		icon: "escavalier",
-		id: "589",
 		exclude: [
 			"sv"
 		]
@@ -5019,20 +4430,17 @@ const pkmnData = [
 	{
 		name: "Foongus",
 		value: "foongus",
-		icon: "foongus",
-		id: "590"
+		icon: "foongus"
 	},
 	{
 		name: "Amoonguss",
 		value: "amoonguss",
-		icon: "amoonguss",
-		id: "591"
+		icon: "amoonguss"
 	},
 	{
 		name: "Frillish",
 		value: "frillish",
 		icon: "frillish",
-		id: "592",
 		exclude: [
 			"sv"
 		]
@@ -5041,7 +4449,6 @@ const pkmnData = [
 		name: "Jellicent",
 		value: "jellicent",
 		icon: "jellicent",
-		id: "593",
 		exclude: [
 			"sv"
 		]
@@ -5050,7 +4457,6 @@ const pkmnData = [
 		name: "Alomomola",
 		value: "alomomola",
 		icon: "alomomola",
-		id: "594",
 		exclude: [
 			"swsh"
 		]
@@ -5059,7 +4465,6 @@ const pkmnData = [
 		name: "Joltik",
 		value: "joltik",
 		icon: "joltik",
-		id: "595",
 		exclude: [
 			"sv"
 		]
@@ -5068,7 +4473,6 @@ const pkmnData = [
 		name: "Galvantula",
 		value: "galvantula",
 		icon: "galvantula",
-		id: "596",
 		exclude: [
 			"sv"
 		]
@@ -5077,7 +4481,6 @@ const pkmnData = [
 		name: "Ferroseed",
 		value: "ferroseed",
 		icon: "ferroseed",
-		id: "597",
 		exclude: [
 			"sv"
 		]
@@ -5086,7 +4489,6 @@ const pkmnData = [
 		name: "Ferrothorn",
 		value: "ferrothorn",
 		icon: "ferrothorn",
-		id: "598",
 		exclude: [
 			"sv"
 		]
@@ -5095,7 +4497,6 @@ const pkmnData = [
 		name: "Klink",
 		value: "klink",
 		icon: "klink",
-		id: "599",
 		exclude: [
 			"sv"
 		]
@@ -5104,7 +4505,6 @@ const pkmnData = [
 		name: "Klang",
 		value: "klang",
 		icon: "klang",
-		id: "600",
 		exclude: [
 			"sv"
 		]
@@ -5113,7 +4513,6 @@ const pkmnData = [
 		name: "Klinklang",
 		value: "klinklang",
 		icon: "klinklang",
-		id: "601",
 		exclude: [
 			"sv"
 		]
@@ -5122,7 +4521,6 @@ const pkmnData = [
 		name: "Tynamo",
 		value: "tynamo",
 		icon: "tynamo",
-		id: "602",
 		exclude: [
 			"swsh"
 		]
@@ -5131,7 +4529,6 @@ const pkmnData = [
 		name: "Eelektrik",
 		value: "eelektrik",
 		icon: "eelektrik",
-		id: "603",
 		exclude: [
 			"swsh"
 		]
@@ -5140,7 +4537,6 @@ const pkmnData = [
 		name: "Eelektross",
 		value: "eelektross",
 		icon: "eelektross",
-		id: "604",
 		exclude: [
 			"swsh"
 		]
@@ -5149,7 +4545,6 @@ const pkmnData = [
 		name: "Elgyem",
 		value: "elgyem",
 		icon: "elgyem",
-		id: "605",
 		exclude: [
 			"sv"
 		]
@@ -5158,7 +4553,6 @@ const pkmnData = [
 		name: "Beheeyem",
 		value: "beheeyem",
 		icon: "beheeyem",
-		id: "606",
 		exclude: [
 			"sv"
 		]
@@ -5167,7 +4561,6 @@ const pkmnData = [
 		name: "Litwick",
 		value: "litwick",
 		icon: "litwick",
-		id: "607",
 		exclude: [
 			"sv"
 		]
@@ -5176,7 +4569,6 @@ const pkmnData = [
 		name: "Lampent",
 		value: "lampent",
 		icon: "lampent",
-		id: "608",
 		exclude: [
 			"sv"
 		]
@@ -5185,7 +4577,6 @@ const pkmnData = [
 		name: "Chandelure",
 		value: "chandelure",
 		icon: "chandelure",
-		id: "609",
 		exclude: [
 			"sv"
 		]
@@ -5193,44 +4584,37 @@ const pkmnData = [
 	{
 		name: "Axew",
 		value: "axew",
-		icon: "axew",
-		id: "610"
+		icon: "axew"
 	},
 	{
 		name: "Fraxure",
 		value: "fraxure",
-		icon: "fraxure",
-		id: "611"
+		icon: "fraxure"
 	},
 	{
 		name: "Haxorus",
 		value: "haxorus",
-		icon: "haxorus",
-		id: "612"
+		icon: "haxorus"
 	},
 	{
 		name: "Cubchoo",
 		value: "cubchoo",
-		icon: "cubchoo",
-		id: "613"
+		icon: "cubchoo"
 	},
 	{
 		name: "Beartic",
 		value: "beartic",
-		icon: "beartic",
-		id: "614"
+		icon: "beartic"
 	},
 	{
 		name: "Cryogonal",
 		value: "cryogonal",
-		icon: "cryogonal",
-		id: "615"
+		icon: "cryogonal"
 	},
 	{
 		name: "Shelmet",
 		value: "shelmet",
 		icon: "shelmet",
-		id: "616",
 		exclude: [
 			"sv"
 		]
@@ -5239,7 +4623,6 @@ const pkmnData = [
 		name: "Accelgor",
 		value: "accelgor",
 		icon: "accelgor",
-		id: "617",
 		exclude: [
 			"sv"
 		]
@@ -5248,7 +4631,6 @@ const pkmnData = [
 		name: "Stunfisk",
 		value: "stunfisk",
 		icon: "stunfisk",
-		id: "618",
 		exclude: [
 			"sv"
 		]
@@ -5257,7 +4639,6 @@ const pkmnData = [
 		name: "Mienfoo",
 		value: "mienfoo",
 		icon: "mienfoo",
-		id: "619",
 		exclude: [
 			"sv"
 		]
@@ -5266,7 +4647,6 @@ const pkmnData = [
 		name: "Mienshao",
 		value: "mienshao",
 		icon: "mienshao",
-		id: "620",
 		exclude: [
 			"sv"
 		]
@@ -5275,7 +4655,6 @@ const pkmnData = [
 		name: "Druddigon",
 		value: "druddigon",
 		icon: "druddigon",
-		id: "621",
 		exclude: [
 			"sv"
 		]
@@ -5284,7 +4663,6 @@ const pkmnData = [
 		name: "Golett",
 		value: "golett",
 		icon: "golett",
-		id: "622",
 		exclude: [
 			"sv"
 		]
@@ -5293,7 +4671,6 @@ const pkmnData = [
 		name: "Golurk",
 		value: "golurk",
 		icon: "golurk",
-		id: "623",
 		exclude: [
 			"sv"
 		]
@@ -5301,20 +4678,17 @@ const pkmnData = [
 	{
 		name: "Pawniard",
 		value: "pawniard",
-		icon: "pawniard",
-		id: "624"
+		icon: "pawniard"
 	},
 	{
 		name: "Bisharp",
 		value: "bisharp",
-		icon: "bisharp",
-		id: "625"
+		icon: "bisharp"
 	},
 	{
 		name: "Bouffalant",
 		value: "bouffalant",
 		icon: "bouffalant",
-		id: "626",
 		exclude: [
 			"sv"
 		]
@@ -5322,20 +4696,17 @@ const pkmnData = [
 	{
 		name: "Rufflet",
 		value: "rufflet",
-		icon: "rufflet",
-		id: "627"
+		icon: "rufflet"
 	},
 	{
 		name: "Braviary",
 		value: "braviary",
-		icon: "braviary",
-		id: "628"
+		icon: "braviary"
 	},
 	{
 		name: "Vullaby",
 		value: "vullaby",
 		icon: "vullaby",
-		id: "629",
 		exclude: [
 			"sv"
 		]
@@ -5344,7 +4715,6 @@ const pkmnData = [
 		name: "Mandibuzz",
 		value: "mandibuzz",
 		icon: "mandibuzz",
-		id: "630",
 		exclude: [
 			"sv"
 		]
@@ -5353,7 +4723,6 @@ const pkmnData = [
 		name: "Heatmor",
 		value: "heatmor",
 		icon: "heatmor",
-		id: "631",
 		exclude: [
 			"sv"
 		]
@@ -5362,7 +4731,6 @@ const pkmnData = [
 		name: "Durant",
 		value: "durant",
 		icon: "durant",
-		id: "632",
 		exclude: [
 			"sv"
 		]
@@ -5370,38 +4738,32 @@ const pkmnData = [
 	{
 		name: "Deino",
 		value: "deino",
-		icon: "deino",
-		id: "633"
+		icon: "deino"
 	},
 	{
 		name: "Zweilous",
 		value: "zweilous",
-		icon: "zweilous",
-		id: "634"
+		icon: "zweilous"
 	},
 	{
 		name: "Hydreigon",
 		value: "hydreigon",
-		icon: "hydreigon",
-		id: "635"
+		icon: "hydreigon"
 	},
 	{
 		name: "Larvesta",
 		value: "larvesta",
-		icon: "larvesta",
-		id: "636"
+		icon: "larvesta"
 	},
 	{
 		name: "Volcarona",
 		value: "volcarona",
-		icon: "volcarona",
-		id: "637"
+		icon: "volcarona"
 	},
 	{
 		name: "Cobalion",
 		value: "cobalion",
 		icon: "cobalion",
-		id: "638",
 		exclude: [
 			"sv"
 		]
@@ -5410,7 +4772,6 @@ const pkmnData = [
 		name: "Terrakion",
 		value: "terrakion",
 		icon: "terrakion",
-		id: "639",
 		exclude: [
 			"sv"
 		]
@@ -5419,7 +4780,6 @@ const pkmnData = [
 		name: "Virizion",
 		value: "virizion",
 		icon: "virizion",
-		id: "640",
 		exclude: [
 			"sv"
 		]
@@ -5427,20 +4787,17 @@ const pkmnData = [
 	{
 		name: "Tornadus",
 		value: "tornadus",
-		icon: "tornadus",
-		id: "641"
+		icon: "tornadus"
 	},
 	{
 		name: "Thundurus",
 		value: "thundurus",
-		icon: "thundurus",
-		id: "642"
+		icon: "thundurus"
 	},
 	{
 		name: "Reshiram",
 		value: "reshiram",
 		icon: "reshiram",
-		id: "643",
 		exclude: [
 			"sv"
 		]
@@ -5449,7 +4806,6 @@ const pkmnData = [
 		name: "Zekrom",
 		value: "zekrom",
 		icon: "zekrom",
-		id: "644",
 		exclude: [
 			"sv"
 		]
@@ -5457,14 +4813,12 @@ const pkmnData = [
 	{
 		name: "Landorus",
 		value: "landorus",
-		icon: "landorus",
-		id: "645"
+		icon: "landorus"
 	},
 	{
 		name: "Kyurem",
 		value: "kyurem",
 		icon: "kyurem",
-		id: "646",
 		exclude: [
 			"sv"
 		]
@@ -5473,7 +4827,6 @@ const pkmnData = [
 		name: "Keldeo",
 		value: "keldeo",
 		icon: "keldeo",
-		id: "647",
 		exclude: [
 			"sv"
 		]
@@ -5482,7 +4835,6 @@ const pkmnData = [
 		name: "Meloetta",
 		value: "meloetta",
 		icon: "meloetta",
-		id: "648",
 		exclude: [
 			"swsh"
 		]
@@ -5491,7 +4843,6 @@ const pkmnData = [
 		name: "Genesect",
 		value: "genesect",
 		icon: "genesect",
-		id: "649",
 		exclude: [
 			"sv"
 		]
@@ -5500,7 +4851,6 @@ const pkmnData = [
 		name: "Chespin",
 		value: "chespin",
 		icon: "chespin",
-		id: "650",
 		exclude: [
 			"swsh"
 		]
@@ -5509,7 +4859,6 @@ const pkmnData = [
 		name: "Quilladin",
 		value: "quilladin",
 		icon: "quilladin",
-		id: "651",
 		exclude: [
 			"swsh"
 		]
@@ -5518,7 +4867,6 @@ const pkmnData = [
 		name: "Chesnaught",
 		value: "chesnaught",
 		icon: "chesnaught",
-		id: "652",
 		exclude: [
 			"swsh"
 		]
@@ -5527,7 +4875,6 @@ const pkmnData = [
 		name: "Fennekin",
 		value: "fennekin",
 		icon: "fennekin",
-		id: "653",
 		exclude: [
 			"swsh"
 		]
@@ -5536,7 +4883,6 @@ const pkmnData = [
 		name: "Braixen",
 		value: "braixen",
 		icon: "braixen",
-		id: "654",
 		exclude: [
 			"swsh"
 		]
@@ -5545,7 +4891,6 @@ const pkmnData = [
 		name: "Delphox",
 		value: "delphox",
 		icon: "delphox",
-		id: "655",
 		exclude: [
 			"swsh"
 		]
@@ -5554,7 +4899,6 @@ const pkmnData = [
 		name: "Froakie",
 		value: "froakie",
 		icon: "froakie",
-		id: "656",
 		exclude: [
 			"swsh"
 		]
@@ -5563,7 +4907,6 @@ const pkmnData = [
 		name: "Frogadier",
 		value: "frogadier",
 		icon: "frogadier",
-		id: "657",
 		exclude: [
 			"swsh"
 		]
@@ -5572,7 +4915,6 @@ const pkmnData = [
 		name: "Greninja",
 		value: "greninja",
 		icon: "greninja",
-		id: "658",
 		exclude: [
 			"swsh"
 		]
@@ -5581,7 +4923,6 @@ const pkmnData = [
 		name: "Bunnelby",
 		value: "bunnelby",
 		icon: "bunnelby",
-		id: "659",
 		exclude: [
 			"sv"
 		]
@@ -5590,7 +4931,6 @@ const pkmnData = [
 		name: "Diggersby",
 		value: "diggersby",
 		icon: "diggersby",
-		id: "660",
 		exclude: [
 			"sv"
 		]
@@ -5598,26 +4938,22 @@ const pkmnData = [
 	{
 		name: "Fletchling",
 		value: "fletchling",
-		icon: "fletchling",
-		id: "661"
+		icon: "fletchling"
 	},
 	{
 		name: "Fletchinder",
 		value: "fletchinder",
-		icon: "fletchinder",
-		id: "662"
+		icon: "fletchinder"
 	},
 	{
 		name: "Talonflame",
 		value: "talonflame",
-		icon: "talonflame",
-		id: "663"
+		icon: "talonflame"
 	},
 	{
 		name: "Scatterbug",
 		value: "scatterbug",
 		icon: "scatterbug",
-		id: "664",
 		exclude: [
 			"swsh"
 		]
@@ -5626,7 +4962,6 @@ const pkmnData = [
 		name: "Spewpa",
 		value: "spewpa",
 		icon: "spewpa",
-		id: "665",
 		exclude: [
 			"swsh"
 		]
@@ -5635,7 +4970,6 @@ const pkmnData = [
 		name: "Vivillon",
 		value: "vivillon",
 		icon: "vivillon",
-		id: "666",
 		exclude: [
 			"swsh"
 		]
@@ -5644,7 +4978,6 @@ const pkmnData = [
 		name: "Litleo",
 		value: "litleo",
 		icon: "litleo",
-		id: "667",
 		exclude: [
 			"swsh"
 		]
@@ -5653,7 +4986,6 @@ const pkmnData = [
 		name: "Pyroar",
 		value: "pyroar",
 		icon: "pyroar",
-		id: "668",
 		exclude: [
 			"swsh"
 		]
@@ -5662,7 +4994,6 @@ const pkmnData = [
 		name: "Flabébé",
 		value: "flabebe",
 		icon: "flabebe",
-		id: "669",
 		exclude: [
 			"swsh"
 		]
@@ -5671,7 +5002,6 @@ const pkmnData = [
 		name: "Floette",
 		value: "floette",
 		icon: "floette",
-		id: "670",
 		exclude: [
 			"swsh"
 		]
@@ -5680,7 +5010,6 @@ const pkmnData = [
 		name: "Florges",
 		value: "florges",
 		icon: "florges",
-		id: "671",
 		exclude: [
 			"swsh"
 		]
@@ -5689,7 +5018,6 @@ const pkmnData = [
 		name: "Skiddo",
 		value: "skiddo",
 		icon: "skiddo",
-		id: "672",
 		exclude: [
 			"swsh"
 		]
@@ -5698,7 +5026,6 @@ const pkmnData = [
 		name: "Gogoat",
 		value: "gogoat",
 		icon: "gogoat",
-		id: "673",
 		exclude: [
 			"swsh"
 		]
@@ -5707,7 +5034,6 @@ const pkmnData = [
 		name: "Pancham",
 		value: "pancham",
 		icon: "pancham",
-		id: "674",
 		exclude: [
 			"sv"
 		]
@@ -5716,7 +5042,6 @@ const pkmnData = [
 		name: "Pangoro",
 		value: "pangoro",
 		icon: "pangoro",
-		id: "675",
 		exclude: [
 			"sv"
 		]
@@ -5725,7 +5050,6 @@ const pkmnData = [
 		name: "Furfrou",
 		value: "furfrou",
 		icon: "furfrou",
-		id: "676",
 		exclude: [
 			"swsh",
 			"sv"
@@ -5735,7 +5059,6 @@ const pkmnData = [
 		name: "Espurr",
 		value: "espurr",
 		icon: "espurr",
-		id: "677",
 		exclude: [
 			"sv"
 		]
@@ -5744,7 +5067,6 @@ const pkmnData = [
 		name: "Meowstic",
 		value: "meowstic",
 		icon: "meowstic",
-		id: "678",
 		exclude: [
 			"sv"
 		]
@@ -5753,7 +5075,6 @@ const pkmnData = [
 		name: "Honedge",
 		value: "honedge",
 		icon: "honedge",
-		id: "679",
 		exclude: [
 			"sv"
 		]
@@ -5762,7 +5083,6 @@ const pkmnData = [
 		name: "Doublade",
 		value: "doublade",
 		icon: "doublade",
-		id: "680",
 		exclude: [
 			"sv"
 		]
@@ -5771,7 +5091,6 @@ const pkmnData = [
 		name: "Aegislash",
 		value: "aegislash",
 		icon: "aegislash",
-		id: "681",
 		exclude: [
 			"sv"
 		]
@@ -5780,7 +5099,6 @@ const pkmnData = [
 		name: "Spritzee",
 		value: "spritzee",
 		icon: "spritzee",
-		id: "682",
 		exclude: [
 			"sv"
 		]
@@ -5789,7 +5107,6 @@ const pkmnData = [
 		name: "Aromatisse",
 		value: "aromatisse",
 		icon: "aromatisse",
-		id: "683",
 		exclude: [
 			"sv"
 		]
@@ -5798,7 +5115,6 @@ const pkmnData = [
 		name: "Swirlix",
 		value: "swirlix",
 		icon: "swirlix",
-		id: "684",
 		exclude: [
 			"sv"
 		]
@@ -5807,7 +5123,6 @@ const pkmnData = [
 		name: "Slurpuff",
 		value: "slurpuff",
 		icon: "slurpuff",
-		id: "685",
 		exclude: [
 			"sv"
 		]
@@ -5816,7 +5131,6 @@ const pkmnData = [
 		name: "Inkay",
 		value: "inkay",
 		icon: "inkay",
-		id: "686",
 		exclude: [
 			"sv"
 		]
@@ -5825,7 +5139,6 @@ const pkmnData = [
 		name: "Malamar",
 		value: "malamar",
 		icon: "malamar",
-		id: "687",
 		exclude: [
 			"sv"
 		]
@@ -5834,7 +5147,6 @@ const pkmnData = [
 		name: "Binacle",
 		value: "binacle",
 		icon: "binacle",
-		id: "688",
 		exclude: [
 			"sv"
 		]
@@ -5843,7 +5155,6 @@ const pkmnData = [
 		name: "Barbaracle",
 		value: "barbaracle",
 		icon: "barbaracle",
-		id: "689",
 		exclude: [
 			"sv"
 		]
@@ -5851,32 +5162,27 @@ const pkmnData = [
 	{
 		name: "Skrelp",
 		value: "skrelp",
-		icon: "skrelp",
-		id: "690"
+		icon: "skrelp"
 	},
 	{
 		name: "Dragalge",
 		value: "dragalge",
-		icon: "dragalge",
-		id: "691"
+		icon: "dragalge"
 	},
 	{
 		name: "Clauncher",
 		value: "clauncher",
-		icon: "clauncher",
-		id: "692"
+		icon: "clauncher"
 	},
 	{
 		name: "Clawitzer",
 		value: "clawitzer",
-		icon: "clawitzer",
-		id: "693"
+		icon: "clawitzer"
 	},
 	{
 		name: "Helioptile",
 		value: "helioptile",
 		icon: "helioptile",
-		id: "694",
 		exclude: [
 			"sv"
 		]
@@ -5885,7 +5191,6 @@ const pkmnData = [
 		name: "Heliolisk",
 		value: "heliolisk",
 		icon: "heliolisk",
-		id: "695",
 		exclude: [
 			"sv"
 		]
@@ -5894,7 +5199,6 @@ const pkmnData = [
 		name: "Tyrunt",
 		value: "tyrunt",
 		icon: "tyrunt",
-		id: "696",
 		exclude: [
 			"sv"
 		]
@@ -5903,7 +5207,6 @@ const pkmnData = [
 		name: "Tyrantrum",
 		value: "tyrantrum",
 		icon: "tyrantrum",
-		id: "697",
 		exclude: [
 			"sv"
 		]
@@ -5912,7 +5215,6 @@ const pkmnData = [
 		name: "Amaura",
 		value: "amaura",
 		icon: "amaura",
-		id: "698",
 		exclude: [
 			"sv"
 		]
@@ -5921,7 +5223,6 @@ const pkmnData = [
 		name: "Aurorus",
 		value: "aurorus",
 		icon: "aurorus",
-		id: "699",
 		exclude: [
 			"sv"
 		]
@@ -5929,56 +5230,47 @@ const pkmnData = [
 	{
 		name: "Sylveon",
 		value: "sylveon",
-		icon: "sylveon",
-		id: "700"
+		icon: "sylveon"
 	},
 	{
 		name: "Hawlucha",
 		value: "hawlucha",
-		icon: "hawlucha",
-		id: "701"
+		icon: "hawlucha"
 	},
 	{
 		name: "Dedenne",
 		value: "dedenne",
-		icon: "dedenne",
-		id: "702"
+		icon: "dedenne"
 	},
 	{
 		name: "Carbink",
 		value: "carbink",
-		icon: "carbink",
-		id: "703"
+		icon: "carbink"
 	},
 	{
 		name: "Goomy",
 		value: "goomy",
-		icon: "goomy",
-		id: "704"
+		icon: "goomy"
 	},
 	{
 		name: "Sliggoo",
 		value: "sliggoo",
-		icon: "sliggoo",
-		id: "705"
+		icon: "sliggoo"
 	},
 	{
 		name: "Goodra",
 		value: "goodra",
-		icon: "goodra",
-		id: "706"
+		icon: "goodra"
 	},
 	{
 		name: "Klefki",
 		value: "klefki",
-		icon: "klefki",
-		id: "707"
+		icon: "klefki"
 	},
 	{
 		name: "Phantump",
 		value: "phantump",
 		icon: "phantump",
-		id: "708",
 		exclude: [
 			"sv"
 		]
@@ -5987,7 +5279,6 @@ const pkmnData = [
 		name: "Trevenant",
 		value: "trevenant",
 		icon: "trevenant",
-		id: "709",
 		exclude: [
 			"sv"
 		]
@@ -5996,7 +5287,6 @@ const pkmnData = [
 		name: "Pumpkaboo",
 		value: "pumpkaboo",
 		icon: "pumpkaboo",
-		id: "710",
 		exclude: [
 			"sv"
 		]
@@ -6005,7 +5295,6 @@ const pkmnData = [
 		name: "Gourgeist",
 		value: "gourgeist",
 		icon: "gourgeist",
-		id: "711",
 		exclude: [
 			"sv"
 		]
@@ -6013,32 +5302,27 @@ const pkmnData = [
 	{
 		name: "Bergmite",
 		value: "bergmite",
-		icon: "bergmite",
-		id: "712"
+		icon: "bergmite"
 	},
 	{
 		name: "Avalugg",
 		value: "avalugg",
-		icon: "avalugg",
-		id: "713"
+		icon: "avalugg"
 	},
 	{
 		name: "Noibat",
 		value: "noibat",
-		icon: "noibat",
-		id: "714"
+		icon: "noibat"
 	},
 	{
 		name: "Noivern",
 		value: "noivern",
-		icon: "noivern",
-		id: "715"
+		icon: "noivern"
 	},
 	{
 		name: "Xerneas",
 		value: "xerneas",
 		icon: "xerneas",
-		id: "716",
 		exclude: [
 			"sv"
 		]
@@ -6047,7 +5331,6 @@ const pkmnData = [
 		name: "Yveltal",
 		value: "yveltal",
 		icon: "yveltal",
-		id: "717",
 		exclude: [
 			"sv"
 		]
@@ -6056,7 +5339,6 @@ const pkmnData = [
 		name: "Zygarde",
 		value: "zygarde",
 		icon: "zygarde",
-		id: "718",
 		exclude: [
 			"sv"
 		]
@@ -6064,14 +5346,12 @@ const pkmnData = [
 	{
 		name: "Diancie",
 		value: "diancie",
-		icon: "diancie",
-		id: "719"
+		icon: "diancie"
 	},
 	{
 		name: "Hoopa",
 		value: "hoopa",
 		icon: "hoopa",
-		id: "720",
 		exclude: [
 			"swsh"
 		]
@@ -6079,32 +5359,27 @@ const pkmnData = [
 	{
 		name: "Volcanion",
 		value: "volcanion",
-		icon: "volcanion",
-		id: "721"
+		icon: "volcanion"
 	},
 	{
 		name: "Rowlet",
 		value: "rowlet",
-		icon: "rowlet",
-		id: "722"
+		icon: "rowlet"
 	},
 	{
 		name: "Dartrix",
 		value: "dartrix",
-		icon: "dartrix",
-		id: "723"
+		icon: "dartrix"
 	},
 	{
 		name: "Decidueye",
 		value: "decidueye",
-		icon: "decidueye",
-		id: "724"
+		icon: "decidueye"
 	},
 	{
 		name: "Litten",
 		value: "litten",
 		icon: "litten",
-		id: "725",
 		exclude: [
 			"sv"
 		]
@@ -6113,7 +5388,6 @@ const pkmnData = [
 		name: "Torracat",
 		value: "torracat",
 		icon: "torracat",
-		id: "726",
 		exclude: [
 			"sv"
 		]
@@ -6122,7 +5396,6 @@ const pkmnData = [
 		name: "Incineroar",
 		value: "incineroar",
 		icon: "incineroar",
-		id: "727",
 		exclude: [
 			"sv"
 		]
@@ -6131,7 +5404,6 @@ const pkmnData = [
 		name: "Popplio",
 		value: "popplio",
 		icon: "popplio",
-		id: "728",
 		exclude: [
 			"sv"
 		]
@@ -6140,7 +5412,6 @@ const pkmnData = [
 		name: "Brionne",
 		value: "brionne",
 		icon: "brionne",
-		id: "729",
 		exclude: [
 			"sv"
 		]
@@ -6149,7 +5420,6 @@ const pkmnData = [
 		name: "Primarina",
 		value: "primarina",
 		icon: "primarina",
-		id: "730",
 		exclude: [
 			"sv"
 		]
@@ -6158,7 +5428,6 @@ const pkmnData = [
 		name: "Pikipek",
 		value: "pikipek",
 		icon: "pikipek",
-		id: "731",
 		exclude: [
 			"swsh",
 			"sv"
@@ -6168,7 +5437,6 @@ const pkmnData = [
 		name: "Trumbeak",
 		value: "trumbeak",
 		icon: "trumbeak",
-		id: "732",
 		exclude: [
 			"swsh",
 			"sv"
@@ -6178,7 +5446,6 @@ const pkmnData = [
 		name: "Toucannon",
 		value: "toucannon",
 		icon: "toucannon",
-		id: "733",
 		exclude: [
 			"swsh",
 			"sv"
@@ -6188,7 +5455,6 @@ const pkmnData = [
 		name: "Yungoos",
 		value: "yungoos",
 		icon: "yungoos",
-		id: "734",
 		exclude: [
 			"swsh"
 		]
@@ -6197,7 +5463,6 @@ const pkmnData = [
 		name: "Gumshoos",
 		value: "gumshoos",
 		icon: "gumshoos",
-		id: "735",
 		exclude: [
 			"swsh"
 		]
@@ -6206,7 +5471,6 @@ const pkmnData = [
 		name: "Grubbin",
 		value: "grubbin",
 		icon: "grubbin",
-		id: "736",
 		exclude: [
 			"sv"
 		]
@@ -6215,7 +5479,6 @@ const pkmnData = [
 		name: "Charjabug",
 		value: "charjabug",
 		icon: "charjabug",
-		id: "737",
 		exclude: [
 			"sv"
 		]
@@ -6224,7 +5487,6 @@ const pkmnData = [
 		name: "Vikavolt",
 		value: "vikavolt",
 		icon: "vikavolt",
-		id: "738",
 		exclude: [
 			"sv"
 		]
@@ -6233,7 +5495,6 @@ const pkmnData = [
 		name: "Crabrawler",
 		value: "crabrawler",
 		icon: "crabrawler",
-		id: "739",
 		exclude: [
 			"swsh"
 		]
@@ -6242,7 +5503,6 @@ const pkmnData = [
 		name: "Crabominable",
 		value: "crabominable",
 		icon: "crabominable",
-		id: "740",
 		exclude: [
 			"swsh"
 		]
@@ -6251,7 +5511,6 @@ const pkmnData = [
 		name: "Oricorio",
 		value: "oricorio",
 		icon: "oricorio",
-		id: "741",
 		exclude: [
 			"swsh"
 		]
@@ -6260,7 +5519,6 @@ const pkmnData = [
 		name: "Cutiefly",
 		value: "cutiefly",
 		icon: "cutiefly",
-		id: "742",
 		exclude: [
 			"sv"
 		]
@@ -6269,7 +5527,6 @@ const pkmnData = [
 		name: "Ribombee",
 		value: "ribombee",
 		icon: "ribombee",
-		id: "743",
 		exclude: [
 			"sv"
 		]
@@ -6277,20 +5534,17 @@ const pkmnData = [
 	{
 		name: "Rockruff",
 		value: "rockruff",
-		icon: "rockruff",
-		id: "744"
+		icon: "rockruff"
 	},
 	{
 		name: "Lycanroc",
 		value: "lycanroc",
-		icon: "lycanroc",
-		id: "745"
+		icon: "lycanroc"
 	},
 	{
 		name: "Wishiwashi",
 		value: "wishiwashi",
 		icon: "wishiwashi",
-		id: "746",
 		exclude: [
 			"sv"
 		]
@@ -6298,32 +5552,27 @@ const pkmnData = [
 	{
 		name: "Mareanie",
 		value: "mareanie",
-		icon: "mareanie",
-		id: "747"
+		icon: "mareanie"
 	},
 	{
 		name: "Toxapex",
 		value: "toxapex",
-		icon: "toxapex",
-		id: "748"
+		icon: "toxapex"
 	},
 	{
 		name: "Mudbray",
 		value: "mudbray",
-		icon: "mudbray",
-		id: "749"
+		icon: "mudbray"
 	},
 	{
 		name: "Mudsdale",
 		value: "mudsdale",
-		icon: "mudsdale",
-		id: "750"
+		icon: "mudsdale"
 	},
 	{
 		name: "Dewpider",
 		value: "dewpider",
 		icon: "dewpider",
-		id: "751",
 		exclude: [
 			"sv"
 		]
@@ -6332,7 +5581,6 @@ const pkmnData = [
 		name: "Araquanid",
 		value: "araquanid",
 		icon: "araquanid",
-		id: "752",
 		exclude: [
 			"sv"
 		]
@@ -6340,20 +5588,17 @@ const pkmnData = [
 	{
 		name: "Fomantis",
 		value: "fomantis",
-		icon: "fomantis",
-		id: "753"
+		icon: "fomantis"
 	},
 	{
 		name: "Lurantis",
 		value: "lurantis",
-		icon: "lurantis",
-		id: "754"
+		icon: "lurantis"
 	},
 	{
 		name: "Morelull",
 		value: "morelull",
 		icon: "morelull",
-		id: "755",
 		exclude: [
 			"sv"
 		]
@@ -6362,7 +5607,6 @@ const pkmnData = [
 		name: "Shiinotic",
 		value: "shiinotic",
 		icon: "shiinotic",
-		id: "756",
 		exclude: [
 			"sv"
 		]
@@ -6370,20 +5614,17 @@ const pkmnData = [
 	{
 		name: "Salandit",
 		value: "salandit",
-		icon: "salandit",
-		id: "757"
+		icon: "salandit"
 	},
 	{
 		name: "Salazzle",
 		value: "salazzle",
-		icon: "salazzle",
-		id: "758"
+		icon: "salazzle"
 	},
 	{
 		name: "Stufful",
 		value: "stufful",
 		icon: "stufful",
-		id: "759",
 		exclude: [
 			"sv"
 		]
@@ -6392,7 +5633,6 @@ const pkmnData = [
 		name: "Bewear",
 		value: "bewear",
 		icon: "bewear",
-		id: "760",
 		exclude: [
 			"sv"
 		]
@@ -6400,26 +5640,22 @@ const pkmnData = [
 	{
 		name: "Bounsweet",
 		value: "bounsweet",
-		icon: "bounsweet",
-		id: "761"
+		icon: "bounsweet"
 	},
 	{
 		name: "Steenee",
 		value: "steenee",
-		icon: "steenee",
-		id: "762"
+		icon: "steenee"
 	},
 	{
 		name: "Tsareena",
 		value: "tsareena",
-		icon: "tsareena",
-		id: "763"
+		icon: "tsareena"
 	},
 	{
 		name: "Comfey",
 		value: "comfey",
 		icon: "comfey",
-		id: "764",
 		exclude: [
 			"sv"
 		]
@@ -6427,20 +5663,17 @@ const pkmnData = [
 	{
 		name: "Oranguru",
 		value: "oranguru",
-		icon: "oranguru",
-		id: "765"
+		icon: "oranguru"
 	},
 	{
 		name: "Passimian",
 		value: "passimian",
-		icon: "passimian",
-		id: "766"
+		icon: "passimian"
 	},
 	{
 		name: "Wimpod",
 		value: "wimpod",
 		icon: "wimpod",
-		id: "767",
 		exclude: [
 			"sv"
 		]
@@ -6449,7 +5682,6 @@ const pkmnData = [
 		name: "Golisopod",
 		value: "golisopod",
 		icon: "golisopod",
-		id: "768",
 		exclude: [
 			"sv"
 		]
@@ -6457,20 +5689,17 @@ const pkmnData = [
 	{
 		name: "Sandygast",
 		value: "sandygast",
-		icon: "sandygast",
-		id: "769"
+		icon: "sandygast"
 	},
 	{
 		name: "Palossand",
 		value: "palossand",
-		icon: "palossand",
-		id: "770"
+		icon: "palossand"
 	},
 	{
 		name: "Pyukumuku",
 		value: "pyukumuku",
 		icon: "pyukumuku",
-		id: "771",
 		exclude: [
 			"sv"
 		]
@@ -6479,7 +5708,6 @@ const pkmnData = [
 		name: "Type: Null",
 		value: "type-null",
 		icon: "type-null",
-		id: "772",
 		exclude: [
 			"sv"
 		]
@@ -6488,7 +5716,6 @@ const pkmnData = [
 		name: "Silvally",
 		value: "silvally",
 		icon: "silvally",
-		id: "773",
 		exclude: [
 			"sv"
 		]
@@ -6497,7 +5724,6 @@ const pkmnData = [
 		name: "Minior",
 		value: "minior",
 		icon: "minior",
-		id: "774",
 		exclude: [
 			"swsh",
 			"sv"
@@ -6507,7 +5733,6 @@ const pkmnData = [
 		name: "Komala",
 		value: "komala",
 		icon: "komala",
-		id: "775",
 		exclude: [
 			"swsh"
 		]
@@ -6516,7 +5741,6 @@ const pkmnData = [
 		name: "Turtonator",
 		value: "turtonator",
 		icon: "turtonator",
-		id: "776",
 		exclude: [
 			"sv"
 		]
@@ -6525,7 +5749,6 @@ const pkmnData = [
 		name: "Togedemaru",
 		value: "togedemaru",
 		icon: "togedemaru",
-		id: "777",
 		exclude: [
 			"sv"
 		]
@@ -6533,14 +5756,12 @@ const pkmnData = [
 	{
 		name: "Mimikyu",
 		value: "mimikyu",
-		icon: "mimikyu",
-		id: "778"
+		icon: "mimikyu"
 	},
 	{
 		name: "Bruxish",
 		value: "bruxish",
 		icon: "bruxish",
-		id: "779",
 		exclude: [
 			"swsh"
 		]
@@ -6549,7 +5770,6 @@ const pkmnData = [
 		name: "Drampa",
 		value: "drampa",
 		icon: "drampa",
-		id: "780",
 		exclude: [
 			"sv"
 		]
@@ -6558,7 +5778,6 @@ const pkmnData = [
 		name: "Dhelmise",
 		value: "dhelmise",
 		icon: "dhelmise",
-		id: "781",
 		exclude: [
 			"sv"
 		]
@@ -6567,7 +5786,6 @@ const pkmnData = [
 		name: "Jangmo-o",
 		value: "jangmo-o",
 		icon: "jangmo-o",
-		id: "782",
 		exclude: [
 			"sv"
 		]
@@ -6576,7 +5794,6 @@ const pkmnData = [
 		name: "Hakamo-o",
 		value: "hakamo-o",
 		icon: "hakamo-o",
-		id: "783",
 		exclude: [
 			"sv"
 		]
@@ -6585,7 +5802,6 @@ const pkmnData = [
 		name: "Kommo-o",
 		value: "kommo-o",
 		icon: "kommo-o",
-		id: "784",
 		exclude: [
 			"sv"
 		]
@@ -6594,7 +5810,6 @@ const pkmnData = [
 		name: "Tapu Koko",
 		value: "tapu-koko",
 		icon: "tapu-koko",
-		id: "785",
 		exclude: [
 			"sv"
 		]
@@ -6603,7 +5818,6 @@ const pkmnData = [
 		name: "Tapu Lele",
 		value: "tapu-lele",
 		icon: "tapu-lele",
-		id: "786",
 		exclude: [
 			"sv"
 		]
@@ -6612,7 +5826,6 @@ const pkmnData = [
 		name: "Tapu Bulu",
 		value: "tapu-bulu",
 		icon: "tapu-bulu",
-		id: "787",
 		exclude: [
 			"sv"
 		]
@@ -6621,7 +5834,6 @@ const pkmnData = [
 		name: "Tapu Fini",
 		value: "tapu-fini",
 		icon: "tapu-fini",
-		id: "788",
 		exclude: [
 			"sv"
 		]
@@ -6630,7 +5842,6 @@ const pkmnData = [
 		name: "Cosmog",
 		value: "cosmog",
 		icon: "cosmog",
-		id: "789",
 		exclude: [
 			"sv"
 		]
@@ -6639,7 +5850,6 @@ const pkmnData = [
 		name: "Cosmoem",
 		value: "cosmoem",
 		icon: "cosmoem",
-		id: "790",
 		exclude: [
 			"sv"
 		]
@@ -6648,7 +5858,6 @@ const pkmnData = [
 		name: "Solgaleo",
 		value: "solgaleo",
 		icon: "solgaleo",
-		id: "791",
 		exclude: [
 			"sv"
 		]
@@ -6657,7 +5866,6 @@ const pkmnData = [
 		name: "Lunala",
 		value: "lunala",
 		icon: "lunala",
-		id: "792",
 		exclude: [
 			"sv"
 		]
@@ -6666,7 +5874,6 @@ const pkmnData = [
 		name: "Nihilego",
 		value: "nihilego",
 		icon: "nihilego",
-		id: "793",
 		exclude: [
 			"sv"
 		]
@@ -6675,7 +5882,6 @@ const pkmnData = [
 		name: "Buzzwole",
 		value: "buzzwole",
 		icon: "buzzwole",
-		id: "794",
 		exclude: [
 			"sv"
 		]
@@ -6684,7 +5890,6 @@ const pkmnData = [
 		name: "Pheromosa",
 		value: "pheromosa",
 		icon: "pheromosa",
-		id: "795",
 		exclude: [
 			"sv"
 		]
@@ -6693,7 +5898,6 @@ const pkmnData = [
 		name: "Xurkitree",
 		value: "xurkitree",
 		icon: "xurkitree",
-		id: "796",
 		exclude: [
 			"sv"
 		]
@@ -6702,7 +5906,6 @@ const pkmnData = [
 		name: "Celesteela",
 		value: "celesteela",
 		icon: "celesteela",
-		id: "797",
 		exclude: [
 			"sv"
 		]
@@ -6711,7 +5914,6 @@ const pkmnData = [
 		name: "Kartana",
 		value: "kartana",
 		icon: "kartana",
-		id: "798",
 		exclude: [
 			"sv"
 		]
@@ -6720,7 +5922,6 @@ const pkmnData = [
 		name: "Guzzlord",
 		value: "guzzlord",
 		icon: "guzzlord",
-		id: "799",
 		exclude: [
 			"sv"
 		]
@@ -6729,7 +5930,6 @@ const pkmnData = [
 		name: "Necrozma",
 		value: "necrozma",
 		icon: "necrozma",
-		id: "800",
 		exclude: [
 			"sv"
 		]
@@ -6737,14 +5937,12 @@ const pkmnData = [
 	{
 		name: "Magearna",
 		value: "magearna",
-		icon: "magearna",
-		id: "801"
+		icon: "magearna"
 	},
 	{
 		name: "Marshadow",
 		value: "marshadow",
 		icon: "marshadow",
-		id: "802",
 		exclude: [
 			"sv"
 		]
@@ -6753,7 +5951,6 @@ const pkmnData = [
 		name: "Poipole",
 		value: "poipole",
 		icon: "poipole",
-		id: "803",
 		exclude: [
 			"sv"
 		]
@@ -6762,7 +5959,6 @@ const pkmnData = [
 		name: "Naganadel",
 		value: "naganadel",
 		icon: "naganadel",
-		id: "804",
 		exclude: [
 			"sv"
 		]
@@ -6771,7 +5967,6 @@ const pkmnData = [
 		name: "Stakataka",
 		value: "stakataka",
 		icon: "stakataka",
-		id: "805",
 		exclude: [
 			"sv"
 		]
@@ -6780,7 +5975,6 @@ const pkmnData = [
 		name: "Blacephalon",
 		value: "blacephalon",
 		icon: "blacephalon",
-		id: "806",
 		exclude: [
 			"sv"
 		]
@@ -6789,7 +5983,6 @@ const pkmnData = [
 		name: "Zeraora",
 		value: "zeraora",
 		icon: "zeraora",
-		id: "807",
 		exclude: [
 			"sv"
 		]
@@ -6798,7 +5991,6 @@ const pkmnData = [
 		name: "Meltan",
 		value: "meltan",
 		icon: "meltan",
-		id: "808",
 		exclude: [
 			"sv"
 		]
@@ -6807,7 +5999,6 @@ const pkmnData = [
 		name: "Melmetal",
 		value: "melmetal",
 		icon: "melmetal",
-		id: "809",
 		exclude: [
 			"sv"
 		]
@@ -6815,92 +6006,77 @@ const pkmnData = [
 	{
 		name: "Grookey",
 		value: "grookey",
-		icon: "grookey",
-		id: "810"
+		icon: "grookey"
 	},
 	{
 		name: "Thwackey",
 		value: "thwackey",
-		icon: "thwackey",
-		id: "811"
+		icon: "thwackey"
 	},
 	{
 		name: "Rillaboom",
 		value: "rillaboom",
-		icon: "rillaboom",
-		id: "812"
+		icon: "rillaboom"
 	},
 	{
 		name: "Scorbunny",
 		value: "scorbunny",
-		icon: "scorbunny",
-		id: "813"
+		icon: "scorbunny"
 	},
 	{
 		name: "Raboot",
 		value: "raboot",
-		icon: "raboot",
-		id: "814"
+		icon: "raboot"
 	},
 	{
 		name: "Cinderace",
 		value: "cinderace",
-		icon: "cinderace",
-		id: "815"
+		icon: "cinderace"
 	},
 	{
 		name: "Sobble",
 		value: "sobble",
-		icon: "sobble",
-		id: "816"
+		icon: "sobble"
 	},
 	{
 		name: "Drizzile",
 		value: "drizzile",
-		icon: "drizzile",
-		id: "817"
+		icon: "drizzile"
 	},
 	{
 		name: "Inteleon",
 		value: "inteleon",
-		icon: "inteleon",
-		id: "818"
+		icon: "inteleon"
 	},
 	{
 		name: "Skwovet",
 		value: "skwovet",
-		icon: "skwovet",
-		id: "819"
+		icon: "skwovet"
 	},
 	{
 		name: "Greedent",
 		value: "greedent",
-		icon: "greedent",
-		id: "820"
+		icon: "greedent"
 	},
 	{
 		name: "Rookidee",
 		value: "rookidee",
-		icon: "rookidee",
-		id: "821"
+		icon: "rookidee"
 	},
 	{
 		name: "Corvisquire",
 		value: "corvisquire",
-		icon: "corvisquire",
-		id: "822"
+		icon: "corvisquire"
 	},
 	{
 		name: "Corviknight",
 		value: "corviknight",
-		icon: "corviknight",
-		id: "823"
+		icon: "corviknight"
 	},
 	{
 		name: "Blipbug",
 		value: "blipbug",
 		icon: "blipbug",
-		id: "824",
 		exclude: [
 			"sv"
 		]
@@ -6909,7 +6085,6 @@ const pkmnData = [
 		name: "Dottler",
 		value: "dottler",
 		icon: "dottler",
-		id: "825",
 		exclude: [
 			"sv"
 		]
@@ -6918,7 +6093,6 @@ const pkmnData = [
 		name: "Orbeetle",
 		value: "orbeetle",
 		icon: "orbeetle",
-		id: "826",
 		exclude: [
 			"sv"
 		]
@@ -6927,7 +6101,6 @@ const pkmnData = [
 		name: "Nickit",
 		value: "nickit",
 		icon: "nickit",
-		id: "827",
 		exclude: [
 			"sv"
 		]
@@ -6936,7 +6109,6 @@ const pkmnData = [
 		name: "Thievul",
 		value: "thievul",
 		icon: "thievul",
-		id: "828",
 		exclude: [
 			"sv"
 		]
@@ -6945,7 +6117,6 @@ const pkmnData = [
 		name: "Gossifleur",
 		value: "gossifleur",
 		icon: "gossifleur",
-		id: "829",
 		exclude: [
 			"sv"
 		]
@@ -6954,7 +6125,6 @@ const pkmnData = [
 		name: "Eldegoss",
 		value: "eldegoss",
 		icon: "eldegoss",
-		id: "830",
 		exclude: [
 			"sv"
 		]
@@ -6963,7 +6133,6 @@ const pkmnData = [
 		name: "Wooloo",
 		value: "wooloo",
 		icon: "wooloo",
-		id: "831",
 		exclude: [
 			"sv"
 		]
@@ -6972,7 +6141,6 @@ const pkmnData = [
 		name: "Dubwool",
 		value: "dubwool",
 		icon: "dubwool",
-		id: "832",
 		exclude: [
 			"sv"
 		]
@@ -6980,20 +6148,17 @@ const pkmnData = [
 	{
 		name: "Chewtle",
 		value: "chewtle",
-		icon: "chewtle",
-		id: "833"
+		icon: "chewtle"
 	},
 	{
 		name: "Drednaw",
 		value: "drednaw",
-		icon: "drednaw",
-		id: "834"
+		icon: "drednaw"
 	},
 	{
 		name: "Yamper",
 		value: "yamper",
 		icon: "yamper",
-		id: "835",
 		exclude: [
 			"sv"
 		]
@@ -7002,7 +6167,6 @@ const pkmnData = [
 		name: "Boltund",
 		value: "boltund",
 		icon: "boltund",
-		id: "836",
 		exclude: [
 			"sv"
 		]
@@ -7010,56 +6174,47 @@ const pkmnData = [
 	{
 		name: "Rolycoly",
 		value: "rolycoly",
-		icon: "rolycoly",
-		id: "837"
+		icon: "rolycoly"
 	},
 	{
 		name: "Carkol",
 		value: "carkol",
-		icon: "carkol",
-		id: "838"
+		icon: "carkol"
 	},
 	{
 		name: "Coalossal",
 		value: "coalossal",
-		icon: "coalossal",
-		id: "839"
+		icon: "coalossal"
 	},
 	{
 		name: "Applin",
 		value: "applin",
-		icon: "applin",
-		id: "840"
+		icon: "applin"
 	},
 	{
 		name: "Flapple",
 		value: "flapple",
-		icon: "flapple",
-		id: "841"
+		icon: "flapple"
 	},
 	{
 		name: "Appletun",
 		value: "appletun",
-		icon: "appletun",
-		id: "842"
+		icon: "appletun"
 	},
 	{
 		name: "Silicobra",
 		value: "silicobra",
-		icon: "silicobra",
-		id: "843"
+		icon: "silicobra"
 	},
 	{
 		name: "Sandaconda",
 		value: "sandaconda",
-		icon: "sandaconda",
-		id: "844"
+		icon: "sandaconda"
 	},
 	{
 		name: "Cramorant",
 		value: "cramorant",
 		icon: "cramorant",
-		id: "845",
 		exclude: [
 			"sv"
 		]
@@ -7067,32 +6222,27 @@ const pkmnData = [
 	{
 		name: "Arrokuda",
 		value: "arrokuda",
-		icon: "arrokuda",
-		id: "846"
+		icon: "arrokuda"
 	},
 	{
 		name: "Barraskewda",
 		value: "barraskewda",
-		icon: "barraskewda",
-		id: "847"
+		icon: "barraskewda"
 	},
 	{
 		name: "Toxel",
 		value: "toxel",
-		icon: "toxel",
-		id: "848"
+		icon: "toxel"
 	},
 	{
 		name: "Toxtricity",
 		value: "toxtricity",
-		icon: "toxtricity",
-		id: "849"
+		icon: "toxtricity"
 	},
 	{
 		name: "Sizzlipede",
 		value: "sizzlipede",
 		icon: "sizzlipede",
-		id: "850",
 		exclude: [
 			"sv"
 		]
@@ -7101,7 +6251,6 @@ const pkmnData = [
 		name: "Centiskorch",
 		value: "centiskorch",
 		icon: "centiskorch",
-		id: "851",
 		exclude: [
 			"sv"
 		]
@@ -7110,7 +6259,6 @@ const pkmnData = [
 		name: "Clobbopus",
 		value: "clobbopus",
 		icon: "clobbopus",
-		id: "852",
 		exclude: [
 			"sv"
 		]
@@ -7119,7 +6267,6 @@ const pkmnData = [
 		name: "Grapploct",
 		value: "grapploct",
 		icon: "grapploct",
-		id: "853",
 		exclude: [
 			"sv"
 		]
@@ -7127,56 +6274,47 @@ const pkmnData = [
 	{
 		name: "Sinistea",
 		value: "sinistea",
-		icon: "sinistea",
-		id: "854"
+		icon: "sinistea"
 	},
 	{
 		name: "Polteageist",
 		value: "polteageist",
-		icon: "polteageist",
-		id: "855"
+		icon: "polteageist"
 	},
 	{
 		name: "Hatenna",
 		value: "hatenna",
-		icon: "hatenna",
-		id: "856"
+		icon: "hatenna"
 	},
 	{
 		name: "Hattrem",
 		value: "hattrem",
-		icon: "hattrem",
-		id: "857"
+		icon: "hattrem"
 	},
 	{
 		name: "Hatterene",
 		value: "hatterene",
-		icon: "hatterene",
-		id: "858"
+		icon: "hatterene"
 	},
 	{
 		name: "Impidimp",
 		value: "impidimp",
-		icon: "impidimp",
-		id: "859"
+		icon: "impidimp"
 	},
 	{
 		name: "Morgrem",
 		value: "morgrem",
-		icon: "morgrem",
-		id: "860"
+		icon: "morgrem"
 	},
 	{
 		name: "Grimmsnarl",
 		value: "grimmsnarl",
-		icon: "grimmsnarl",
-		id: "861"
+		icon: "grimmsnarl"
 	},
 	{
 		name: "Obstagoon",
 		value: "obstagoon",
 		icon: "obstagoon",
-		id: "862",
 		exclude: [
 			"sv"
 		]
@@ -7184,14 +6322,12 @@ const pkmnData = [
 	{
 		name: "Perrserker",
 		value: "perrserker",
-		icon: "perrserker",
-		id: "863"
+		icon: "perrserker"
 	},
 	{
 		name: "Cursola",
 		value: "cursola",
 		icon: "cursola",
-		id: "864",
 		exclude: [
 			"sv"
 		]
@@ -7200,7 +6336,6 @@ const pkmnData = [
 		name: "Sirfetch'd",
 		value: "sirfetchd",
 		icon: "sirfetchd",
-		id: "865",
 		exclude: [
 			"sv"
 		]
@@ -7209,7 +6344,6 @@ const pkmnData = [
 		name: "Mr. Rime",
 		value: "mr-rime",
 		icon: "mr-rime",
-		id: "866",
 		exclude: [
 			"sv"
 		]
@@ -7218,7 +6352,6 @@ const pkmnData = [
 		name: "Runerigus",
 		value: "runerigus",
 		icon: "runerigus",
-		id: "867",
 		exclude: [
 			"sv"
 		]
@@ -7227,7 +6360,6 @@ const pkmnData = [
 		name: "Milcery",
 		value: "milcery",
 		icon: "milcery",
-		id: "868",
 		exclude: [
 			"sv"
 		]
@@ -7236,7 +6368,6 @@ const pkmnData = [
 		name: "Alcremie",
 		value: "alcremie",
 		icon: "alcremie",
-		id: "869",
 		exclude: [
 			"sv"
 		]
@@ -7244,50 +6375,42 @@ const pkmnData = [
 	{
 		name: "Falinks",
 		value: "falinks",
-		icon: "falinks",
-		id: "870"
+		icon: "falinks"
 	},
 	{
 		name: "Pincurchin",
 		value: "pincurchin",
-		icon: "pincurchin",
-		id: "871"
+		icon: "pincurchin"
 	},
 	{
 		name: "Snom",
 		value: "snom",
-		icon: "snom",
-		id: "872"
+		icon: "snom"
 	},
 	{
 		name: "Frosmoth",
 		value: "frosmoth",
-		icon: "frosmoth",
-		id: "873"
+		icon: "frosmoth"
 	},
 	{
 		name: "Stonjourner",
 		value: "stonjourner",
-		icon: "stonjourner",
-		id: "874"
+		icon: "stonjourner"
 	},
 	{
 		name: "Eiscue",
 		value: "eiscue",
-		icon: "eiscue",
-		id: "875"
+		icon: "eiscue"
 	},
 	{
 		name: "Indeedee",
 		value: "indeedee",
-		icon: "indeedee",
-		id: "876"
+		icon: "indeedee"
 	},
 	{
 		name: "Morpeko",
 		value: "morpeko",
 		icon: "morpeko",
-		id: "877",
 		exclude: [
 			"sv"
 		]
@@ -7295,20 +6418,17 @@ const pkmnData = [
 	{
 		name: "Cufant",
 		value: "cufant",
-		icon: "cufant",
-		id: "878"
+		icon: "cufant"
 	},
 	{
 		name: "Copperajah",
 		value: "copperajah",
-		icon: "copperajah",
-		id: "879"
+		icon: "copperajah"
 	},
 	{
 		name: "Dracozolt",
 		value: "dracozolt",
 		icon: "dracozolt",
-		id: "880",
 		exclude: [
 			"sv"
 		]
@@ -7317,7 +6437,6 @@ const pkmnData = [
 		name: "Arctozolt",
 		value: "arctozolt",
 		icon: "arctozolt",
-		id: "881",
 		exclude: [
 			"sv"
 		]
@@ -7326,7 +6445,6 @@ const pkmnData = [
 		name: "Dracovish",
 		value: "dracovish",
 		icon: "dracovish",
-		id: "882",
 		exclude: [
 			"sv"
 		]
@@ -7335,7 +6453,6 @@ const pkmnData = [
 		name: "Arctovish",
 		value: "arctovish",
 		icon: "arctovish",
-		id: "883",
 		exclude: [
 			"sv"
 		]
@@ -7344,7 +6461,6 @@ const pkmnData = [
 		name: "Duraludon",
 		value: "duraludon",
 		icon: "duraludon",
-		id: "884",
 		exclude: [
 			"sv"
 		]
@@ -7352,128 +6468,107 @@ const pkmnData = [
 	{
 		name: "Dreepy",
 		value: "dreepy",
-		icon: "dreepy",
-		id: "885"
+		icon: "dreepy"
 	},
 	{
 		name: "Drakloak",
 		value: "drakloak",
-		icon: "drakloak",
-		id: "886"
+		icon: "drakloak"
 	},
 	{
 		name: "Dragapult",
 		value: "dragapult",
-		icon: "dragapult",
-		id: "887"
+		icon: "dragapult"
 	},
 	{
 		name: "Zacian",
 		value: "zacian",
-		icon: "zacian",
-		id: "888"
+		icon: "zacian"
 	},
 	{
 		name: "Zamazenta",
 		value: "zamazenta",
-		icon: "zamazenta",
-		id: "889"
+		icon: "zamazenta"
 	},
 	{
 		name: "Eternatus",
 		value: "eternatus",
-		icon: "eternatus",
-		id: "890"
+		icon: "eternatus"
 	},
 	{
 		name: "Kubfu",
 		value: "kubfu",
-		icon: "kubfu",
-		id: "891"
+		icon: "kubfu"
 	},
 	{
 		name: "Urshifu",
 		value: "urshifu",
-		icon: "urshifu",
-		id: "892"
+		icon: "urshifu"
 	},
 	{
 		name: "Zarude",
 		value: "zarude",
-		icon: "zarude",
-		id: "893"
+		icon: "zarude"
 	},
 	{
 		name: "Regieleki",
 		value: "regieleki",
-		icon: "regieleki",
-		id: "894"
+		icon: "regieleki"
 	},
 	{
 		name: "Regidrago",
 		value: "regidrago",
-		icon: "regidrago",
-		id: "895"
+		icon: "regidrago"
 	},
 	{
 		name: "Glastrier",
 		value: "glastrier",
-		icon: "glastrier",
-		id: "896"
+		icon: "glastrier"
 	},
 	{
 		name: "Spectrier",
 		value: "spectrier",
-		icon: "spectrier",
-		id: "897"
+		icon: "spectrier"
 	},
 	{
 		name: "Calyrex",
 		value: "calyrex",
-		icon: "calyrex",
-		id: "898"
+		icon: "calyrex"
 	},
 	{
 		name: "Wyrdeer",
 		value: "wyrdeer",
-		icon: "wyrdeer",
-		id: "899"
+		icon: "wyrdeer"
 	},
 	{
 		name: "Kleavor",
 		value: "kleavor",
-		icon: "kleavor",
-		id: "900"
+		icon: "kleavor"
 	},
 	{
 		name: "Ursaluna",
 		value: "ursaluna",
-		icon: "ursaluna",
-		id: "901"
+		icon: "ursaluna"
 	},
 	{
 		name: "Basculegion",
 		value: "basculegion",
-		icon: "basculegion",
-		id: "902"
+		icon: "basculegion"
 	},
 	{
 		name: "Sneasler",
 		value: "sneasler",
-		icon: "sneasler",
-		id: "903"
+		icon: "sneasler"
 	},
 	{
 		name: "Overqwil",
 		value: "overqwil",
-		icon: "overqwil",
-		id: "904"
+		icon: "overqwil"
 	},
 	{
 		name: "Enamorus",
 		value: "enamorus",
-		icon: "enamorus",
-		id: "905"
+		icon: "enamorus"
 	},
 	{
 		name: "Sprigatito",

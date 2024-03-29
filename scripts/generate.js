@@ -1,4 +1,3 @@
-const lang = 'ger';
 const fs = require('fs'),
 	{ execSync } = require('child_process'),
 	pokesprite = require('pokesprite-images'),
@@ -9,6 +8,8 @@ const fs = require('fs'),
 	pkmnCount = Object.keys(pkmnData).length;
 	additionalPkmnData = JSON.parse(fs.readFileSync('scripts/additional-pokemon.json', 'utf-8'));
 	spriteSheetSize = Math.ceil(Math.sqrt(pkmnCount + additionalPkmnData.length));
+
+const nameTranslations = JSON.parse(fs.readFileSync('scripts/name-translations.json', 'utf-8'));
 
 let images = "'" + spriteDir + "unknown.png'\n",
 	spriteSheetCSS = '',
@@ -27,15 +28,16 @@ for (let i = 1; i <= pkmnCount; i++) {
 	spriteSheetCSS += '.pkmn.' + pkmn.slug.eng + ':before {\n' +
 		'	background-position: ' + (colCount ? ('-' + (colCount * imageWidth) + 'px') : '0') + ' ' + (rowCount ? ('-' + (rowCount * imageHeight) + 'px;') : '0') + '\n' +
 		'}\n\n';
-	if (lang === 'ger') {
-		//fetch name-translations json
-		const nameTranslations = JSON.parse(fs.readFileSync('scripts/name-translations.json', 'utf-8'));
+	// regex to remove all zeros from the beginning of the string
+	const pkmnIdWithoutLeadingZeros = pkmn.idx.replace(/^0+/, '');
+
+
 	dataJS.push({
-		name: nameTranslations[pkmn.name.eng],
+		name: pkmn.name.eng,
 		value: pkmn.slug.eng,
-		icon: pkmn.slug.eng
+		icon: pkmn.slug.eng,
+		id: pkmnIdWithoutLeadingZeros,
 	});
-}
 	images += "'" + spriteDir + 'regular/' + pkmn.slug.eng + ".png'\n";
 
 	colCount++;
@@ -125,6 +127,8 @@ fomanticAssets.forEach((asset => {
 fs.writeFileSync('src/css/fomantic.css', fomanticCSS);
 fs.writeFileSync('src/js/fomantic.js', fomanticJS);
 fs.copyFileSync('node_modules/jquery/dist/jquery.js', 'src/js/jquery.js');
+
+fs.writeFileSync('src/js/translations.js', 'const nameTranslations = ' + JSON.stringify(nameTranslations, null, 2) + ';');
 
 fs.writeFileSync('src/css/sprites.css', spriteSheetCSS);
 fs.writeFileSync('src/js/pokemon.js', 'const pkmnData = ' + (JSON.stringify(dataJS, null, '\t')).replace(/"([^"]+)":/g, '$1:') + ';');

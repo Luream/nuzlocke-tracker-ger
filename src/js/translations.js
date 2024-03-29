@@ -1,4 +1,4 @@
-{
+const nameTranslations = {
   "1": {
     "english": "Bulbasaur",
     "german": "Bisasam"
@@ -4099,4 +4099,4 @@
     "english": "Pecharunt",
     "german": "Infamomo"
   }
-}
+};

@@ -13,7 +13,7 @@
 		<meta property="og:type" content="website">
 		<meta property="og:url" content="https://ashenfactory.github.io/nuzlocke-tracker/">
 		<meta property="og:locale" content="en_US">
-
+		<!-- TEST NOTES-->
 		<meta name="theme-color" content="#1da1da">
 		<link rel="icon" href="favicon.svg">
 		<link rel="mask-icon" href="mask-icon.svg" color="#1da1da">
@@ -119,8 +119,8 @@
 						<i class="dropdown icon"></i>
 						<div class="menu"></div>
 					</div>
+
 				</div>
-			</div>
 			<div class="actions">
 				<div class="ui approve button">Add</div>
 				<div class="ui cancel button">Cancel</div>
@@ -135,7 +135,20 @@
 						<input id="disableDexLimit" type="checkbox">
 						<label for="disableDexLimit">Allow all Pokémon</label>
 					</div>
+					
 				</div>
+				<div class="field">
+					<div id="languageOptions" class="ui selection dropdown">
+						<input name="language" type="hidden" required>
+						<i class="dropdown icon"></i>
+						<div class="default text">Select a language</div>
+						<div class="scrollhint menu">
+							<div class="item" data-value="german">German</div>
+							<div class="item" data-value="english">English</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
 <!-- 				<div class="field">
 					<div class="ui checkbox">
