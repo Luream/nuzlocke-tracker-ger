@@ -115,9 +115,6 @@ function renderLocations(game, darkTheme) {
     const locationStatus = localStorage.getItem(
       game.id + location.value + "-status"
     );
-    if (index == 1) {
-      console.log(location);
-    }
     string +=
       "<tr" +
       (location.order !== undefined ? ' class="customLocation"' : "") +
@@ -838,8 +835,9 @@ $(() => {
   $("#languageOptions").dropdown({
     onChange: function (value) {
       pkmnData.forEach((pokemon) => {
-        console.log("Pokemon ID: " + pokemon.id);
-        console.log("Name Translation: " + nameTranslations[pokemon.id]);
+		if (pokemon === undefined || nameTranslations == undefined || nameTranslations[pokemon.id] == undefined || nameTranslations[pokemon.id][value] == undefined) {
+			return;
+		}
         pokemon.name = nameTranslations[pokemon.id][value];
       });
     },
