@@ -1,3 +1,4 @@
+const lang = 'ger';
 const fs = require('fs'),
 	{ execSync } = require('child_process'),
 	pokesprite = require('pokesprite-images'),
@@ -26,13 +27,15 @@ for (let i = 1; i <= pkmnCount; i++) {
 	spriteSheetCSS += '.pkmn.' + pkmn.slug.eng + ':before {\n' +
 		'	background-position: ' + (colCount ? ('-' + (colCount * imageWidth) + 'px') : '0') + ' ' + (rowCount ? ('-' + (rowCount * imageHeight) + 'px;') : '0') + '\n' +
 		'}\n\n';
-
+	if (lang === 'ger') {
+		//fetch name-translations json
+		const nameTranslations = JSON.parse(fs.readFileSync('scripts/name-translations.json', 'utf-8'));
 	dataJS.push({
-		name: pkmn.name.eng,
+		name: nameTranslations[pkmn.name.eng],
 		value: pkmn.slug.eng,
 		icon: pkmn.slug.eng
 	});
-
+}
 	images += "'" + spriteDir + 'regular/' + pkmn.slug.eng + ".png'\n";
 
 	colCount++;
@@ -69,7 +72,7 @@ for (const [game, ids] of Object.entries(excludedPkmn)) {
 }
 
 fs.writeFileSync('images.txt', images);
-execSync('montage @images.txt -tile ' + spriteSheetSize + 'x -geometry 68x56 -background none img/sprites.webp');
+execSync('magick montage @images.txt -tile ' + spriteSheetSize + 'x -geometry 68x56 -background none img/sprites.webp');
 fs.unlinkSync('images.txt');
 
 const fomanticAssets = [
