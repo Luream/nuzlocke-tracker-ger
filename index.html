@@ -1,167 +1,209 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="en-US">
-	<head>
-		<meta charset="utf-8">
-		<title>Nuzlocke Tracker</title>
-		<meta property="og:description" name="description" content="A tool for tracking Pokémon encounters and captures during Nuzloke challenges">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-	    <link rel="canonical" href="https://ashenfactory.github.io/nuzlocke-tracker/">
+  <head>
+    <meta charset="utf-8" />
+    <title>Nuzlocke Tracker</title>
+    <meta
+      property="og:description"
+      name="description"
+      content="A tool for tracking Pokémon encounters and captures during Nuzloke challenges"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="canonical"
+      href="https://ashenfactory.github.io/nuzlocke-tracker/"
+    />
 
-		<meta property="og:image" content="https://repository-images.githubusercontent.com/121312463/4a7a0156-592e-48c6-84d2-83b36c0a5d3a">
-		<meta name="twitter:card" content="summary_large_image">
-		<meta property="og:title" content="Nuzlocke Tracker">
-		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://ashenfactory.github.io/nuzlocke-tracker/">
-		<meta property="og:locale" content="en_US">
-		<!-- TEST NOTES-->
-		<meta name="theme-color" content="#1da1da">
-		<link rel="icon" href="favicon.svg">
-		<link rel="mask-icon" href="mask-icon.svg" color="#1da1da">
-		<link rel="apple-touch-icon" href="apple-touch-icon.png">
-		<link rel="manifest" href="manifest.json">
+    <meta
+      property="og:image"
+      content="https://repository-images.githubusercontent.com/121312463/4a7a0156-592e-48c6-84d2-83b36c0a5d3a"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:title" content="Nuzlocke Tracker" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://ashenfactory.github.io/nuzlocke-tracker/"
+    />
+    <meta property="og:locale" content="en_US" />
+    <!-- TEST NOTES-->
+    <meta name="theme-color" content="#1da1da" />
+    <link rel="icon" href="favicon.svg" />
+    <link rel="mask-icon" href="mask-icon.svg" color="#1da1da" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.json" />
 
-		<link rel="stylesheet" href="dist/css/main.min.css?2023-01-10">
-		<script>
-			document.documentElement.className = 'js';
-		</script>
-	</head>
-	<body>
-		<div class="pusher">
-			<div class="ui container">
-				<div class="ui vertically padded grid">
-					<div class="ten wide column">
-						<h1 class="ui header">
-							Nuzlocke Tracker
-						</h1>
-					</div>
+    <link rel="stylesheet" href="dist/css/main.min.css?2023-01-10" />
+    <script>
+      document.documentElement.className = "js";
+    </script>
+  </head>
+  <body>
+    <div class="pusher">
+      <div class="ui container">
+        <div class="ui vertically padded grid">
+          <div class="ten wide column">
+            <h1 class="ui header">Nuzlocke Tracker</h1>
+          </div>
 
-					<div class="six wide right aligned column">
-						<div class="ui toggle checkbox float-right" title="Toggle dark theme">
-							<input id="dark-theme" type="checkbox">
-							<label for="dark-theme"><i class="large adjust icon"></i></label>
-						</div>
-					</div>
-				</div>
+          <div class="six wide right aligned column">
+            <div
+              class="ui toggle checkbox float-right"
+              title="Toggle dark theme"
+            >
+              <input id="dark-theme" type="checkbox" />
+              <label for="dark-theme"><i class="large adjust icon"></i></label>
+            </div>
+          </div>
+        </div>
 
-				<div id="errorMessage" class="ui hidden negative message">
-					<i class="close icon"></i>
-					<div id="messageHeader" class="header"></div>
-					<p id="messageContent"></p>
-				</div>
+        <div id="errorMessage" class="ui hidden negative message">
+          <i class="close icon"></i>
+          <div id="messageHeader" class="header"></div>
+          <p id="messageContent"></p>
+        </div>
 
-				<div id="mainContent">
-					<div class="ui loading segment"></div>
-				</div>
+        <div id="mainContent">
+          <div class="ui loading segment"></div>
+        </div>
 
-				<div id="noscript" class="ui error message">
-					<div class="header">It looks like JavaScript is disabled</div>
-					<p class="center aligned">Please consider enabeling it in order to use this website.</p>
-				</div>
-			</div>
+        <div id="noscript" class="ui error message">
+          <div class="header">It looks like JavaScript is disabled</div>
+          <p class="center aligned">
+            Please consider enabeling it in order to use this website.
+          </p>
+        </div>
+      </div>
 
-			<div class="ui inverted vertical footer segment">
-				<div class="ui center aligned container">
-					<p>Pokémon © Pokémon. © Nintendo/Creatures Inc./GAME FREAK inc. TM, ® and Pokémon character names are trademarks of Nintendo.</p>
-					<p>All sprites for generations 1 through 8 were made available by <a target="_blank" href="https://github.com/msikma/pokesprite">msikma's pokesprite project</a></p>
-					<p>The generation 9 sprites were created and made available by <a target="_blank" href="https://twitter.com/EzerArt_">Ezerart</a><p>
-					<a target="_blank" rel="noopener" href="https://github.com/Ashenfactory/nuzlocke-tracker" title="View on GitHub" class="circular ui icon button"><i class="large github icon"></i></a>
-				</div>
-			</div>
-		</div>
+      <div class="ui inverted vertical footer segment">
+        <div class="ui center aligned container">
+          <p>
+            Pokémon © Pokémon. © Nintendo/Creatures Inc./GAME FREAK inc. TM, ®
+            and Pokémon character names are trademarks of Nintendo.
+          </p>
+          <p>
+            All sprites for generations 1 through 8 were made available by
+            <a target="_blank" href="https://github.com/msikma/pokesprite"
+              >msikma's pokesprite project</a
+            >
+          </p>
+          <p>
+            The generation 9 sprites were created and made available by
+            <a target="_blank" href="https://twitter.com/EzerArt_">Ezerart</a>
+          </p>
+          <p>
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://github.com/Ashenfactory/nuzlocke-tracker"
+              title="View on GitHub"
+              class="circular ui icon button"
+              ><i class="large github icon"></i
+            ></a>
+          </p>
+        </div>
+      </div>
+    </div>
 
-		<div id="importModal" class="ui modal tiny">
-			<div class="header">Import</div>
-			<div class="content">
-				<p>Are you sure you want to import the selected file? Any existing data for the associated game will be replaced.</p>
-			</div>
-			<div class="actions">
-				<div class="ui approve button">Import data</div>
-				<div class="ui cancel button">Cancel</div>
-			</div>
-		</div>
+    <div id="importModal" class="ui modal tiny">
+      <div class="header">Import</div>
+      <div class="content">
+        <p>
+          Are you sure you want to import the selected file? Any existing data
+          for the associated game will be replaced.
+        </p>
+      </div>
+      <div class="actions">
+        <div class="ui approve button">Import data</div>
+        <div class="ui cancel button">Cancel</div>
+      </div>
+    </div>
 
-		<div id="clearModal" class="ui modal tiny">
-			<div class="header">Clear custom location</div>
-			<div class="content">
-				<p>Do you wish to clear this location's data, or remove the location entirely?</p>
-			</div>
-			<div class="actions">
-				<div class="ui approve button" data-action="clear">Clear data</div>
-				<div class="ui approve button" data-action="remove">Remove location</div>
-				<div class="ui cancel button">Cancel</div>
-			</div>
-		</div>
+    <div id="clearModal" class="ui modal tiny">
+      <div class="header">Clear custom location</div>
+      <div class="content">
+        <p>
+          Do you wish to clear this location's data, or remove the location
+          entirely?
+        </p>
+      </div>
+      <div class="actions">
+        <div class="ui approve button" data-action="clear">Clear data</div>
+        <div class="ui approve button" data-action="remove">
+          Remove location
+        </div>
+        <div class="ui cancel button">Cancel</div>
+      </div>
+    </div>
 
-		<div id="resetModal" class="ui modal tiny">
-			<div class="header">Reset</div>
-			<div class="content">
-				<p>Do you wish to clear all values or perform a total reset of this game, which also removes all custom locations? Any unsaved data will be lost.</p>
-			</div>
-			<div class="actions">
-				<div class="ui approve button" data-action="clear">Clear values</div>
-				<div class="ui approve button" data-action="remove">Total reset</div>
-				<div class="ui cancel button">Cancel</div>
-			</div>
-		</div>
+    <div id="resetModal" class="ui modal tiny">
+      <div class="header">Reset</div>
+      <div class="content">
+        <p>
+          Do you wish to clear all values or perform a total reset of this game,
+          which also removes all custom locations? Any unsaved data will be
+          lost.
+        </p>
+      </div>
+      <div class="actions">
+        <div class="ui approve button" data-action="clear">Clear values</div>
+        <div class="ui approve button" data-action="remove">Total reset</div>
+        <div class="ui cancel button">Cancel</div>
+      </div>
+    </div>
 
-		<div id="locationModal" class="ui modal tiny">
-			<div class="header">Add location</div>
-			<div class="content ui form">
-				<div class="field">
-					<label for="customLocationName">Name</label>
-					<input type="text" id="customLocationName" required>
-				</div>
-				<div class="field">
-					<label for="locationOrder">Order</label>
-					<div id="locationOrder" class="ui selection dropdown">
-						<input name="location" type="hidden" required>
-						<div class="default text">Select a location</div>
-						<i class="dropdown icon"></i>
-						<div class="menu"></div>
-					</div>
+    <div id="locationModal" class="ui modal tiny">
+      <div class="header">Add location</div>
+      <div class="content ui form">
+        <div class="field">
+          <label for="customLocationName">Name</label>
+          <input type="text" id="customLocationName" required />
+        </div>
+        <div class="field">
+          <label for="locationOrder">Order</label>
+          <div id="locationOrder" class="ui selection dropdown">
+            <input name="location" type="hidden" required />
+            <div class="default text">Select a location</div>
+            <i class="dropdown icon"></i>
+            <div class="menu"></div>
+          </div>
+        </div>
+        <div class="actions">
+          <div class="ui approve button">Add</div>
+          <div class="ui cancel button">Cancel</div>
+        </div>
+      </div>
 
-				</div>
-			<div class="actions">
-				<div class="ui approve button">Add</div>
-				<div class="ui cancel button">Cancel</div>
-			</div>
-		</div>
+      <div id="settingsModal" class="ui modal tiny">
+        <div class="header">Game settings</div>
+        <div class="content ui form">
+          <div class="field">
+            <div class="ui checkbox">
+              <input id="disableDexLimit" type="checkbox" />
+              <label for="disableDexLimit">Allow all Pokémon</label>
+            </div>
+          </div>
+          <div class="field">
+            <div class="default text">Select a language</div>
+            <select name="languageOptions" id="languageOptions" class="ui selection dropdown">
+              <option value="german">German</option>
+              <option value="english">English</option>
+            </select>
+          </div>
+        </div>
 
-		<div id="settingsModal" class="ui modal tiny">
-			<div class="header">Game settings</div>
-			<div class="content ui form">
-				<div class="field">
-					<div class="ui checkbox">
-						<input id="disableDexLimit" type="checkbox">
-						<label for="disableDexLimit">Allow all Pokémon</label>
-					</div>
-					
-				</div>
-				<div class="field">
-					<div id="languageOptions" class="ui selection dropdown">
-						<input name="language" type="hidden" required>
-						<i class="dropdown icon"></i>
-						<div class="default text">Select a language</div>
-						<div class="scrollhint menu">
-							<div class="item" data-value="german">German</div>
-							<div class="item" data-value="english">English</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-<!-- 				<div class="field">
+        <!-- 				<div class="field">
 					<div class="ui checkbox">
 						<input id="allowCustomPokemon" type="checkbox">
 						<label for="allowCustomPokemon">Allow custom Pokémon</label>
 					</div>
 				</div> -->
-			</div>
-			<div class="actions">
-				<div class="ui cancel button">Close</div>
-			</div>
-		</div>
+      </div>
+      <div class="actions">
+        <div class="ui cancel button">Close</div>
+      </div>
+    </div>
 
-		<script src="dist/js/main.min.js?2023-01-10"></script>
-	</body>
+    <script src="dist/js/main.min.js?2023-01-10"></script>
+  </body>
 </html>

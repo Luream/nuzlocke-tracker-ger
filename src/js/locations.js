@@ -1,3833 +1,5347 @@
 var games = {
-	rby: {
-		id: "rby",
-		title: "Red, Blue and Yellow",
-		nameLimit: 10,
-		dexLimit: 151,
-		loaded: false,
-		locations: [
-			{
-				name: "Starter",
-				value: 0
-			},
-			{
-				name: "Pallet Town",
-				value: 1
-			},
-			{
-				name: "Route 1",
-				value: 2
-			},
-			{
-				name: "Viridian City",
-				value: 3
-			},
-			{
-				name: "Route 22",
-				value: 4
-			},
-			{
-				name: "Route 2",
-				value: 5
-			},
-			{
-				name: "Viridian Forest",
-				value: 6
-			},
-			{
-				name: "Route 3",
-				value: 7
-			},
-			{
-				name: "Route 4",
-				value: 8
-			},
-			{
-				name: "Mt. Moon",
-				value: 9
-			},
-			{
-				name: "Cerulean City",
-				value: 10
-			},
-			{
-				name: "Route 24",
-				value: 11
-			},
-			{
-				name: "Route 25",
-				value: 12
-			},
-			{
-				name: "Route 5",
-				value: 13
-			},
-			{
-				name: "Route 6",
-				value: 14
-			},
-			{
-				name: "Vermillion City",
-				value: 15
-			},
-			{
-				name: "Route 11",
-				value: 16
-			},
-			{
-				name: "Diglett's Cave",
-				value: 17
-			},
-			{
-				name: "Route 9",
-				value: 18
-			},
-			{
-				name: "Route 10",
-				value: 19
-			},
-			{
-				name: "Rock Tunnel",
-				value: 20
-			},
-			{
-				name: "Pokémon Tower",
-				value: 21
-			},
-			{
-				name: "Route 12",
-				value: 22
-			},
-			{
-				name: "Route 8",
-				value: 23
-			},
-			{
-				name: "Route 7",
-				value: 24
-			},
-			{
-				name: "Celadon City",
-				value: 25
-			},
-			{
-				name: "Route 16",
-				value: 26
-			},
-			{
-				name: "Route 17",
-				value: 27
-			},
-			{
-				name: "Route 18",
-				value: 28
-			},
-			{
-				name: "Fuschia City",
-				value: 29
-			},
-			{
-				name: "Safari Zone",
-				value: 30
-			},
-			{
-				name: "Route 15",
-				value: 31
-			},
-			{
-				name: "Route 14",
-				value: 32
-			},
-			{
-				name: "Route 13",
-				value: 33
-			},
-			{
-				name: "Power Plant",
-				value: 34
-			},
-			{
-				name: "Route 19",
-				value: 35
-			},
-			{
-				name: "Route 20",
-				value: 36
-			},
-			{
-				name: "Seafoam Islands",
-				value: 37
-			},
-			{
-				name: "Cinnabar Island",
-				value: 38
-			},
-			{
-				name: "Pokémon Mansion",
-				value: 39
-			},
-			{
-				name: "Route 21",
-				value: 40
-			},
-			{
-				name: "Route 23",
-				value: 41
-			},
-			{
-				name: "Victory Road",
-				value: 42
-			},
-			{
-				name: "Cerulean Cave",
-				value: 43
-			}
-		]
-	},
-	gsc: {
-		id: "gsc",
-		title: "Gold, Silver and Crystal",
-		nameLimit: 10,
-		dexLimit: 251,
-		loaded: false,
-		locations: [
-			{
-				name: "Starter",
-				value: 0
-			},
-			{
-				name: "New Bark Town",
-				value: 1
-			},
-			{
-				name: "Route 29",
-				value: 2
-			},
-			{
-				name: "Cherrygrove City",
-				value: 3
-			},
-			{
-				name: "Route 30",
-				value: 4
-			},
-			{
-				name: "Route 31",
-				value: 5
-			},
-			{
-				name: "Dark Cave",
-				value: 6
-			},
-			{
-				name: "Violet City",
-				value: 7
-			},
-			{
-				name: "Sprout Tower",
-				value: 8
-			},
-			{
-				name: "Route 32",
-				value: 9
-			},
-			{
-				name: "Ruins of Alph",
-				value: 10
-			},
-			{
-				name: "Union Cave",
-				value: 11
-			},
-			{
-				name: "Route 33",
-				value: 12
-			},
-			{
-				name: "Azalea Town",
-				value: 13
-			},
-			{
-				name: "Slowpoke Well",
-				value: 14
-			},
-			{
-				name: "Ilex Forest",
-				value: 15
-			},
-			{
-				name: "Route 34",
-				value: 16
-			},
-			{
-				name: "Goldenrod City",
-				value: 17
-			},
-			{
-				name: "Route 35",
-				value: 18
-			},
-			{
-				name: "National Park",
-				value: 19
-			},
-			{
-				name: "Route 36",
-				value: 20
-			},
-			{
-				name: "Route 37",
-				value: 21
-			},
-			{
-				name: "Ecruteak City",
-				value: 22
-			},
-			{
-				name: "Burned Tower",
-				value: 23
-			},
-			{
-				name: "Tin Tower",
-				value: 24
-			},
-			{
-				name: "Route 38",
-				value: 25
-			},
-			{
-				name: "Route 39",
-				value: 26
-			},
-			{
-				name: "Olivine City",
-				value: 27
-			},
-			{
-				name: "Route 40",
-				value: 28
-			},
-			{
-				name: "Route 41",
-				value: 29
-			},
-			{
-				name: "Whirl Islands",
-				value: 30
-			},
-			{
-				name: "Cianwood City",
-				value: 31
-			},
-			{
-				name: "Route 42",
-				value: 32
-			},
-			{
-				name: "Mt. Mortar",
-				value: 33
-			},
-			{
-				name: "Mahogany Town",
-				value: 34
-			},
-			{
-				name: "Rocket Hideout",
-				value: 35
-			},
-			{
-				name: "Route 43",
-				value: 36
-			},
-			{
-				name: "Lake of Rage",
-				value: 37
-			},
-			{
-				name: "Route 44",
-				value: 38
-			},
-			{
-				name: "Ice Path",
-				value: 39
-			},
-			{
-				name: "Blackthorn City",
-				value: 40
-			},
-			{
-				name: "Dragon's Den",
-				value: 41
-			},
-			{
-				name: "Route 45",
-				value: 42
-			},
-			{
-				name: "Dark Cave 2",
-				value: 43
-			},
-			{
-				name: "Route 46",
-				value: 44
-			},
-			{
-				name: "Route 27",
-				value: 45
-			},
-			{
-				name: "Tohjo Falls",
-				value: 46
-			},
-			{
-				name: "Route 26",
-				value: 47
-			},
-			{
-				name: "Victory Road",
-				value: 48
-			},
-			{
-				name: "Indigo Plateau",
-				value: 49
-			},
-			{
-				name: "Vermillion City",
-				value: 50
-			},
-			{
-				name: "Route 6",
-				value: 51
-			},
-			{
-				name: "Saffron City",
-				value: 52
-			},
-			{
-				name: "Route 5",
-				value: 53
-			},
-			{
-				name: "Route 7",
-				value: 54
-			},
-			{
-				name: "Route 8",
-				value: 55
-			},
-			{
-				name: "Route 10",
-				value: 56
-			},
-			{
-				name: "Rock Tunnel",
-				value: 57
-			},
-			{
-				name: "Route 9",
-				value: 58
-			},
-			{
-				name: "Cerulean City",
-				value: 59
-			},
-			{
-				name: "Route 24",
-				value: 60
-			},
-			{
-				name: "Route 25",
-				value: 61
-			},
-			{
-				name: "Route 4",
-				value: 62
-			},
-			{
-				name: "Route 16",
-				value: 63
-			},
-			{
-				name: "Route 17",
-				value: 64
-			},
-			{
-				name: "Route 18",
-				value: 65
-			},
-			{
-				name: "Fuschia City",
-				value: 66
-			},
-			{
-				name: "Route 15",
-				value: 67
-			},
-			{
-				name: "Route 14",
-				value: 68
-			},
-			{
-				name: "Route 13",
-				value: 69
-			},
-			{
-				name: "Route 12",
-				value: 70
-			},
-			{
-				name: "Route 11",
-				value: 71
-			},
-			{
-				name: "Diglett's Cave",
-				value: 72
-			},
-			{
-				name: "Route 2",
-				value: 73
-			},
-			{
-				name: "Pewter City",
-				value: 74
-			},
-			{
-				name: "Route 3",
-				value: 75
-			},
-			{
-				name: "Mt. Moon",
-				value: 76
-			},
-			{
-				name: "Viridian City",
-				value: 77
-			},
-			{
-				name: "Route 1",
-				value: 78
-			},
-			{
-				name: "Pallet Town",
-				value: 79
-			},
-			{
-				name: "Route 21",
-				value: 80
-			},
-			{
-				name: "Cinnabar Island",
-				value: 81
-			},
-			{
-				name: "Route 20",
-				value: 82
-			},
-			{
-				name: "Route 19",
-				value: 83
-			},
-			{
-				name: "Route 22",
-				value: 84
-			},
-			{
-				name: "Route 28",
-				value: 85
-			},
-			{
-				name: "Mt. Silver",
-				value: 86
-			}
-		]
-	},
-	rse: {
-		id: "rse",
-		title: "Ruby, Sapphire and Emerald",
-		nameLimit: 10,
-		dexLimit: 386,
-		loaded: false,
-		locations: [
-			{
-				name: "Starter",
-				value: 0
-			},
-			{
-				name: "Littleroot Town",
-				value: 1
-			},
-			{
-				name: "Route 101",
-				value: 2
-			},
-			{
-				name: "Route 102",
-				value: 3
-			},
-			{
-				name: "Route 103",
-				value: 4
-			},
-			{
-				name: "Petalburg City",
-				value: 5
-			},
-			{
-				name: "Route 104",
-				value: 6
-			},
-			{
-				name: "Petalburg Woods",
-				value: 7
-			},
-			{
-				name: "Rustboro City",
-				value: 8
-			},
-			{
-				name: "Route 115",
-				value: 9
-			},
-			{
-				name: "Route 116",
-				value: 10
-			},
-			{
-				name: "Rusturf Tunnel",
-				value: 11
-			},
-			{
-				name: "Dewford Town",
-				value: 12
-			},
-			{
-				name: "Route 106",
-				value: 13
-			},
-			{
-				name: "Granite Cave",
-				value: 14
-			},
-			{
-				name: "Route 107",
-				value: 15
-			},
-			{
-				name: "Slateport City",
-				value: 16
-			},
-			{
-				name: "Route 110",
-				value: 17
-			},
-			{
-				name: "Altering Cave",
-				value: 18
-			},
-			{
-				name: "New Mauville",
-				value: 19
-			},
-			{
-				name: "Route 117",
-				value: 20
-			},
-			{
-				name: "Route 111",
-				value: 21
-			},
-			{
-				name: "Mirage Tower (Emerald)",
-				value: 22
-			},
-			{
-				name: "Route 112",
-				value: 23
-			},
-			{
-				name: "Fiery Path",
-				value: 24
-			},
-			{
-				name: "Route 113",
-				value: 25
-			},
-			{
-				name: "Route 114",
-				value: 26
-			},
-			{
-				name: "Desert Underpass (Emerald)",
-				value: 27
-			},
-			{
-				name: "Meteor Falls",
-				value: 28
-			},
-			{
-				name: "Jagged Pass",
-				value: 29
-			},
-			{
-				name: "Lavaridge Town",
-				value: 30
-			},
-			{
-				name: "Route 118",
-				value: 31
-			},
-			{
-				name: "Route 119",
-				value: 32
-			},
-			{
-				name: "Fortree City",
-				value: 33
-			},
-			{
-				name: "Route 120",
-				value: 34
-			},
-			{
-				name: "Route 121",
-				value: 35
-			},
-			{
-				name: "Safari Zone",
-				value: 36
-			},
-			{
-				name: "Lilycove City",
-				value: 37
-			},
-			{
-				name: "Route 122",
-				value: 38
-			},
-			{
-				name: "Mt. Pyre",
-				value: 39
-			},
-			{
-				name: "Route 123",
-				value: 40
-			},
-			{
-				name: "Team Magma Hideout (Emerald)",
-				value: 41
-			},
-			{
-				name: "Route 124",
-				value: 42
-			},
-			{
-				name: "Mossdeep City",
-				value: 43
-			},
-			{
-				name: "Route 125",
-				value: 44
-			},
-			{
-				name: "Shoal Cave",
-				value: 45
-			},
-			{
-				name: "Route 127",
-				value: 46
-			},
-			{
-				name: "Route 128",
-				value: 47
-			},
-			{
-				name: "Seafloor Cavern",
-				value: 48
-			},
-			{
-				name: "Route 126",
-				value: 49
-			},
-			{
-				name: "Sootopolis City",
-				value: 50
-			},
-			{
-				name: "Cave of Origin",
-				value: 51
-			},
-			{
-				name: "Route 129",
-				value: 52
-			},
-			{
-				name: "Route 130",
-				value: 53
-			},
-			{
-				name: "Route 131",
-				value: 54
-			},
-			{
-				name: "Sky Pillar",
-				value: 55
-			},
-			{
-				name: "Pacifidlog Town",
-				value: 56
-			},
-			{
-				name: "Mirage Island",
-				value: 57
-			},
-			{
-				name: "Route 105",
-				value: 58
-			},
-			{
-				name: "Route 108",
-				value: 59
-			},
-			{
-				name: "Abandoned Ship",
-				value: 60
-			},
-			{
-				name: "Route 109",
-				value: 61
-			},
-			{
-				name: "Route 132",
-				value: 62
-			},
-			{
-				name: "Route 133",
-				value: 63
-			},
-			{
-				name: "Route 134",
-				value: 64
-			},
-			{
-				name: "Ever Grande City",
-				value: 65
-			},
-			{
-				name: "Victory Road",
-				value: 66
-			},
-			{
-				name: "S.S. Tidal",
-				value: 67
-			},
-			{
-				name: "Battle Frontier",
-				value: 68
-			},
-			{
-				name: "Artisan Cave",
-				value: 69
-			}]
-	},
-	frlg: {
-		id: "frlg",
-		title: "FireRed and LeafGreen",
-		nameLimit: 10,
-		dexLimit: 386,
-		loaded: false,
-		locations: [
-			{
-				name: "Starter",
-				value: 0
-			},
-			{
-				name: "Pallet Town",
-				value: 1
-			},
-			{
-				name: "Route 1",
-				value: 2
-			},
-			{
-				name: "Viridian City",
-				value: 3
-			},
-			{
-				name: "Route 22",
-				value: 4
-			},
-			{
-				name: "Route 2",
-				value: 5
-			},
-			{
-				name: "Viridian Forest",
-				value: 6
-			},
-			{
-				name: "Route 3",
-				value: 7
-			},
-			{
-				name: "Route 4",
-				value: 8
-			},
-			{
-				name: "Mt. Moon",
-				value: 9
-			},
-			{
-				name: "Cerulean City",
-				value: 10
-			},
-			{
-				name: "Route 24",
-				value: 11
-			},
-			{
-				name: "Route 25",
-				value: 12
-			},
-			{
-				name: "Route 5",
-				value: 13
-			},
-			{
-				name: "Route 6",
-				value: 14
-			},
-			{
-				name: "Vermillion City",
-				value: 15
-			},
-			{
-				name: "Route 11",
-				value: 16
-			},
-			{
-				name: "Diglett's Cave",
-				value: 17
-			},
-			{
-				name: "Route 9",
-				value: 18
-			},
-			{
-				name: "Route 10",
-				value: 19
-			},
-			{
-				name: "Rock Tunnel",
-				value: 20
-			},
-			{
-				name: "Pokémon Tower",
-				value: 21
-			},
-			{
-				name: "Route 12",
-				value: 22
-			},
-			{
-				name: "Route 8",
-				value: 23
-			},
-			{
-				name: "Route 7",
-				value: 24
-			},
-			{
-				name: "Celadon City",
-				value: 25
-			},
-			{
-				name: "Route 16",
-				value: 26
-			},
-			{
-				name: "Route 17",
-				value: 27
-			},
-			{
-				name: "Route 18",
-				value: 28
-			},
-			{
-				name: "Fuschia City",
-				value: 29
-			},
-			{
-				name: "Safari Zone",
-				value: 30
-			},
-			{
-				name: "Route 15",
-				value: 31
-			},
-			{
-				name: "Route 14",
-				value: 32
-			},
-			{
-				name: "Route 13",
-				value: 33
-			},
-			{
-				name: "Power Plant",
-				value: 34
-			},
-			{
-				name: "Route 19",
-				value: 35
-			},
-			{
-				name: "Route 20",
-				value: 36
-			},
-			{
-				name: "Seafoam Islands",
-				value: 37
-			},
-			{
-				name: "Cinnabar Island",
-				value: 38
-			},
-			{
-				name: "Pokémon Mansion",
-				value: 39
-			},
-			{
-				name: "Route 21",
-				value: 40
-			},
-			{
-				name: "One Island",
-				value: 41
-			},
-			{
-				name: "Treasure Beach",
-				value: 42
-			},
-			{
-				name: "Kindle Road",
-				value: 43
-			},
-			{
-				name: "Mt. Ember",
-				value: 44
-			},
-			{
-				name: "Cape Brink",
-				value: 45
-			},
-			{
-				name: "Three Isle Port",
-				value: 46
-			},
-			{
-				name: "Bond Bridge",
-				value: 47
-			},
-			{
-				name: "Berry Forest",
-				value: 48
-			},
-			{
-				name: "Route 23",
-				value: 49
-			},
-			{
-				name: "Victory Road",
-				value: 50
-			},
-			{
-				name: "Four Island",
-				value: 51
-			},
-			{
-				name: "Icefall Cave",
-				value: 52
-			},
-			{
-				name: "Five Island",
-				value: 53
-			},
-			{
-				name: "Five Isle Meadow",
-				value: 54
-			},
-			{
-				name: "Memorial Pillar",
-				value: 55
-			},
-			{
-				name: "Water Labyrinth",
-				value: 56
-			},
-			{
-				name: "Resort Gorgeous",
-				value: 57
-			},
-			{
-				name: "Lost Cave",
-				value: 58
-			},
-			{
-				name: "Water Path",
-				value: 59
-			},
-			{
-				name: "Green Path",
-				value: 60
-			},
-			{
-				name: "Pattern Bush",
-				value: 61
-			},
-			{
-				name: "Outcast Island",
-				value: 62
-			},
-			{
-				name: "Altering Cave",
-				value: 63
-			},
-			{
-				name: "Ruin Valley",
-				value: 64
-			},
-			{
-				name: "Trainer Tower",
-				value: 65
-			},
-			{
-				name: "Canyon Entrance",
-				value: 66
-			},
-			{
-				name: "Seavault Canyon",
-				value: 67
-			},
-			{
-				name: "Tanoby Ruins",
-				value: 68
-			},
-			{
-				name: "Cerulean Cave",
-				value: 69
-			}
-		]
-	},
-	dpp: {
-		id: "dpp",
-		title: "Diamond, Pearl and Platinum",
-		nameLimit: 10,
-		dexLimit: 493,
-		loaded: false,
-		locations: [
-			{
-				name: "Starter",
-				value: 0
-			},
-			{
-				name: "Twinleaf Town",
-				value: 1
-			},
-			{
-				name: "Route 201",
-				value: 2
-			},
-			{
-				name: "Lake Verity",
-				value: 3
-			},
-			{
-				name: "Route 202",
-				value: 4
-			},
-			{
-				name: "Route 203",
-				value: 5
-			},
-			{
-				name: "Oreburgh Gate",
-				value: 6
-			},
-			{
-				name: "Oreburgh City",
-				value: 7
-			},
-			{
-				name: "Oreburgh Mine",
-				value: 8
-			},
-			{
-				name: "Route 207",
-				value: 9
-			},
-			{
-				name: "Route 204",
-				value: 10
-			},
-			{
-				name: "Ravaged Path",
-				value: 11
-			},
-			{
-				name: "Floaroma Meadow",
-				value: 12
-			},
-			{
-				name: "Route 205",
-				value: 13
-			},
-			{
-				name: "Valley Windworks",
-				value: 14
-			},
-			{
-				name: "Eterna Forest",
-				value: 15
-			},
-			{
-				name: "The Old Chateau",
-				value: 16
-			},
-			{
-				name: "Eterna City",
-				value: 17
-			},
-			{
-				name: "Route 206",
-				value: 18
-			},
-			{
-				name: "Wayward Cave",
-				value: 19
-			},
-			{
-				name: "Mt. Coronet",
-				value: 20
-			},
-			{
-				name: "Route 208",
-				value: 21
-			},
-			{
-				name: "Hearthome City",
-				value: 22
-			},
-			{
-				name: "Route 209",
-				value: 23
-			},
-			{
-				name: "The Lost Tower",
-				value: 24
-			},
-			{
-				name: "Solaceon Ruins",
-				value: 25
-			},
-			{
-				name: "Route 210",
-				value: 26
-			},
-			{
-				name: "Route 215",
-				value: 27
-			},
-			{
-				name: "Veilstone City",
-				value: 28
-			},
-			{
-				name: "Route 212",
-				value: 29
-			},
-			{
-				name: "Trophy Garden",
-				value: 30
-			},
-			{
-				name: "Pastoria City",
-				value: 31
-			},
-			{
-				name: "Great Marsh",
-				value: 32
-			},
-			{
-				name: "Route 213",
-				value: 33
-			},
-			{
-				name: "Valor Lakefront",
-				value: 34
-			},
-			{
-				name: "Lake Valor",
-				value: 35
-			},
-			{
-				name: "Route 214",
-				value: 36
-			},
-			{
-				name: "Ruin Maniac's Cave",
-				value: 37
-			},
-			{
-				name: "Ruin Maniac's Tunnel",
-				value: 38
-			},
-			{
-				name: "Celestic Town",
-				value: 39
-			},
-			{
-				name: "Fuego Ironworks",
-				value: 40
-			},
-			{
-				name: "Routes 219",
-				value: 41
-			},
-			{
-				name: "Route 220",
-				value: 42
-			},
-			{
-				name: "Route 221",
-				value: 43
-			},
-			{
-				name: "Route 218",
-				value: 44
-			},
-			{
-				name: "Canalave City",
-				value: 45
-			},
-			{
-				name: "Iron Island",
-				value: 46
-			},
-			{
-				name: "Route 211",
-				value: 47
-			},
-			{
-				name: "Route 216",
-				value: 48
-			},
-			{
-				name: "Route 217",
-				value: 49
-			},
-			{
-				name: "Acuity Lakefront",
-				value: 50
-			},
-			{
-				name: "Lake Acuity",
-				value: 51
-			},
-			{
-				name: "Snowpoint Temple",
-				value: 52
-			},
-			{
-				name: "Route 222",
-				value: 53
-			},
-			{
-				name: "Sunyshore City",
-				value: 54
-			},
-			{
-				name: "Route 223",
-				value: 55
-			},
-			{
-				name: "Pokémon League",
-				value: 56
-			},
-			{
-				name: "Victory Road",
-				value: 57
-			},
-			{
-				name: "Route 224",
-				value: 58
-			},
-			{
-				name: "Route 230",
-				value: 59
-			},
-			{
-				name: "Route 229",
-				value: 60
-			},
-			{
-				name: "Resort Area",
-				value: 61
-			},
-			{
-				name: "Route 228",
-				value: 62
-			},
-			{
-				name: "Route 226",
-				value: 63
-			},
-			{
-				name: "Route 227",
-				value: 64
-			},
-			{
-				name: "Stark Mountain",
-				value: 65
-			},
-			{
-				name: "Route 225",
-				value: 66
-			},
-			{
-				name: "Sendoff Spring",
-				value: 67
-			},
-			{
-				name: "Turnback Cave",
-				value: 68
-			},
-			{
-				name: "Distortion World",
-				value: 69
-			},
-			{
-				name: "Spear Pillar",
-				value: 70
-			},
-			{
-				name: "Newmoon Island",
-				value: 71
-			},
-			{
-				name: "Flower Paradise",
-				value: 72
-			},
-			{
-				name: "Hall of Origin",
-				value: 73
-			}
-		]
-	},
-	hgss: {
-		id: "hgss",
-		title: "HeartGold and SoulSilver",
-		nameLimit: 10,
-		dexLimit: 493,
-		loaded: false,
-		locations: [
-			{
-				name: "Starter",
-				value: 0
-			},
-			{
-				name: "New Bark Town",
-				value: 1
-			},
-			{
-				name: "Route 29",
-				value: 2
-			},
-			{
-				name: "Cherrygrove City",
-				value: 3
-			},
-			{
-				name: "Route 30",
-				value: 4
-			},
-			{
-				name: "Route 31",
-				value: 5
-			},
-			{
-				name: "Dark Cave",
-				value: 6
-			},
-			{
-				name: "Violet City",
-				value: 7
-			},
-			{
-				name: "Sprout Tower",
-				value: 8
-			},
-			{
-				name: "Route 32",
-				value: 9
-			},
-			{
-				name: "Ruins of Alph",
-				value: 10
-			},
-			{
-				name: "Union Cave",
-				value: 11
-			},
-			{
-				name: "Route 33",
-				value: 12
-			},
-			{
-				name: "Azalea Town",
-				value: 13
-			},
-			{
-				name: "Slowpoke Well",
-				value: 14
-			},
-			{
-				name: "Ilex Forest",
-				value: 15
-			},
-			{
-				name: "Route 34",
-				value: 16
-			},
-			{
-				name: "Goldenrod City",
-				value: 17
-			},
-			{
-				name: "Route 35",
-				value: 18
-			},
-			{
-				name: "National Park",
-				value: 19
-			},
-			{
-				name: "Route 36",
-				value: 20
-			},
-			{
-				name: "Route 37",
-				value: 21
-			},
-			{
-				name: "Ecruteak City",
-				value: 22
-			},
-			{
-				name: "Burned Tower",
-				value: 23
-			},
-			{
-				name: "Bell Tower",
-				value: 24
-			},
-			{
-				name: "Route 38",
-				value: 25
-			},
-			{
-				name: "Route 39",
-				value: 26
-			},
-			{
-				name: "Olivine City",
-				value: 27
-			},
-			{
-				name: "Route 40",
-				value: 28
-			},
-			{
-				name: "Route 41",
-				value: 29
-			},
-			{
-				name: "Whirl Islands",
-				value: 30
-			},
-			{
-				name: "Cianwood City",
-				value: 31
-			},
-			{
-				name: "Cliff Edge Gate",
-				value: 32
-			},
-			{
-				name: "Route 47",
-				value: 33
-			},
-			{
-				name: "Cliff Cave",
-				value: 34
-			},
-			{
-				name: "Route 48",
-				value: 35
-			},
-			{
-				name: "Safari Zone Gate",
-				value: 36
-			},
-			{
-				name: "Safari Zone",
-				value: 37
-			},
-			{
-				name: "Route 42",
-				value: 38
-			},
-			{
-				name: "Mt. Mortar",
-				value: 39
-			},
-			{
-				name: "Mahogany Town",
-				value: 40
-			},
-			{
-				name: "Rocket Hideout",
-				value: 41
-			},
-			{
-				name: "Route 43",
-				value: 42
-			},
-			{
-				name: "Lake of Rage",
-				value: 43
-			},
-			{
-				name: "Route 44",
-				value: 44
-			},
-			{
-				name: "Ice Path",
-				value: 45
-			},
-			{
-				name: "Blackthorn City",
-				value: 46
-			},
-			{
-				name: "Dragon's Den",
-				value: 47
-			},
-			{
-				name: "Route 45",
-				value: 48
-			},
-			{
-				name: "Dark Cave 2",
-				value: 49
-			},
-			{
-				name: "Route 46",
-				value: 50
-			},
-			{
-				name: "Route 27",
-				value: 51
-			},
-			{
-				name: "Tohjo Falls",
-				value: 52
-			},
-			{
-				name: "Route 26",
-				value: 53
-			},
-			{
-				name: "Victory Road",
-				value: 54
-			},
-			{
-				name: "Indigo Plateau",
-				value: 55
-			},
-			{
-				name: "Vermillion City",
-				value: 56
-			},
-			{
-				name: "Route 6",
-				value: 57
-			},
-			{
-				name: "Saffron City",
-				value: 58
-			},
-			{
-				name: "Route 5",
-				value: 59
-			},
-			{
-				name: "Route 7",
-				value: 60
-			},
-			{
-				name: "Route 8",
-				value: 61
-			},
-			{
-				name: "Route 10",
-				value: 62
-			},
-			{
-				name: "Power Plant",
-				value: 63
-			},
-			{
-				name: "Rock Tunnel",
-				value: 64
-			},
-			{
-				name: "Route 9",
-				value: 65
-			},
-			{
-				name: "Cerulean City",
-				value: 66
-			},
-			{
-				name: "Route 24",
-				value: 67
-			},
-			{
-				name: "Route 25",
-				value: 68
-			},
-			{
-				name: "Route 4",
-				value: 69
-			},
-			{
-				name: "Route 16",
-				value: 70
-			},
-			{
-				name: "Route 17",
-				value: 71
-			},
-			{
-				name: "Route 18",
-				value: 72
-			},
-			{
-				name: "Fuschia City",
-				value: 73
-			},
-			{
-				name: "Route 15",
-				value: 74
-			},
-			{
-				name: "Route 14",
-				value: 75
-			},
-			{
-				name: "Route 13",
-				value: 76
-			},
-			{
-				name: "Route 12",
-				value: 77
-			},
-			{
-				name: "Route 11",
-				value: 78
-			},
-			{
-				name: "Diglett's Cave",
-				value: 79
-			},
-			{
-				name: "Route 2",
-				value: 80
-			},
-			{
-				name: "Pewter City",
-				value: 81
-			},
-			{
-				name: "Route 3",
-				value: 82
-			},
-			{
-				name: "Mt. Moon",
-				value: 83
-			},
-			{
-				name: "Viridian City",
-				value: 84
-			},
-			{
-				name: "Route 1",
-				value: 85
-			},
-			{
-				name: "Pallet Town",
-				value: 86
-			},
-			{
-				name: "Route 21",
-				value: 87
-			},
-			{
-				name: "Cinnabar Island",
-				value: 88
-			},
-			{
-				name: "Route 20",
-				value: 89
-			},
-			{
-				name: "Route 19",
-				value: 90
-			},
-			{
-				name: "Route 22",
-				value: 91
-			},
-			{
-				name: "Route 28",
-				value: 92
-			},
-			{
-				name: "Mt. Silver",
-				value: 93
-			},
-			{
-				name: "Cerulean Cave",
-				value: 94
-			}
-		]
-	},
-	bw: {
-		id: "bw",
-		title: "Black and White",
-		nameLimit: 10,
-		dexLimit: 649,
-		loaded: false,
-		locations: [
-			{
-				name: "Starter",
-				value: 0
-			},
-			{
-				name: "Nuvema Town",
-				value: 1
-			},
-			{
-				name: "Route 1",
-				value: 2
-			},
-			{
-				name: "Accumula Town",
-				value: 3
-			},
-			{
-				name: "Route 2",
-				value: 4
-			},
-			{
-				name: "Striaton City",
-				value: 5
-			},
-			{
-				name: "Dreamyard",
-				value: 6
-			},
-			{
-				name: "Route 3",
-				value: 7
-			},
-			{
-				name: "Wellspring Cave",
-				value: 8
-			},
-			{
-				name: "Nacrene City",
-				value: 9
-			},
-			{
-				name: "Pinwheel Forest",
-				value: 10
-			},
-			{
-				name: "Castelia City",
-				value: 11
-			},
-			{
-				name: "Route 4",
-				value: 12
-			},
-			{
-				name: "Desert Resort",
-				value: 13
-			},
-			{
-				name: "Relic Castle",
-				value: 14
-			},
-			{
-				name: "Route 16",
-				value: 15
-			},
-			{
-				name: "Route 5",
-				value: 16
-			},
-			{
-				name: "Driftveil Drawbridge",
-				value: 17
-			},
-			{
-				name: "Driftveil City",
-				value: 18
-			},
-			{
-				name: "Cold Storage",
-				value: 19
-			},
-			{
-				name: "Route 6",
-				value: 20
-			},
-			{
-				name: "Mistralton Cave",
-				value: 21
-			},
-			{
-				name: "Chargestone Cave",
-				value: 22
-			},
-			{
-				name: "Route 7",
-				value: 23
-			},
-			{
-				name: "Celestial Tower",
-				value: 24
-			},
-			{
-				name: "Twist Mountain",
-				value: 25
-			},
-			{
-				name: "Iccirus City",
-				value: 26
-			},
-			{
-				name: "Dragonspiral Tower",
-				value: 27
-			},
-			{
-				name: "Route 8",
-				value: 28
-			},
-			{
-				name: "Moor of Icirrus",
-				value: 29
-			},
-			{
-				name: "Route 9",
-				value: 30
-			},
-			{
-				name: "Route 10",
-				value: 31
-			},
-			{
-				name: "Victory Road",
-				value: 32
-			},
-			{
-				name: "Route 11",
-				value: 33
-			},
-			{
-				name: "Village Bridge",
-				value: 34
-			},
-			{
-				name: "Route 12",
-				value: 35
-			},
-			{
-				name: "Route 13",
-				value: 36
-			},
-			{
-				name: "Undella Town",
-				value: 37
-			},
-			{
-				name: "Undella Bay",
-				value: 38
-			},
-			{
-				name: "Route 14",
-				value: 39
-			},
-			{
-				name: "Abundant Shrine",
-				value: 40
-			},
-			{
-				name: "White Forest",
-				value: 41
-			},
-			{
-				name: "Route 15",
-				value: 42
-			},
-			{
-				name: "Marvelous Bridge",
-				value: 43
-			},
-			{
-				name: "Lostlorn Forest",
-				value: 44
-			},
-			{
-				name: "Route 17",
-				value: 45
-			},
-			{
-				name: "Route 18",
-				value: 46
-			},
-			{
-				name: "P2 Laboratory",
-				value: 47
-			},
-			{
-				name: "Liberty Garden",
-				value: 48
-			}
-		]
-	},
-	bw2: {
-		id: "bw2",
-		title: "Black 2 and White 2",
-		nameLimit: 10,
-		dexLimit: 649,
-		loaded: false,
-		locations: [
-			{
-				name: "Starter",
-				value: 0
-			},
-			{
-				name: "Aspertia City",
-				value: 1
-			},
-			{
-				name: "Route 19",
-				value: 2
-			},
-			{
-				name: "Floccesy Town",
-				value: 3
-			},
-			{
-				name: "Route 20",
-				value: 4
-			},
-			{
-				name: "Floccesy Ranch",
-				value: 5
-			},
-			{
-				name: "Aspertia Gym",
-				value: 6
-			},
-			{
-				name: "Virbank City",
-				value: 7
-			},
-			{
-				name: "Virbank Complex",
-				value: 8
-			},
-			{
-				name: "Castelia City",
-				value: 9
-			},
-			{
-				name: "Castelia Sewers",
-				value: 10
-			},
-			{
-				name: "Relic Passage",
-				value: 11
-			},
-			{
-				name: "Route 4",
-				value: 12
-			},
-			{
-				name: "Desert Resort",
-				value: 13
-			},
-			{
-				name: "Relic Castle",
-				value: 14
-			},
-			{
-				name: "Route 16",
-				value: 15
-			},
-			{
-				name: "Lostlorn Forest",
-				value: 16
-			},
-			{
-				name: "Route 5",
-				value: 17
-			},
-			{
-				name: "Driftveil Drawbridge",
-				value: 18
-			},
-			{
-				name: "Driftveil City",
-				value: 19
-			},
-			{
-				name: "Route 6",
-				value: 20
-			},
-			{
-				name: "Mistralton Cave",
-				value: 21
-			},
-			{
-				name: "Chargestone Cave",
-				value: 22
-			},
-			{
-				name: "Route 7",
-				value: 23
-			},
-			{
-				name: "Celestial Tower",
-				value: 24
-			},
-			{
-				name: "Reversal Mountain",
-				value: 25
-			},
-			{
-				name: "Strange House",
-				value: 26
-			},
-			{
-				name: "Undella Town",
-				value: 27
-			},
-			{
-				name: "Undella Bay",
-				value: 28
-			},
-			{
-				name: "Route 13",
-				value: 29
-			},
-			{
-				name: "Route 12",
-				value: 30
-			},
-			{
-				name: "Village Bridge",
-				value: 31
-			},
-			{
-				name: "Route 11",
-				value: 32
-			},
-			{
-				name: "Route 9",
-				value: 33
-			},
-			{
-				name: "Seaside Cave",
-				value: 34
-			},
-			{
-				name: "Route 21",
-				value: 35
-			},
-			{
-				name: "Humilau City",
-				value: 36
-			},
-			{
-				name: "Route 22",
-				value: 37
-			},
-			{
-				name: "Giant Chasm",
-				value: 38
-			},
-			{
-				name: "Route 23",
-				value: 39
-			},
-			{
-				name: "Victory Road",
-				value: 40
-			},
-			{
-				name: "Old Victory Road",
-				value: 41
-			},
-			{
-				name: "Marvelous Bridge",
-				value: 42
-			},
-			{
-				name: "Route 15",
-				value: 43
-			},
-			{
-				name: "Route 14",
-				value: 44
-			},
-			{
-				name: "Abundant Shrine",
-				value: 45
-			},
-			{
-				name: "Moor of Icirrus",
-				value: 46
-			},
-			{
-				name: "Icirrus City",
-				value: 47
-			},
-			{
-				name: "Dragonspiral Tower",
-				value: 48
-			},
-			{
-				name: "Twist Mountain",
-				value: 49
-			},
-			{
-				name: "Clay Tunnel",
-				value: 50
-			},
-			{
-				name: "Underground Ruins",
-				value: 51
-			},
-			{
-				name: "Pinwheel Forest",
-				value: 52
-			},
-			{
-				name: "Nacrene City",
-				value: 53
-			},
-			{
-				name: "Route 3",
-				value: 54
-			},
-			{
-				name: "Wellspring Cave",
-				value: 55
-			},
-			{
-				name: "Striaton City",
-				value: 56
-			},
-			{
-				name: "Dreamyard",
-				value: 57
-			},
-			{
-				name: "Route 2",
-				value: 58
-			},
-			{
-				name: "Accumula Town",
-				value: 59
-			},
-			{
-				name: "Route 1",
-				value: 60
-			},
-			{
-				name: "Route 17",
-				value: 61
-			},
-			{
-				name: "Route 18",
-				value: 62
-			},
-			{
-				name: "P2 Laboratory",
-				value: 63
-			},
-			{
-				name: "Nature Preserve",
-				value: 64
-			}
-		]
-	},
-	xy: {
-		id: "xy",
-		title: "X and Y",
-		nameLimit: 12,
-		dexLimit: 721,
-		loaded: false,
-		locations: [
-			{
-				name: "Starter",
-				value: 0
-			},
-			{
-				name: "Aquacorde Town",
-				value: 1
-			},
-			{
-				name: "Route 2",
-				value: 2
-			},
-			{
-				name: "Santalune Forest",
-				value: 3
-			},
-			{
-				name: "Route 3",
-				value: 4
-			},
-			{
-				name: "Route 22",
-				value: 5
-			},
-			{
-				name: "Route 4",
-				value: 6
-			},
-			{
-				name: "Lumiose City",
-				value: 7
-			},
-			{
-				name: "Route 5",
-				value: 8
-			},
-			{
-				name: "Route 6",
-				value: 9
-			},
-			{
-				name: "Parfum Palace",
-				value: 10
-			},
-			{
-				name: "Route 7",
-				value: 11
-			},
-			{
-				name: "Battle Chateau",
-				value: 12
-			},
-			{
-				name: "Connecting Cave",
-				value: 13
-			},
-			{
-				name: "Route 8",
-				value: 14
-			},
-			{
-				name: "Ambrette Town",
-				value: 15
-			},
-			{
-				name: "Route 9",
-				value: 16
-			},
-			{
-				name: "Glittering Cave",
-				value: 17
-			},
-			{
-				name: "Cyllage City",
-				value: 18
-			},
-			{
-				name: "Route 10",
-				value: 19
-			},
-			{
-				name: "Route 11",
-				value: 20
-			},
-			{
-				name: "Reflection Cave",
-				value: 21
-			},
-			{
-				name: "Shalour City",
-				value: 22
-			},
-			{
-				name: "Tower of Mystery",
-				value: 23
-			},
-			{
-				name: "Route 12",
-				value: 24
-			},
-			{
-				name: "Azure Bay",
-				value: 25
-			},
-			{
-				name: "Route 13",
-				value: 26
-			},
-			{
-				name: "Route 14",
-				value: 27
-			},
-			{
-				name: "Laverre City",
-				value: 28
-			},
-			{
-				name: "Route 15",
-				value: 29
-			},
-			{
-				name: "Lost Hotel",
-				value: 30
-			},
-			{
-				name: "Route 16",
-				value: 31
-			},
-			{
-				name: "Frost Cavern",
-				value: 32
-			},
-			{
-				name: "Route 17",
-				value: 33
-			},
-			{
-				name: "Team Flare Secret HQ",
-				value: 34
-			},
-			{
-				name: "Route 18",
-				value: 35
-			},
-			{
-				name: "Couriway Town",
-				value: 36
-			},
-			{
-				name: "Route 19",
-				value: 37
-			},
-			{
-				name: "Route 20",
-				value: 38
-			},
-			{
-				name: "Pokémon Village",
-				value: 39
-			},
-			{
-				name: "Route 21",
-				value: 40
-			},
-			{
-				name: "Victory Road",
-				value: 41
-			},
-			{
-				name: "Terminus Cave",
-				value: 42
-			},
-			{
-				name: "Sea Spirit's Den",
-				value: 43
-			},
-			{
-				name: "Friend Safari",
-				value: 44
-			}
-		]
-	},
-	oras: {
-		id: "oras",
-		title: "Omega Ruby and Alpha Sapphire",
-		nameLimit: 12,
-		dexLimit: 721,
-		loaded: false,
-		locations: [
-			{
-				name: "Starter",
-				value: 0
-			},
-			{
-				name: "Littleroot Town",
-				value: 1
-			},
-			{
-				name: "Route 101",
-				value: 2
-			},
-			{
-				name: "Route 102",
-				value: 3
-			},
-			{
-				name: "Route 103",
-				value: 4
-			},
-			{
-				name: "Petalburg City",
-				value: 5
-			},
-			{
-				name: "Route 104",
-				value: 6
-			},
-			{
-				name: "Petalburg Woods",
-				value: 7
-			},
-			{
-				name: "Rustboro City",
-				value: 8
-			},
-			{
-				name: "Route 115",
-				value: 9
-			},
-			{
-				name: "Route 116",
-				value: 10
-			},
-			{
-				name: "Rusturf Tunnel",
-				value: 11
-			},
-			{
-				name: "Dewford Town",
-				value: 12
-			},
-			{
-				name: "Route 106",
-				value: 13
-			},
-			{
-				name: "Granite Cave",
-				value: 14
-			},
-			{
-				name: "Route 107",
-				value: 15
-			},
-			{
-				name: "Slateport City",
-				value: 16
-			},
-			{
-				name: "Route 110",
-				value: 17
-			},
-			{
-				name: "Altering Cave",
-				value: 18
-			},
-			{
-				name: "New Mauville",
-				value: 19
-			},
-			{
-				name: "Route 117",
-				value: 20
-			},
-			{
-				name: "Route 111",
-				value: 21
-			},
-			{
-				name: "Route 112",
-				value: 22
-			},
-			{
-				name: "Fiery Path",
-				value: 23
-			},
-			{
-				name: "Route 113",
-				value: 24
-			},
-			{
-				name: "Route 114",
-				value: 25
-			},
-			{
-				name: "Meteor Falls",
-				value: 26
-			},
-			{
-				name: "Jagged Pass",
-				value: 27
-			},
-			{
-				name: "Lavaridge Town",
-				value: 28
-			},
-			{
-				name: "Route 118",
-				value: 29
-			},
-			{
-				name: "Southern Island",
-				value: 30
-			},
-			{
-				name: "Route 119",
-				value: 31
-			},
-			{
-				name: "Fortree City",
-				value: 32
-			},
-			{
-				name: "Route 120",
-				value: 33
-			},
-			{
-				name: "Route 121",
-				value: 34
-			},
-			{
-				name: "Safari Zone",
-				value: 35
-			},
-			{
-				name: "Lilycove City",
-				value: 36
-			},
-			{
-				name: "Route 122",
-				value: 37
-			},
-			{
-				name: "Mt. Pyre",
-				value: 38
-			},
-			{
-				name: "Route 123",
-				value: 39
-			},
-			{
-				name: "Team Aqua/Magma Hideout Entrance",
-				value: 40
-			},
-			{
-				name: "Route 124",
-				value: 41
-			},
-			{
-				name: "Mossdeep City",
-				value: 42
-			},
-			{
-				name: "Route 125",
-				value: 43
-			},
-			{
-				name: "Shoal Cave",
-				value: 44
-			},
-			{
-				name: "Route 127",
-				value: 45
-			},
-			{
-				name: "Route 128",
-				value: 46
-			},
-			{
-				name: "Seafloor Cavern",
-				value: 47
-			},
-			{
-				name: "Route 126",
-				value: 48
-			},
-			{
-				name: "Sootopolis City",
-				value: 49
-			},
-			{
-				name: "Cave of Origin",
-				value: 50
-			},
-			{
-				name: "Soaring",
-				value: 51
-			},
-			{
-				name: "Route 129",
-				value: 52
-			},
-			{
-				name: "Route 130",
-				value: 53
-			},
-			{
-				name: "Route 131",
-				value: 54
-			},
-			{
-				name: "Sky Pillar",
-				value: 55
-			},
-			{
-				name: "Pacifidlog Town",
-				value: 56
-			},
-			{
-				name: "Mirage Island",
-				value: 57
-			},
-			{
-				name: "Route 105",
-				value: 58
-			},
-			{
-				name: "Route 108",
-				value: 59
-			},
-			{
-				name: "Abandoned Ship",
-				value: 60
-			},
-			{
-				name: "Route 109",
-				value: 61
-			},
-			{
-				name: "Route 132",
-				value: 62
-			},
-			{
-				name: "Route 133",
-				value: 63
-			},
-			{
-				name: "Route 134",
-				value: 64
-			},
-			{
-				name: "Ever Grande City",
-				value: 65
-			},
-			{
-				name: "Victory Road",
-				value: 66
-			},
-			{
-				name: "S.S. Tidal",
-				value: 67
-			},
-			{
-				name: "Pathless Plain",
-				value: 68
-			},
-			{
-				name: "Nameless Cavern",
-				value: 69
-			},
-			{
-				name: "Fabled Cave",
-				value: 70
-			},
-			{
-				name: "Gnarled Den",
-				value: 71
-			},
-			{
-				name: "Trackless Forest",
-				value: 72
-			},
-			{
-				name: "Crescent Isle",
-				value: 73
-			},
-			{
-				name: "Battle Resort",
-				value: 74
-			},
-			{
-				name: "Mirage Cave",
-				value: 75
-			},
-			{
-				name: "Mirage Forest",
-				value: 76
-			},
-			{
-				name: "Mirage Island",
-				value: 77
-			},
-			{
-				name: "Mirage Mountain",
-				value: 78
-			}
-		]
-	},
-	sm: {
-		id: "sm",
-		title: "Sun and Moon",
-		nameLimit: 12,
-		dexLimit: 802,
-		loaded: false,
-		locations: [
-			{
-				name: "Starter",
-				value: 0
-			},
-			{
-				name: "Hau'oli Outskirts",
-				value: 1
-			},
-			{
-				name: "Iki Town",
-				value: 2
-			},
-			{
-				name: "Route 1",
-				value: 3
-			},
-			{
-				name: "Melemele Sea",
-				value: 4
-			},
-			{
-				name: "Hau'oli City",
-				value: 5
-			},
-			{
-				name: "Route 2",
-				value: 6
-			},
-			{
-				name: "Berry Fields",
-				value: 7
-			},
-			{
-				name: "Verdant Cavern",
-				value: 8
-			},
-			{
-				name: "Hau'oli Cemetery",
-				value: 9
-			},
-			{
-				name: "Route 3",
-				value: 10
-			},
-			{
-				name: "Melemele Meadow",
-				value: 11
-			},
-			{
-				name: "Seaward Cave",
-				value: 12
-			},
-			{
-				name: "Kala'e Bay",
-				value: 13
-			},
-			{
-				name: "Ten Carat Hill",
-				value: 14
-			},
-			{
-				name: "Hano Beach",
-				value: 15
-			},
-			{
-				name: "Route 4",
-				value: 16
-			},
-			{
-				name: "Paniola Town",
-				value: 17
-			},
-			{
-				name: "Paniola Ranch",
-				value: 18
-			},
-			{
-				name: "Route 5",
-				value: 19
-			},
-			{
-				name: "Brooklet Hill",
-				value: 20
-			},
-			{
-				name: "Route 6",
-				value: 21
-			},
-			{
-				name: "Route 7",
-				value: 22
-			},
-			{
-				name: "Wela Volcano Park",
-				value: 23
-			},
-			{
-				name: "Route 8",
-				value: 24
-			},
-			{
-				name: "Fossil Restoration Center",
-				value: 25
-			},
-			{
-				name: "Lush Jungle",
-				value: 26
-			},
-			{
-				name: "Diglett's Tunnel",
-				value: 27
-			},
-			{
-				name: "Route 9",
-				value: 28
-			},
-			{
-				name: "Konikoni City",
-				value: 29
-			},
-			{
-				name: "Memorial Hill",
-				value: 30
-			},
-			{
-				name: "Akala Outskirts",
-				value: 31
-			},
-			{
-				name: "Malie City",
-				value: 32
-			},
-			{
-				name: "Malie Garden",
-				value: 33
-			},
-			{
-				name: "Route 10",
-				value: 34
-			},
-			{
-				name: "Mount Hokulani",
-				value: 35
-			},
-			{
-				name: "Route 11",
-				value: 36
-			},
-			{
-				name: "Route 12",
-				value: 37
-			},
-			{
-				name: "Secluded Shore",
-				value: 38
-			},
-			{
-				name: "Blush Mountain",
-				value: 39
-			},
-			{
-				name: "Route 13",
-				value: 40
-			},
-			{
-				name: "Haina Desert",
-				value: 41
-			},
-			{
-				name: "Tapu Village",
-				value: 42
-			},
-			{
-				name: "Route 15",
-				value: 43
-			},
-			{
-				name: "Aether House",
-				value: 44
-			},
-			{
-				name: "Route 14",
-				value: 45
-			},
-			{
-				name: "Thrifty Megamart",
-				value: 46
-			},
-			{
-				name: "Route 16",
-				value: 47
-			},
-			{
-				name: "Ula'ula Meadow",
-				value: 48
-			},
-			{
-				name: "Lake of the Moone/Sunne",
-				value: 49
-			},
-			{
-				name: "Route 17",
-				value: 50
-			},
-			{
-				name: "Shady House",
-				value: 51
-			},
-			{
-				name: "Seafolk Village",
-				value: 52
-			},
-			{
-				name: "Poni Wilds",
-				value: 53
-			},
-			{
-				name: "Ancient Poni Path",
-				value: 54
-			},
-			{
-				name: "Poni Breaker Coast",
-				value: 55
-			},
-			{
-				name: "Exeggutor Island",
-				value: 56
-			},
-			{
-				name: "Vast Poni Canyon",
-				value: 57
-			},
-			{
-				name: "Altar of the Moone/Sunne",
-				value: 58
-			},
-			{
-				name: "Mount Lanakila",
-				value: 59
-			},
-			{
-				name: "Poni Grove",
-				value: 60
-			},
-			{
-				name: "Poni Plains",
-				value: 61
-			},
-			{
-				name: "Poni Meadow",
-				value: 62
-			},
-			{
-				name: "Resolution Cave",
-				value: 63
-			},
-			{
-				name: "Poni Coast",
-				value: 64
-			},
-			{
-				name: "Poni Gauntlet",
-				value: 65
-			},
-			{
-				name: "Ruins of Conflict",
-				value: 66
-			},
-			{
-				name: "Ruins of Life",
-				value: 67
-			},
-			{
-				name: "Ruins of Abundance",
-				value: 68
-			},
-			{
-				name: "Ruins of Hope",
-				value: 69
-			}
-		]
-	},
-	usum: {
-		id: "usum",
-		title: "Ultra Sun and Ultra Moon",
-		nameLimit: 12,
-		dexLimit: 807,
-		loaded: false,
-		locations: [
-			{
-				name: "Starter",
-				value: 0
-			},
-			{
-				name: "Hau'oli Outskirts",
-				value: 1
-			},
-			{
-				name: "Iki Town",
-				value: 2
-			},
-			{
-				name: "Route 1",
-				value: 3
-			},
-			{
-				name: "Melemele Sea",
-				value: 4
-			},
-			{
-				name: "Hau'oli City",
-				value: 5
-			},
-			{
-				name: "Route 2",
-				value: 6
-			},
-			{
-				name: "Berry Fields",
-				value: 7
-			},
-			{
-				name: "Verdant Cavern",
-				value: 8
-			},
-			{
-				name: "Hau'oli Cemetery",
-				value: 9
-			},
-			{
-				name: "Route 3",
-				value: 10
-			},
-			{
-				name: "Melemele Meadow",
-				value: 11
-			},
-			{
-				name: "Seaward Cave",
-				value: 12
-			},
-			{
-				name: "Kala'e Bay",
-				value: 13
-			},
-			{
-				name: "Ten Carat Hill",
-				value: 14
-			},
-			{
-				name: "Hano Beach",
-				value: 15
-			},
-			{
-				name: "Route 4",
-				value: 16
-			},
-			{
-				name: "Paniola Town",
-				value: 17
-			},
-			{
-				name: "Paniola Ranch",
-				value: 18
-			},
-			{
-				name: "Route 5",
-				value: 19
-			},
-			{
-				name: "Brooklet Hill",
-				value: 20
-			},
-			{
-				name: "Route 6",
-				value: 21
-			},
-			{
-				name: "Route 7",
-				value: 22
-			},
-			{
-				name: "Wela Volcano Park",
-				value: 23
-			},
-			{
-				name: "Dividing Peak Tunnel",
-				value: 24
-			},
-			{
-				name: "Route 8",
-				value: 25
-			},
-			{
-				name: "Fossil Restoration Center",
-				value: 26
-			},
-			{
-				name: "Lush Jungle",
-				value: 27
-			},
-			{
-				name: "Diglett's Tunnel",
-				value: 28
-			},
-			{
-				name: "Route 9",
-				value: 29
-			},
-			{
-				name: "Konikoni City",
-				value: 30
-			},
-			{
-				name: "Memorial Hill",
-				value: 31
-			},
-			{
-				name: "Akala Outskirts",
-				value: 32
-			},
-			{
-				name: "Malie City",
-				value: 33
-			},
-			{
-				name: "Malie Garden",
-				value: 34
-			},
-			{
-				name: "Route 10",
-				value: 35
-			},
-			{
-				name: "Mount Hokulani",
-				value: 36
-			},
-			{
-				name: "Route 11",
-				value: 37
-			},
-			{
-				name: "Route 12",
-				value: 38
-			},
-			{
-				name: "Secluded Shore",
-				value: 39
-			},
-			{
-				name: "Blush Mountain",
-				value: 40
-			},
-			{
-				name: "Route 13",
-				value: 41
-			},
-			{
-				name: "Haina Desert",
-				value: 42
-			},
-			{
-				name: "Tapu Village",
-				value: 43
-			},
-			{
-				name: "Route 15",
-				value: 44
-			},
-			{
-				name: "Aether House",
-				value: 45
-			},
-			{
-				name: "Route 14",
-				value: 46
-			},
-			{
-				name: "Thrifty Megamart",
-				value: 47
-			},
-			{
-				name: "Route 16",
-				value: 48
-			},
-			{
-				name: "Ula'ula Meadow",
-				value: 49
-			},
-			{
-				name: "Lake of the Moone/Sunne",
-				value: 50
-			},
-			{
-				name: "Route 17",
-				value: 51
-			},
-			{
-				name: "Shady House",
-				value: 52
-			},
-			{
-				name: "Seafolk Village",
-				value: 53
-			},
-			{
-				name: "Poni Wilds",
-				value: 54
-			},
-			{
-				name: "Ancient Poni Path",
-				value: 55
-			},
-			{
-				name: "Poni Breaker Coast",
-				value: 56
-			},
-			{
-				name: "Exeggutor Island",
-				value: 57
-			},
-			{
-				name: "Vast Poni Canyon",
-				value: 58
-			},
-			{
-				name: "Altar of the Moone/Sunne",
-				value: 59
-			},
-			{
-				name: "Mount Lanakila",
-				value: 60
-			},
-			{
-				name: "Poni Grove",
-				value: 61
-			},
-			{
-				name: "Poni Plains",
-				value: 62
-			},
-			{
-				name: "Poni Meadow",
-				value: 63
-			},
-			{
-				name: "Resolution Cave",
-				value: 64
-			},
-			{
-				name: "Poni Coast",
-				value: 65
-			},
-			{
-				name: "Poni Gauntlet",
-				value: 66
-			},
-			{
-				name: "Ruins of Conflict",
-				value: 67
-			},
-			{
-				name: "Ruins of Life",
-				value: 68
-			},
-			{
-				name: "Ruins of Abundance",
-				value: 69
-			},
-			{
-				name: "Ruins of Hope",
-				value: 70
-			}
-		]
-	},
-	swsh: {
-		id: "swsh",
-		title: "Sword and Shield",
-		nameLimit: 12,
-		dexLimit: 898,
-		loaded: false,
-		locations: [
-			{
-				name: "Starter",
-				value: 0
-			},
-			{
-				name: "Slumbering Weald",
-				value: 1
-			},
-			{
-				name: "Route 1",
-				value: 2
-			},
-			{
-				name: "Wedgehurst",
-				value: 3
-			},
-			{
-				name: "Route 2",
-				value: 4
-			},
-			{
-				name: "Wild Area: Rolling Fields",
-				value: 5
-			},
-			{
-				name: "Wild Area: Dappled Grove",
-				value: 6
-			},
-			{
-				name: "Wild Area: West Lake Axewell",
-				value: 7
-			},
-			{
-				name: "Wild Area: Watchtower Ruins",
-				value: 8
-			},
-			{
-				name: "Wild Area: East Lake Axewell",
-				value: 9
-			},
-			{
-				name: "Wild Area: South Lake Miloch",
-				value: 10
-			},
-			{
-				name: "Wild Area: Giant's Seat",
-				value: 11
-			},
-			{
-				name: "Wild Area: North Lake Miloch",
-				value: 12
-			},
-			{
-				name: "Motostoke",
-				value: 13
-			},
-			{
-				name: "Route 3",
-				value: 14
-			},
-			{
-				name: "Galar Mine",
-				value: 15
-			},
-
-			{
-				name: "Route 4",
-				value: 16
-			},
-			{
-				name: "Route 5",
-				value: 17
-			},
-			{
-				name: "Hulbury",
-				value: 18
-			},
-			{
-				name: "Galar Mine No. 2",
-				value: 19
-			},
-			{
-				name: "Motostoke Outskirts",
-				value: 20
-			},
-			{
-				name: "Motostoke Stadium",
-				value: 21
-			},
-			{
-				name: "Wild Area: Motostoke Riverbank",
-				value: 22
-			},
-			{
-				name: "Wild Area: Bridge Field",
-				value: 23
-			},
-			{
-				name: "Wild Area: Stony Wilderness",
-				value: 24
-			},
-			{
-				name: "Wild Area: Giant's Mirror",
-				value: 25
-			},
-			{
-				name: "Wild Area: Dusty Bowl",
-				value: 26
-			},
-			{
-				name: "Wild Area: Giant's Cap",
-				value: 27
-			},
-			{
-				name: "Wild Area: Hammerlocke Hills",
-				value: 28
-			},
-			{
-				name: "Wild Area: Lake of Outrage",
-				value: 29
-			},
-			{
-				name: "Route 6",
-				value: 30
-			},
-			{
-				name: "Glimwood Tangle",
-				value: 31
-			},
-			{
-				name: "Router 7",
-				value: 32
-			},
-			{
-				name: "Route 8",
-				value: 33
-			},
-			{
-				name: "Route 9",
-				value: 34
-			},
-			{
-				name: "Wild Area: Axew's Eye",
-				value: 35
-			},
-			{
-				name: "Isle of Armor: Fields of Honor",
-				value: 36
-			},
-			{
-				name: "Isle of Armor: Soothing Wetlands",
-				value: 37
-			},
-			{
-				name: "Isle of Armor: Forest of Focus",
-				value: 38
-			},
-			{
-				name: "Isle of Armor: Challenge Beach",
-				value: 39
-			},
-			{
-				name: "Isle of Armor: Brawlers' Cave",
-				value: 40
-			},
-			{
-				name: "Isle of Armor: Challenge Road",
-				value: 41
-			},
-			{
-				name: "Isle of Armor: Courageous Cavern",
-				value: 42
-			},
-			{
-				name: "Isle of Armor: Loop Lagoon",
-				value: 43
-			},
-			{
-				name: "Isle of Armor: Training Lowlands",
-				value: 44
-			},
-			{
-				name: "Isle of Armor: Warm-Up Tunnel",
-				value: 45
-			},
-			{
-				name: "Isle of Armor: Potbottom Desert",
-				value: 46
-			},
-			{
-				name: "Isle of Armor: Workout Sea",
-				value: 47
-			},
-			{
-				name: "Isle of Armor: Stepping-Stone Sea",
-				value: 48
-			},
-			{
-				name: "Isle of Armor: Insular Sea",
-				value: 49
-			},
-			{
-				name: "Isle of Armor: Honeycalm Sea",
-				value: 50
-			},
-			{
-				name: "Isle of Armor: Honeycalm Island",
-				value: 51
-			},
-			{
-				name: "Crown Tundra: Slippery Slope",
-				value: 52
-			},
-			{
-				name: "Crown Tundra: Freezington",
-				value: 53
-			},
-			{
-				name: "Crown Tundra: Max Lair",
-				value: 54
-			},
-			{
-				name: "Crown Tundra: Frostpoint Field",
-				value: 55
-			},
-			{
-				name: "Crown Tundra: Giant's Bed",
-				value: 56
-			},
-			{
-				name: "Crown Tundra: Old Cemetery",
-				value: 57
-			},
-			{
-				name: "Crown Tundra: Snowslide Slope",
-				value: 58
-			},
-			{
-				name: "Crown Tundra: Tunnel to the Top",
-				value: 59
-			},
-			{
-				name: "Crown Tundra: Path to the Peak",
-				value: 60
-			},
-			{
-				name: "Crown Tundra: Crown Shrine",
-				value: 61
-			},
-			{
-				name: "Crown Tundra: Giant's Foot",
-				value: 62
-			},
-			{
-				name: "Crown Tundra: Roaring-Sea Caves",
-				value: 63
-			},
-			{
-				name: "Crown Tundra: Frigrid Sea",
-				value: 64
-			},
-			{
-				name: "Crown Tundra: Three-Point Pass",
-				value: 65
-			},
-			{
-				name: "Crown Tundra: Ballimere Lake",
-				value: 66
-			},
-			{
-				name: "Crown Tundra: Lakeside Cave",
-				value: 67
-			},
-			{
-				name: "Crown Tundra: Dyna Tree Hill",
-				value: 68
-			},
-			{
-				name: "Crown Tundra: Rock Peak Ruins",
-				value: 69
-			},
-			{
-				name: "Crown Tundra: Iceberg Ruins",
-				value: 70
-			},
-			{
-				name: "Crown Tundra: Iron Ruins",
-				value: 71
-			},
-			{
-				name: "Crown Tundra: Split-Decision Ruins",
-				value: 72
-			}
-		]
-	},
-	sv: {
-		id: "sv",
-		title: "Scarlet and Violet",
-		nameLimit: 12,
-		dexLimit: 1008,
-		loaded: false,
-		locations: [
-			{
-				name: "Starter",
-				value: 0
-			},
-			{
-				name: "Poco Path",
-				value: 1
-			},
-			{
-				name: "Inlet Grotto",
-				value: 2
-			},
-			{
-				name: "South Province: Area One",
-				value: 3
-			},
-			{
-				name: "Pokémon League",
-				value: 4
-			},
-			{
-				name: "South Province: Area Two",
-				value: 5
-			},
-			{
-				name: "South Province: Area Three",
-				value: 6
-			},
-			{
-				name: "East Province: Area One",
-				value: 7
-			},
-			{
-				name: "East Province: Area Two",
-				value: 8
-			},
-			{
-				name: "South Province: Area Four",
-				value: 9
-			},
-			{
-				name: "South Province: Area Five",
-				value: 10
-			},
-			{
-				name: "West Province: Area One",
-				value: 11
-			},
-			{
-				name: "Asado Desert",
-				value: 12
-			},
-			{
-				name: "West Paldean Sea",
-				value: 13
-			},
-			{
-				name: "West Province: Area Two",
-				value: 14
-			},
-			{
-				name: "West Province: Area Three",
-				value: 15
-			},
-			{
-				name: "East Province: Area Three",
-				value: 16
-			},
-			{
-				name: "East Paldean Sea",
-				value: 17
-			},
-			{
-				name: "Tagtree Thicket",
-				value: 18
-			},
-			{
-				name: "South Province: Area Six",
-				value: 19
-			},
-			{
-				name: "Alfornada Cavern",
-				value: 20
-			},
-			{
-				name: "South Paldean Sea",
-				value: 21
-			},
-			{
-				name: "Dalizapa Passage",
-				value: 22
-			},
-			{
-				name: "Glaseado Mountain",
-				value: 23
-			},
-			{
-				name: "North Province: Area Three",
-				value: 24
-			},
-			{
-				name: "North Paldean Sea",
-				value: 25
-			},
-			{
-				name: "North Province: Area One",
-				value: 26
-			},
-			{
-				name: "North Province: Area Two",
-				value: 27
-			},
-			{
-				name: "Socarrat Trail",
-				value: 28
-			},
-			{
-				name: "Casseroya Lake",
-				value: 29
-			},
-			{
-				name: "Area Zero",
-				value: 30
-			},
-		]
-	},
-	custom: {
-		id: "custom",
-		title: "Custom Game",
-		nameLimit: 12,
-		dexLimit: 1008,
-		loaded: false,
-		locations: [
-			{
-				name: "Starter",
-				value: 0
-			}
-		]
-	}
+  rby: {
+    id: "rby",
+    title: "Red, Blue and Yellow",
+    nameLimit: 10,
+    dexLimit: 151,
+    loaded: false,
+    locations: [
+      {
+        name: "Starter",
+        value: 0,
+      },
+      {
+        name: "Pallet Town",
+        value: 1,
+        german: "Alabastia",
+        english: "Pallet Town",
+      },
+      {
+        name: "Route 1",
+        value: 2,
+        german: "Route 1",
+        english: "Route 1",
+      },
+      {
+        name: "Viridian City",
+        value: 3,
+        german: "Vertania City",
+        english: "Viridian City",
+      },
+      {
+        name: "Route 22",
+        value: 4,
+        german: "Route 22",
+        english: "Route 22",
+      },
+      {
+        name: "Route 2",
+        value: 5,
+        german: "Route 2",
+        english: "Route 2",
+      },
+      {
+        name: "Viridian Forest",
+        value: 6,
+        german: "Vertania-Wald",
+        english: "Viridian Forest",
+      },
+      {
+        name: "Route 3",
+        value: 7,
+        german: "Route 3",
+        english: "Route 3",
+      },
+      {
+        name: "Route 4",
+        value: 8,
+        german: "Route 4",
+        english: "Route 4",
+      },
+      {
+        name: "Mt. Moon",
+        value: 9,
+        german: "Mondberg",
+        english: "Mt. Moon",
+      },
+      {
+        name: "Cerulean City",
+        value: 10,
+        german: "Azuria City",
+        english: "Cerulean City",
+      },
+      {
+        name: "Route 24",
+        value: 11,
+        german: "Route 24",
+        english: "Route 24",
+      },
+      {
+        name: "Route 25",
+        value: 12,
+        german: "Route 25",
+        english: "Route 25",
+      },
+      {
+        name: "Route 5",
+        value: 13,
+        german: "Route 5",
+        english: "Route 5",
+      },
+      {
+        name: "Route 6",
+        value: 14,
+        german: "Route 6",
+        english: "Route 6",
+      },
+      {
+        name: "Vermillion City",
+        value: 15,
+      },
+      {
+        name: "Route 11",
+        value: 16,
+        german: "Route 11",
+        english: "Route 11",
+      },
+      {
+        name: "Diglett's Cave",
+        value: 17,
+        german: "Digdas Höhle",
+        english: "Diglett's Cave",
+      },
+      {
+        name: "Route 9",
+        value: 18,
+        german: "Route 9",
+        english: "Route 9",
+      },
+      {
+        name: "Route 10",
+        value: 19,
+        german: "Route 10",
+        english: "Route 10",
+      },
+      {
+        name: "Rock Tunnel",
+        value: 20,
+        german: "Felstunnel",
+        english: "Rock Tunnel",
+      },
+      {
+        name: "Pokémon Tower",
+        value: 21,
+        german: "Pokémon Tower",
+        english: "Pokémon Tower",
+      },
+      {
+        name: "Route 12",
+        value: 22,
+        german: "Route 12",
+        english: "Route 12",
+      },
+      {
+        name: "Route 8",
+        value: 23,
+        german: "Route 8",
+        english: "Route 8",
+      },
+      {
+        name: "Route 7",
+        value: 24,
+        german: "Route 7",
+        english: "Route 7",
+      },
+      {
+        name: "Celadon City",
+        value: 25,
+        german: "Prismania City",
+        english: "Celadon City",
+      },
+      {
+        name: "Route 16",
+        value: 26,
+        german: "Route 16",
+        english: "Route 16",
+      },
+      {
+        name: "Route 17",
+        value: 27,
+        german: "Route 17",
+        english: "Route 17",
+      },
+      {
+        name: "Route 18",
+        value: 28,
+        german: "Route 18",
+        english: "Route 18",
+      },
+      {
+        name: "Fuschia City",
+        value: 29,
+      },
+      {
+        name: "Safari Zone",
+        value: 30,
+        german: "Safari-Zone",
+        english: "Safari Zone",
+      },
+      {
+        name: "Route 15",
+        value: 31,
+        german: "Route 15",
+        english: "Route 15",
+      },
+      {
+        name: "Route 14",
+        value: 32,
+        german: "Route 14",
+        english: "Route 14",
+      },
+      {
+        name: "Route 13",
+        value: 33,
+        german: "Route 13",
+        english: "Route 13",
+      },
+      {
+        name: "Power Plant",
+        value: 34,
+        german: "Kraftwerk",
+        english: "Power Plant",
+      },
+      {
+        name: "Route 19",
+        value: 35,
+        german: "Route 19",
+        english: "Route 19",
+      },
+      {
+        name: "Route 20",
+        value: 36,
+        german: "Route 20",
+        english: "Route 20",
+      },
+      {
+        name: "Seafoam Islands",
+        value: 37,
+        german: "Seeschauminseln",
+        english: "Seafoam Islands",
+      },
+      {
+        name: "Cinnabar Island",
+        value: 38,
+        german: "Zinnoberinsel",
+        english: "Cinnabar Island",
+      },
+      {
+        name: "Pokémon Mansion",
+        value: 39,
+        german: "Pokémon Mansion",
+        english: "Pokémon Mansion",
+      },
+      {
+        name: "Route 21",
+        value: 40,
+        german: "Route 21",
+        english: "Route 21",
+      },
+      {
+        name: "Route 23",
+        value: 41,
+        german: "Route 23",
+        english: "Route 23",
+      },
+      {
+        name: "Victory Road",
+        value: 42,
+        german: "Siegesstraße",
+        english: "Victory Road",
+      },
+      {
+        name: "Cerulean Cave",
+        value: 43,
+        german: "Azuria-Höhle",
+        english: "Cerulean Cave",
+      },
+    ],
+  },
+  gsc: {
+    id: "gsc",
+    title: "Gold, Silver and Crystal",
+    nameLimit: 10,
+    dexLimit: 251,
+    loaded: false,
+    locations: [
+      {
+        name: "Starter",
+        value: 0,
+      },
+      {
+        name: "New Bark Town",
+        value: 1,
+        german: "Neuborkia",
+        english: "New Bark Town",
+      },
+      {
+        name: "Route 29",
+        value: 2,
+        german: "Route 29",
+        english: "Route 29",
+      },
+      {
+        name: "Cherrygrove City",
+        value: 3,
+        german: "Rosalia City",
+        english: "Cherrygrove City",
+      },
+      {
+        name: "Route 30",
+        value: 4,
+        german: "Route 30",
+        english: "Route 30",
+      },
+      {
+        name: "Route 31",
+        value: 5,
+        german: "Route 31",
+        english: "Route 31",
+      },
+      {
+        name: "Dark Cave",
+        value: 6,
+        german: "Dunkelhöhle",
+        english: "Dark Cave",
+      },
+      {
+        name: "Violet City",
+        value: 7,
+        german: "Viola City",
+        english: "Violet City",
+      },
+      {
+        name: "Sprout Tower",
+        value: 8,
+        german: "Knofensa-Turm",
+        english: "Sprout Tower",
+      },
+      {
+        name: "Route 32",
+        value: 9,
+        german: "Route 32",
+        english: "Route 32",
+      },
+      {
+        name: "Ruins of Alph",
+        value: 10,
+        german: "Alph-Ruinen",
+        english: "Ruins of Alph",
+      },
+      {
+        name: "Union Cave",
+        value: 11,
+        german: "Einheitstunnel",
+        english: "Union Cave",
+      },
+      {
+        name: "Route 33",
+        value: 12,
+        german: "Route 33",
+        english: "Route 33",
+      },
+      {
+        name: "Azalea Town",
+        value: 13,
+        german: "Azalea City",
+        english: "Azalea Town",
+      },
+      {
+        name: "Slowpoke Well",
+        value: 14,
+        german: "Flegmon-Brunnen",
+        english: "Slowpoke Well",
+      },
+      {
+        name: "Ilex Forest",
+        value: 15,
+        german: "Steineichenwald",
+        english: "Ilex Forest",
+      },
+      {
+        name: "Route 34",
+        value: 16,
+        german: "Route 34",
+        english: "Route 34",
+      },
+      {
+        name: "Goldenrod City",
+        value: 17,
+        german: "Dukatia City",
+        english: "Goldenrod City",
+      },
+      {
+        name: "Route 35",
+        value: 18,
+        german: "Route 35",
+        english: "Route 35",
+      },
+      {
+        name: "National Park",
+        value: 19,
+        german: "Nationalpark",
+        english: "National Park",
+      },
+      {
+        name: "Route 36",
+        value: 20,
+        german: "Route 36",
+        english: "Route 36",
+      },
+      {
+        name: "Route 37",
+        value: 21,
+        german: "Route 37",
+        english: "Route 37",
+      },
+      {
+        name: "Ecruteak City",
+        value: 22,
+        german: "Teak City",
+        english: "Ecruteak City",
+      },
+      {
+        name: "Burned Tower",
+        value: 23,
+        german: "Burned Tower",
+        english: "Burned Tower",
+      },
+      {
+        name: "Tin Tower",
+        value: 24,
+      },
+      {
+        name: "Route 38",
+        value: 25,
+        german: "Route 38",
+        english: "Route 38",
+      },
+      {
+        name: "Route 39",
+        value: 26,
+        german: "Route 39",
+        english: "Route 39",
+      },
+      {
+        name: "Olivine City",
+        value: 27,
+        german: "Oliviana City",
+        english: "Olivine City",
+      },
+      {
+        name: "Route 40",
+        value: 28,
+      },
+      {
+        name: "Route 41",
+        value: 29,
+      },
+      {
+        name: "Whirl Islands",
+        value: 30,
+        german: "Strudelinseln",
+        english: "Whirl Islands",
+      },
+      {
+        name: "Cianwood City",
+        value: 31,
+        german: "Anemonia City",
+        english: "Cianwood City",
+      },
+      {
+        name: "Route 42",
+        value: 32,
+        german: "Route 42",
+        english: "Route 42",
+      },
+      {
+        name: "Mt. Mortar",
+        value: 33,
+        german: "Kesselberg",
+        english: "Mt. Mortar",
+      },
+      {
+        name: "Mahogany Town",
+        value: 34,
+        german: "Mahagonia City",
+        english: "Mahogany Town",
+      },
+      {
+        name: "Rocket Hideout",
+        value: 35,
+      },
+      {
+        name: "Route 43",
+        value: 36,
+        german: "Route 43",
+        english: "Route 43",
+      },
+      {
+        name: "Lake of Rage",
+        value: 37,
+        german: "See des Zorns",
+        english: "Lake of Rage",
+      },
+      {
+        name: "Route 44",
+        value: 38,
+        german: "Route 44",
+        english: "Route 44",
+      },
+      {
+        name: "Ice Path",
+        value: 39,
+        german: "Eispfad",
+        english: "Ice Path",
+      },
+      {
+        name: "Blackthorn City",
+        value: 40,
+        german: "Ebenholz City",
+        english: "Blackthorn City",
+      },
+      {
+        name: "Dragon's Den",
+        value: 41,
+        german: "Drachenhöhle",
+        english: "Dragon's Den",
+      },
+      {
+        name: "Route 45",
+        value: 42,
+        german: "Route 45",
+        english: "Route 45",
+      },
+      {
+        name: "Dark Cave 2",
+        value: 43,
+      },
+      {
+        name: "Route 46",
+        value: 44,
+        german: "Route 46",
+        english: "Route 46",
+      },
+      {
+        name: "Route 27",
+        value: 45,
+        german: "Route 27",
+        english: "Route 27",
+      },
+      {
+        name: "Tohjo Falls",
+        value: 46,
+        german: "Tohjo-Fälle",
+        english: "Tohjo Falls",
+      },
+      {
+        name: "Route 26",
+        value: 47,
+        german: "Route 26",
+        english: "Route 26",
+      },
+      {
+        name: "Victory Road",
+        value: 48,
+        german: "Siegesstraße",
+        english: "Victory Road",
+      },
+      {
+        name: "Indigo Plateau",
+        value: 49,
+        german: "Indigo Plateau",
+        english: "Indigo Plateau",
+      },
+      {
+        name: "Vermillion City",
+        value: 50,
+      },
+      {
+        name: "Route 6",
+        value: 51,
+        german: "Route 6",
+        english: "Route 6",
+      },
+      {
+        name: "Saffron City",
+        value: 52,
+        german: "Saffronia City",
+        english: "Saffron City",
+      },
+      {
+        name: "Route 5",
+        value: 53,
+        german: "Route 5",
+        english: "Route 5",
+      },
+      {
+        name: "Route 7",
+        value: 54,
+        german: "Route 7",
+        english: "Route 7",
+      },
+      {
+        name: "Route 8",
+        value: 55,
+        german: "Route 8",
+        english: "Route 8",
+      },
+      {
+        name: "Route 10",
+        value: 56,
+        german: "Route 10",
+        english: "Route 10",
+      },
+      {
+        name: "Rock Tunnel",
+        value: 57,
+        german: "Felstunnel",
+        english: "Rock Tunnel",
+      },
+      {
+        name: "Route 9",
+        value: 58,
+        german: "Route 9",
+        english: "Route 9",
+      },
+      {
+        name: "Cerulean City",
+        value: 59,
+        german: "Azuria City",
+        english: "Cerulean City",
+      },
+      {
+        name: "Route 24",
+        value: 60,
+        german: "Route 24",
+        english: "Route 24",
+      },
+      {
+        name: "Route 25",
+        value: 61,
+        german: "Route 25",
+        english: "Route 25",
+      },
+      {
+        name: "Route 4",
+        value: 62,
+        german: "Route 4",
+        english: "Route 4",
+      },
+      {
+        name: "Route 16",
+        value: 63,
+        german: "Route 16",
+        english: "Route 16",
+      },
+      {
+        name: "Route 17",
+        value: 64,
+        german: "Route 17",
+        english: "Route 17",
+      },
+      {
+        name: "Route 18",
+        value: 65,
+        german: "Route 18",
+        english: "Route 18",
+      },
+      {
+        name: "Fuschia City",
+        value: 66,
+      },
+      {
+        name: "Route 15",
+        value: 67,
+        german: "Route 15",
+        english: "Route 15",
+      },
+      {
+        name: "Route 14",
+        value: 68,
+        german: "Route 14",
+        english: "Route 14",
+      },
+      {
+        name: "Route 13",
+        value: 69,
+        german: "Route 13",
+        english: "Route 13",
+      },
+      {
+        name: "Route 12",
+        value: 70,
+        german: "Route 12",
+        english: "Route 12",
+      },
+      {
+        name: "Route 11",
+        value: 71,
+        german: "Route 11",
+        english: "Route 11",
+      },
+      {
+        name: "Diglett's Cave",
+        value: 72,
+        german: "Digdas Höhle",
+        english: "Diglett's Cave",
+      },
+      {
+        name: "Route 2",
+        value: 73,
+        german: "Route 2",
+        english: "Route 2",
+      },
+      {
+        name: "Pewter City",
+        value: 74,
+        german: "Marmoria City",
+        english: "Pewter City",
+      },
+      {
+        name: "Route 3",
+        value: 75,
+        german: "Route 3",
+        english: "Route 3",
+      },
+      {
+        name: "Mt. Moon",
+        value: 76,
+        german: "Mondberg",
+        english: "Mt. Moon",
+      },
+      {
+        name: "Viridian City",
+        value: 77,
+        german: "Vertania City",
+        english: "Viridian City",
+      },
+      {
+        name: "Route 1",
+        value: 78,
+        german: "Route 1",
+        english: "Route 1",
+      },
+      {
+        name: "Pallet Town",
+        value: 79,
+        german: "Alabastia",
+        english: "Pallet Town",
+      },
+      {
+        name: "Route 21",
+        value: 80,
+        german: "Route 21",
+        english: "Route 21",
+      },
+      {
+        name: "Cinnabar Island",
+        value: 81,
+        german: "Zinnoberinsel",
+        english: "Cinnabar Island",
+      },
+      {
+        name: "Route 20",
+        value: 82,
+        german: "Route 20",
+        english: "Route 20",
+      },
+      {
+        name: "Route 19",
+        value: 83,
+        german: "Route 19",
+        english: "Route 19",
+      },
+      {
+        name: "Route 22",
+        value: 84,
+        german: "Route 22",
+        english: "Route 22",
+      },
+      {
+        name: "Route 28",
+        value: 85,
+        german: "Route 28",
+        english: "Route 28",
+      },
+      {
+        name: "Mt. Silver",
+        value: 86,
+        german: "Silberberg",
+        english: "Mt. Silver",
+      },
+    ],
+  },
+  rse: {
+    id: "rse",
+    title: "Ruby, Sapphire and Emerald",
+    nameLimit: 10,
+    dexLimit: 386,
+    loaded: false,
+    locations: [
+      {
+        name: "Starter",
+        value: 0,
+      },
+      {
+        name: "Littleroot Town",
+        value: 1,
+        german: "Wurzelheim",
+        english: "Littleroot Town",
+      },
+      {
+        name: "Route 101",
+        value: 2,
+        german: "Route 101",
+        english: "Route 101",
+      },
+      {
+        name: "Route 102",
+        value: 3,
+        german: "Route 102",
+        english: "Route 102",
+      },
+      {
+        name: "Route 103",
+        value: 4,
+        german: "Route 103",
+        english: "Route 103",
+      },
+      {
+        name: "Petalburg City",
+        value: 5,
+        german: "Blütenburg City",
+        english: "Petalburg City",
+      },
+      {
+        name: "Route 104",
+        value: 6,
+        german: "Route 104",
+        english: "Route 104",
+      },
+      {
+        name: "Petalburg Woods",
+        value: 7,
+        german: "Blütenburgwald",
+        english: "Petalburg Woods",
+      },
+      {
+        name: "Rustboro City",
+        value: 8,
+        german: "Metarost City",
+        english: "Rustboro City",
+      },
+      {
+        name: "Route 115",
+        value: 9,
+        german: "Route 115",
+        english: "Route 115",
+      },
+      {
+        name: "Route 116",
+        value: 10,
+        german: "Route 116",
+        english: "Route 116",
+      },
+      {
+        name: "Rusturf Tunnel",
+        value: 11,
+        german: "Metaflurtunnel",
+        english: "Rusturf Tunnel",
+      },
+      {
+        name: "Dewford Town",
+        value: 12,
+        german: "Faustauhaven",
+        english: "Dewford Town",
+      },
+      {
+        name: "Route 106",
+        value: 13,
+        german: "Route 106",
+        english: "Route 106",
+      },
+      {
+        name: "Granite Cave",
+        value: 14,
+        german: "Granithöhle",
+        english: "Granite Cave",
+      },
+      {
+        name: "Route 107",
+        value: 15,
+        german: "Route 107",
+        english: "Route 107",
+      },
+      {
+        name: "Slateport City",
+        value: 16,
+        german: "Graphitport City",
+        english: "Slateport City",
+      },
+      {
+        name: "Route 110",
+        value: 17,
+        german: "Route 110",
+        english: "Route 110",
+      },
+      {
+        name: "Altering Cave",
+        value: 18,
+        german: "Wandelhöhle",
+        english: "Altering Cave",
+      },
+      {
+        name: "New Mauville",
+        value: 19,
+        german: "Neu Malvenfroh",
+        english: "New Mauville",
+      },
+      {
+        name: "Route 117",
+        value: 20,
+        german: "Route 117",
+        english: "Route 117",
+      },
+      {
+        name: "Route 111",
+        value: 21,
+        german: "Route 111",
+        english: "Route 111",
+      },
+      {
+        name: "Mirage Tower (Emerald)",
+        value: 22,
+      },
+      {
+        name: "Route 112",
+        value: 23,
+        german: "Route 112",
+        english: "Route 112",
+      },
+      {
+        name: "Fiery Path",
+        value: 24,
+        german: "Feuriger Pfad",
+        english: "Fiery Path",
+      },
+      {
+        name: "Route 113",
+        value: 25,
+        german: "Route 113",
+        english: "Route 113",
+      },
+      {
+        name: "Route 114",
+        value: 26,
+        german: "Route 114",
+        english: "Route 114",
+      },
+      {
+        name: "Desert Underpass (Emerald)",
+        value: 27,
+      },
+      {
+        name: "Meteor Falls",
+        value: 28,
+        german: "Meteorfälle",
+        english: "Meteor Falls",
+      },
+      {
+        name: "Jagged Pass",
+        value: 29,
+        german: "Steilpass",
+        english: "Jagged Pass",
+      },
+      {
+        name: "Lavaridge Town",
+        value: 30,
+        german: "Bad Lavastadt",
+        english: "Lavaridge Town",
+      },
+      {
+        name: "Route 118",
+        value: 31,
+        german: "Route 118",
+        english: "Route 118",
+      },
+      {
+        name: "Route 119",
+        value: 32,
+        german: "Route 119",
+        english: "Route 119",
+      },
+      {
+        name: "Fortree City",
+        value: 33,
+        german: "Baumhausen City",
+        english: "Fortree City",
+      },
+      {
+        name: "Route 120",
+        value: 34,
+        german: "Route 120",
+        english: "Route 120",
+      },
+      {
+        name: "Route 121",
+        value: 35,
+        german: "Route 121",
+        english: "Route 121",
+      },
+      {
+        name: "Safari Zone",
+        value: 36,
+        german: "Safari-Zone",
+        english: "Safari Zone",
+      },
+      {
+        name: "Lilycove City",
+        value: 37,
+        german: "Seegrasulb City",
+        english: "Lilycove City",
+      },
+      {
+        name: "Route 122",
+        value: 38,
+        german: "Route 122",
+        english: "Route 122",
+      },
+      {
+        name: "Mt. Pyre",
+        value: 39,
+        german: "Pyroberg",
+        english: "Mt. Pyre",
+      },
+      {
+        name: "Route 123",
+        value: 40,
+        german: "Route 123",
+        english: "Route 123",
+      },
+      {
+        name: "Team Magma Hideout (Emerald)",
+        value: 41,
+      },
+      {
+        name: "Route 124",
+        value: 42,
+        german: "Route 124",
+        english: "Route 124",
+      },
+      {
+        name: "Mossdeep City",
+        value: 43,
+        german: "Moosbach City",
+        english: "Mossdeep City",
+      },
+      {
+        name: "Route 125",
+        value: 44,
+        german: "Route 125",
+        english: "Route 125",
+      },
+      {
+        name: "Shoal Cave",
+        value: 45,
+        german: "Küstenhöhle",
+        english: "Shoal Cave",
+      },
+      {
+        name: "Route 127",
+        value: 46,
+        german: "Route 127",
+        english: "Route 127",
+      },
+      {
+        name: "Route 128",
+        value: 47,
+        german: "Route 128",
+        english: "Route 128",
+      },
+      {
+        name: "Seafloor Cavern",
+        value: 48,
+        german: "Tiefseehöhle",
+        english: "Seafloor Cavern",
+      },
+      {
+        name: "Route 126",
+        value: 49,
+        german: "Route 126",
+        english: "Route 126",
+      },
+      {
+        name: "Sootopolis City",
+        value: 50,
+        german: "Xeneroville",
+        english: "Sootopolis City",
+      },
+      {
+        name: "Cave of Origin",
+        value: 51,
+        german: "Urzeithöhle",
+        english: "Cave of Origin",
+      },
+      {
+        name: "Route 129",
+        value: 52,
+        german: "Route 129",
+        english: "Route 129",
+      },
+      {
+        name: "Route 130",
+        value: 53,
+        german: "Route 130",
+        english: "Route 130",
+      },
+      {
+        name: "Route 131",
+        value: 54,
+        german: "Route 131",
+        english: "Route 131",
+      },
+      {
+        name: "Sky Pillar",
+        value: 55,
+        german: "Himmelturm",
+        english: "Sky Pillar",
+      },
+      {
+        name: "Pacifidlog Town",
+        value: 56,
+        german: "Floßbrunn",
+        english: "Pacifidlog Town",
+      },
+      {
+        name: "Mirage Island",
+        value: 57,
+        german: "Wundereiland",
+        english: "Mirage Island",
+      },
+      {
+        name: "Route 105",
+        value: 58,
+        german: "Route 105",
+        english: "Route 105",
+      },
+      {
+        name: "Route 108",
+        value: 59,
+        german: "Route 108",
+        english: "Route 108",
+      },
+      {
+        name: "Abandoned Ship",
+        value: 60,
+        german: "Schiffswrack",
+        english: "Abandoned Ship",
+      },
+      {
+        name: "Route 109",
+        value: 61,
+        german: "Route 109",
+        english: "Route 109",
+      },
+      {
+        name: "Route 132",
+        value: 62,
+        german: "Route 132",
+        english: "Route 132",
+      },
+      {
+        name: "Route 133",
+        value: 63,
+        german: "Route 133",
+        english: "Route 133",
+      },
+      {
+        name: "Route 134",
+        value: 64,
+        german: "Route 134",
+        english: "Route 134",
+      },
+      {
+        name: "Ever Grande City",
+        value: 65,
+        german: "Prachtpolis City",
+        english: "Ever Grande City",
+      },
+      {
+        name: "Victory Road",
+        value: 66,
+        german: "Siegesstraße",
+        english: "Victory Road",
+      },
+      {
+        name: "S.S. Tidal",
+        value: 67,
+        german: "MS Tide",
+        english: "S.S. Tidal",
+      },
+      {
+        name: "Battle Frontier",
+        value: 68,
+        german: "Kampfzone",
+        english: "Battle Frontier",
+      },
+      {
+        name: "Artisan Cave",
+        value: 69,
+        german: "Höhlenatelier",
+        english: "Artisan Cave",
+      },
+    ],
+  },
+  frlg: {
+    id: "frlg",
+    title: "FireRed and LeafGreen",
+    nameLimit: 10,
+    dexLimit: 386,
+    loaded: false,
+    locations: [
+      {
+        name: "Starter",
+        value: 0,
+      },
+      {
+        name: "Pallet Town",
+        value: 1,
+        german: "Alabastia",
+        english: "Pallet Town",
+      },
+      {
+        name: "Route 1",
+        value: 2,
+        german: "Route 1",
+        english: "Route 1",
+      },
+      {
+        name: "Viridian City",
+        value: 3,
+        german: "Vertania City",
+        english: "Viridian City",
+      },
+      {
+        name: "Route 22",
+        value: 4,
+        german: "Route 22",
+        english: "Route 22",
+      },
+      {
+        name: "Route 2",
+        value: 5,
+        german: "Route 2",
+        english: "Route 2",
+      },
+      {
+        name: "Viridian Forest",
+        value: 6,
+        german: "Vertania-Wald",
+        english: "Viridian Forest",
+      },
+      {
+        name: "Route 3",
+        value: 7,
+        german: "Route 3",
+        english: "Route 3",
+      },
+      {
+        name: "Route 4",
+        value: 8,
+        german: "Route 4",
+        english: "Route 4",
+      },
+      {
+        name: "Mt. Moon",
+        value: 9,
+        german: "Mondberg",
+        english: "Mt. Moon",
+      },
+      {
+        name: "Cerulean City",
+        value: 10,
+        german: "Azuria City",
+        english: "Cerulean City",
+      },
+      {
+        name: "Route 24",
+        value: 11,
+        german: "Route 24",
+        english: "Route 24",
+      },
+      {
+        name: "Route 25",
+        value: 12,
+        german: "Route 25",
+        english: "Route 25",
+      },
+      {
+        name: "Route 5",
+        value: 13,
+        german: "Route 5",
+        english: "Route 5",
+      },
+      {
+        name: "Route 6",
+        value: 14,
+        german: "Route 6",
+        english: "Route 6",
+      },
+      {
+        name: "Vermillion City",
+        value: 15,
+      },
+      {
+        name: "Route 11",
+        value: 16,
+        german: "Route 11",
+        english: "Route 11",
+      },
+      {
+        name: "Diglett's Cave",
+        value: 17,
+        german: "Digdas Höhle",
+        english: "Diglett's Cave",
+      },
+      {
+        name: "Route 9",
+        value: 18,
+        german: "Route 9",
+        english: "Route 9",
+      },
+      {
+        name: "Route 10",
+        value: 19,
+        german: "Route 10",
+        english: "Route 10",
+      },
+      {
+        name: "Rock Tunnel",
+        value: 20,
+        german: "Felstunnel",
+        english: "Rock Tunnel",
+      },
+      {
+        name: "Pokémon Tower",
+        value: 21,
+        german: "Pokémon Tower",
+        english: "Pokémon Tower",
+      },
+      {
+        name: "Route 12",
+        value: 22,
+        german: "Route 12",
+        english: "Route 12",
+      },
+      {
+        name: "Route 8",
+        value: 23,
+        german: "Route 8",
+        english: "Route 8",
+      },
+      {
+        name: "Route 7",
+        value: 24,
+        german: "Route 7",
+        english: "Route 7",
+      },
+      {
+        name: "Celadon City",
+        value: 25,
+        german: "Prismania City",
+        english: "Celadon City",
+      },
+      {
+        name: "Route 16",
+        value: 26,
+        german: "Route 16",
+        english: "Route 16",
+      },
+      {
+        name: "Route 17",
+        value: 27,
+        german: "Route 17",
+        english: "Route 17",
+      },
+      {
+        name: "Route 18",
+        value: 28,
+        german: "Route 18",
+        english: "Route 18",
+      },
+      {
+        name: "Fuschia City",
+        value: 29,
+      },
+      {
+        name: "Safari Zone",
+        value: 30,
+        german: "Safari-Zone",
+        english: "Safari Zone",
+      },
+      {
+        name: "Route 15",
+        value: 31,
+        german: "Route 15",
+        english: "Route 15",
+      },
+      {
+        name: "Route 14",
+        value: 32,
+        german: "Route 14",
+        english: "Route 14",
+      },
+      {
+        name: "Route 13",
+        value: 33,
+        german: "Route 13",
+        english: "Route 13",
+      },
+      {
+        name: "Power Plant",
+        value: 34,
+        german: "Kraftwerk",
+        english: "Power Plant",
+      },
+      {
+        name: "Route 19",
+        value: 35,
+        german: "Route 19",
+        english: "Route 19",
+      },
+      {
+        name: "Route 20",
+        value: 36,
+        german: "Route 20",
+        english: "Route 20",
+      },
+      {
+        name: "Seafoam Islands",
+        value: 37,
+        german: "Seeschauminseln",
+        english: "Seafoam Islands",
+      },
+      {
+        name: "Cinnabar Island",
+        value: 38,
+        german: "Zinnoberinsel",
+        english: "Cinnabar Island",
+      },
+      {
+        name: "Pokémon Mansion",
+        value: 39,
+        german: "Pokémon Mansion",
+        english: "Pokémon Mansion",
+      },
+      {
+        name: "Route 21",
+        value: 40,
+        german: "Route 21",
+        english: "Route 21",
+      },
+      {
+        name: "One Island",
+        value: 41,
+        german: "Eiland Eins",
+        english: "One Island",
+      },
+      {
+        name: "Treasure Beach",
+        value: 42,
+        german: "Schatzgestade",
+        english: "Treasure Beach",
+      },
+      {
+        name: "Kindle Road",
+        value: 43,
+        german: "Glühweg",
+        english: "Kindle Road",
+      },
+      {
+        name: "Mt. Ember",
+        value: 44,
+        german: "Glutberg",
+        english: "Mt. Ember",
+      },
+      {
+        name: "Cape Brink",
+        value: 45,
+        german: "Kap Kante",
+        english: "Cape Brink",
+      },
+      {
+        name: "Three Isle Port",
+        value: 46,
+        german: "Three Isle Port",
+        english: "Three Isle Port",
+      },
+      {
+        name: "Bond Bridge",
+        value: 47,
+        german: "Bundbrücke",
+        english: "Bond Bridge",
+      },
+      {
+        name: "Berry Forest",
+        value: 48,
+        german: "Beerenforst",
+        english: "Berry Forest",
+      },
+      {
+        name: "Route 23",
+        value: 49,
+        german: "Route 23",
+        english: "Route 23",
+      },
+      {
+        name: "Victory Road",
+        value: 50,
+        german: "Siegesstraße",
+        english: "Victory Road",
+      },
+      {
+        name: "Four Island",
+        value: 51,
+        german: "Eiland Vier",
+        english: "Four Island",
+      },
+      {
+        name: "Icefall Cave",
+        value: 52,
+        german: "Eiskaskadenhöhle",
+        english: "Icefall Cave",
+      },
+      {
+        name: "Five Island",
+        value: 53,
+        german: "Eiland Fünf",
+        english: "Five Island",
+      },
+      {
+        name: "Five Isle Meadow",
+        value: 54,
+        german: "Eiland 5-Weide",
+        english: "Five Isle Meadow",
+      },
+      {
+        name: "Memorial Pillar",
+        value: 55,
+        german: "Gedenksäule",
+        english: "Memorial Pillar",
+      },
+      {
+        name: "Water Labyrinth",
+        value: 56,
+        german: "Wasserirrgarten",
+        english: "Water Labyrinth",
+      },
+      {
+        name: "Resort Gorgeous",
+        value: 57,
+        german: "Ferienparadies",
+        english: "Resort Gorgeous",
+      },
+      {
+        name: "Lost Cave",
+        value: 58,
+        german: "Verlorene Höhle",
+        english: "Lost Cave",
+      },
+      {
+        name: "Water Path",
+        value: 59,
+        german: "Wasserweg",
+        english: "Water Path",
+      },
+      {
+        name: "Green Path",
+        value: 60,
+        german: "Grüner Pfad",
+        english: "Green Path",
+      },
+      {
+        name: "Pattern Bush",
+        value: 61,
+        german: "Musterbuschwald",
+        english: "Pattern Bush",
+      },
+      {
+        name: "Outcast Island",
+        value: 62,
+        german: "Fern-Eiland",
+        english: "Outcast Island",
+      },
+      {
+        name: "Altering Cave",
+        value: 63,
+        german: "Wandelhöhle",
+        english: "Altering Cave",
+      },
+      {
+        name: "Ruin Valley",
+        value: 64,
+        german: "Ruinental",
+        english: "Ruin Valley",
+      },
+      {
+        name: "Trainer Tower",
+        value: 65,
+        german: "Trainerturm",
+        english: "Trainer Tower",
+      },
+      {
+        name: "Canyon Entrance",
+        value: 66,
+        german: "Schluchteingang",
+        english: "Canyon Entrance",
+      },
+      {
+        name: "Seavault Canyon",
+        value: 67,
+      },
+      {
+        name: "Tanoby Ruins",
+        value: 68,
+        german: "Tanibo-Ruinen",
+        english: "Tanoby Ruins",
+      },
+      {
+        name: "Cerulean Cave",
+        value: 69,
+        german: "Azuria-Höhle",
+        english: "Cerulean Cave",
+      },
+    ],
+  },
+  dpp: {
+    id: "dpp",
+    title: "Diamond, Pearl and Platinum",
+    nameLimit: 10,
+    dexLimit: 493,
+    loaded: false,
+    locations: [
+      {
+        name: "Starter",
+        value: 0,
+      },
+      {
+        name: "Twinleaf Town",
+        value: 1,
+        german: "Zweiblattdorf",
+        english: "Twinleaf Town",
+      },
+      {
+        name: "Route 201",
+        value: 2,
+        german: "Route 201",
+        english: "Route 201",
+      },
+      {
+        name: "Lake Verity",
+        value: 3,
+        german: "See der Wahrheit",
+        english: "Lake Verity",
+      },
+      {
+        name: "Route 202",
+        value: 4,
+        german: "Route 202",
+        english: "Route 202",
+      },
+      {
+        name: "Route 203",
+        value: 5,
+        german: "Route 203",
+        english: "Route 203",
+      },
+      {
+        name: "Oreburgh Gate",
+        value: 6,
+        german: "Oreburgh Gate",
+        english: "Oreburgh Gate",
+      },
+      {
+        name: "Oreburgh City",
+        value: 7,
+        german: "Erzelingen",
+        english: "Oreburgh City",
+      },
+      {
+        name: "Oreburgh Mine",
+        value: 8,
+        german: "Oreburgh Mine",
+        english: "Oreburgh Mine",
+      },
+      {
+        name: "Route 207",
+        value: 9,
+        german: "Route 207",
+        english: "Route 207",
+      },
+      {
+        name: "Route 204",
+        value: 10,
+        german: "Route 204",
+        english: "Route 204",
+      },
+      {
+        name: "Ravaged Path",
+        value: 11,
+        german: "Verwüsteter Pfad",
+        english: "Ravaged Path",
+      },
+      {
+        name: "Floaroma Meadow",
+        value: 12,
+        german: "Auen von Flori",
+        english: "Floaroma Meadow",
+      },
+      {
+        name: "Route 205",
+        value: 13,
+        german: "Route 205",
+        english: "Route 205",
+      },
+      {
+        name: "Valley Windworks",
+        value: 14,
+        german: "Windkraftwerk",
+        english: "Valley Windworks",
+      },
+      {
+        name: "Eterna Forest",
+        value: 15,
+        german: "Ewigwald",
+        english: "Eterna Forest",
+      },
+      {
+        name: "The Old Chateau",
+        value: 16,
+      },
+      {
+        name: "Eterna City",
+        value: 17,
+        german: "Ewigenau",
+        english: "Eterna City",
+      },
+      {
+        name: "Route 206",
+        value: 18,
+        german: "Route 206",
+        english: "Route 206",
+      },
+      {
+        name: "Wayward Cave",
+        value: 19,
+        german: "Bizarre Höhle",
+        english: "Wayward Cave",
+      },
+      {
+        name: "Mt. Coronet",
+        value: 20,
+        german: "Mt. Coronet",
+        english: "Mt. Coronet",
+      },
+      {
+        name: "Route 208",
+        value: 21,
+        german: "Route 208",
+        english: "Route 208",
+      },
+      {
+        name: "Hearthome City",
+        value: 22,
+        german: "Herzhofen",
+        english: "Hearthome City",
+      },
+      {
+        name: "Route 209",
+        value: 23,
+        german: "Route 209",
+        english: "Route 209",
+      },
+      {
+        name: "The Lost Tower",
+        value: 24,
+      },
+      {
+        name: "Solaceon Ruins",
+        value: 25,
+        german: "Solaceon Ruins",
+        english: "Solaceon Ruins",
+      },
+      {
+        name: "Route 210",
+        value: 26,
+        german: "Route 210",
+        english: "Route 210",
+      },
+      {
+        name: "Route 215",
+        value: 27,
+        german: "Route 215",
+        english: "Route 215",
+      },
+      {
+        name: "Veilstone City",
+        value: 28,
+        german: "Schleiede",
+        english: "Veilstone City",
+      },
+      {
+        name: "Route 212",
+        value: 29,
+        german: "Route 212",
+        english: "Route 212",
+      },
+      {
+        name: "Trophy Garden",
+        value: 30,
+        german: "Trophäengarten",
+        english: "Trophy Garden",
+      },
+      {
+        name: "Pastoria City",
+        value: 31,
+        german: "Weideburg",
+        english: "Pastoria City",
+      },
+      {
+        name: "Great Marsh",
+        value: 32,
+        german: "Großmoor",
+        english: "Great Marsh",
+      },
+      {
+        name: "Route 213",
+        value: 33,
+        german: "Route 213",
+        english: "Route 213",
+      },
+      {
+        name: "Valor Lakefront",
+        value: 34,
+        german: "Valor Lakefront",
+        english: "Valor Lakefront",
+      },
+      {
+        name: "Lake Valor",
+        value: 35,
+        german: "See der Kühnheit",
+        english: "Lake Valor",
+      },
+      {
+        name: "Route 214",
+        value: 36,
+        german: "Route 214",
+        english: "Route 214",
+      },
+      {
+        name: "Ruin Maniac's Cave",
+        value: 37,
+      },
+      {
+        name: "Ruin Maniac's Tunnel",
+        value: 38,
+      },
+      {
+        name: "Celestic Town",
+        value: 39,
+        german: "Elyses",
+        english: "Celestic Town",
+      },
+      {
+        name: "Fuego Ironworks",
+        value: 40,
+        german: "Feuriohütte",
+        english: "Fuego Ironworks",
+      },
+      {
+        name: "Routes 219",
+        value: 41,
+      },
+      {
+        name: "Route 220",
+        value: 42,
+      },
+      {
+        name: "Route 221",
+        value: 43,
+        german: "Route 221",
+        english: "Route 221",
+      },
+      {
+        name: "Route 218",
+        value: 44,
+        german: "Route 218",
+        english: "Route 218",
+      },
+      {
+        name: "Canalave City",
+        value: 45,
+        german: "Fleetburg",
+        english: "Canalave City",
+      },
+      {
+        name: "Iron Island",
+        value: 46,
+        german: "Eiseninsel",
+        english: "Iron Island",
+      },
+      {
+        name: "Route 211",
+        value: 47,
+        german: "Route 211",
+        english: "Route 211",
+      },
+      {
+        name: "Route 216",
+        value: 48,
+        german: "Route 216",
+        english: "Route 216",
+      },
+      {
+        name: "Route 217",
+        value: 49,
+        german: "Route 217",
+        english: "Route 217",
+      },
+      {
+        name: "Acuity Lakefront",
+        value: 50,
+        german: "Acuity Lakefront",
+        english: "Acuity Lakefront",
+      },
+      {
+        name: "Lake Acuity",
+        value: 51,
+        german: "See der Stärke",
+        english: "Lake Acuity",
+      },
+      {
+        name: "Snowpoint Temple",
+        value: 52,
+        german: "Snowpoint Temple",
+        english: "Snowpoint Temple",
+      },
+      {
+        name: "Route 222",
+        value: 53,
+        german: "Route 222",
+        english: "Route 222",
+      },
+      {
+        name: "Sunyshore City",
+        value: 54,
+        german: "Sonnewik",
+        english: "Sunyshore City",
+      },
+      {
+        name: "Route 223",
+        value: 55,
+      },
+      {
+        name: "Pokémon League",
+        value: 56,
+        german: "Pokémon League",
+        english: "Pokémon League",
+      },
+      {
+        name: "Victory Road",
+        value: 57,
+        german: "Siegesstraße",
+        english: "Victory Road",
+      },
+      {
+        name: "Route 224",
+        value: 58,
+        german: "Route 224",
+        english: "Route 224",
+      },
+      {
+        name: "Route 230",
+        value: 59,
+      },
+      {
+        name: "Route 229",
+        value: 60,
+        german: "Route 229",
+        english: "Route 229",
+      },
+      {
+        name: "Resort Area",
+        value: 61,
+        german: "Erholungsgebiet",
+        english: "Resort Area",
+      },
+      {
+        name: "Route 228",
+        value: 62,
+        german: "Route 228",
+        english: "Route 228",
+      },
+      {
+        name: "Route 226",
+        value: 63,
+      },
+      {
+        name: "Route 227",
+        value: 64,
+        german: "Route 227",
+        english: "Route 227",
+      },
+      {
+        name: "Stark Mountain",
+        value: 65,
+        german: "Kahlberg",
+        english: "Stark Mountain",
+      },
+      {
+        name: "Route 225",
+        value: 66,
+        german: "Route 225",
+        english: "Route 225",
+      },
+      {
+        name: "Sendoff Spring",
+        value: 67,
+        german: "Scheidequelle",
+        english: "Sendoff Spring",
+      },
+      {
+        name: "Turnback Cave",
+        value: 68,
+        german: "Höhle der Umkehr",
+        english: "Turnback Cave",
+      },
+      {
+        name: "Distortion World",
+        value: 69,
+        german: "Zerrwelt",
+        english: "Distortion World",
+      },
+      {
+        name: "Spear Pillar",
+        value: 70,
+        german: "Speersäule",
+        english: "Spear Pillar",
+      },
+      {
+        name: "Newmoon Island",
+        value: 71,
+        german: "Neumond-Insel",
+        english: "Newmoon Island",
+      },
+      {
+        name: "Flower Paradise",
+        value: 72,
+        german: "Blumenparadies",
+        english: "Flower Paradise",
+      },
+      {
+        name: "Hall of Origin",
+        value: 73,
+        german: "Halle des Beginns",
+        english: "Hall of Origin",
+      },
+    ],
+  },
+  hgss: {
+    id: "hgss",
+    title: "HeartGold and SoulSilver",
+    nameLimit: 10,
+    dexLimit: 493,
+    loaded: false,
+    locations: [
+      {
+        name: "Starter",
+        value: 0,
+      },
+      {
+        name: "New Bark Town",
+        value: 1,
+        german: "Neuborkia",
+        english: "New Bark Town",
+      },
+      {
+        name: "Route 29",
+        value: 2,
+        german: "Route 29",
+        english: "Route 29",
+      },
+      {
+        name: "Cherrygrove City",
+        value: 3,
+        german: "Rosalia City",
+        english: "Cherrygrove City",
+      },
+      {
+        name: "Route 30",
+        value: 4,
+        german: "Route 30",
+        english: "Route 30",
+      },
+      {
+        name: "Route 31",
+        value: 5,
+        german: "Route 31",
+        english: "Route 31",
+      },
+      {
+        name: "Dark Cave",
+        value: 6,
+        german: "Dunkelhöhle",
+        english: "Dark Cave",
+      },
+      {
+        name: "Violet City",
+        value: 7,
+        german: "Viola City",
+        english: "Violet City",
+      },
+      {
+        name: "Sprout Tower",
+        value: 8,
+        german: "Knofensa-Turm",
+        english: "Sprout Tower",
+      },
+      {
+        name: "Route 32",
+        value: 9,
+        german: "Route 32",
+        english: "Route 32",
+      },
+      {
+        name: "Ruins of Alph",
+        value: 10,
+        german: "Alph-Ruinen",
+        english: "Ruins of Alph",
+      },
+      {
+        name: "Union Cave",
+        value: 11,
+        german: "Einheitstunnel",
+        english: "Union Cave",
+      },
+      {
+        name: "Route 33",
+        value: 12,
+        german: "Route 33",
+        english: "Route 33",
+      },
+      {
+        name: "Azalea Town",
+        value: 13,
+        german: "Azalea City",
+        english: "Azalea Town",
+      },
+      {
+        name: "Slowpoke Well",
+        value: 14,
+        german: "Flegmon-Brunnen",
+        english: "Slowpoke Well",
+      },
+      {
+        name: "Ilex Forest",
+        value: 15,
+        german: "Steineichenwald",
+        english: "Ilex Forest",
+      },
+      {
+        name: "Route 34",
+        value: 16,
+        german: "Route 34",
+        english: "Route 34",
+      },
+      {
+        name: "Goldenrod City",
+        value: 17,
+        german: "Dukatia City",
+        english: "Goldenrod City",
+      },
+      {
+        name: "Route 35",
+        value: 18,
+        german: "Route 35",
+        english: "Route 35",
+      },
+      {
+        name: "National Park",
+        value: 19,
+        german: "Nationalpark",
+        english: "National Park",
+      },
+      {
+        name: "Route 36",
+        value: 20,
+        german: "Route 36",
+        english: "Route 36",
+      },
+      {
+        name: "Route 37",
+        value: 21,
+        german: "Route 37",
+        english: "Route 37",
+      },
+      {
+        name: "Ecruteak City",
+        value: 22,
+        german: "Teak City",
+        english: "Ecruteak City",
+      },
+      {
+        name: "Burned Tower",
+        value: 23,
+        german: "Burned Tower",
+        english: "Burned Tower",
+      },
+      {
+        name: "Bell Tower",
+        value: 24,
+        german: "Glockenturm",
+        english: "Bell Tower",
+      },
+      {
+        name: "Route 38",
+        value: 25,
+        german: "Route 38",
+        english: "Route 38",
+      },
+      {
+        name: "Route 39",
+        value: 26,
+        german: "Route 39",
+        english: "Route 39",
+      },
+      {
+        name: "Olivine City",
+        value: 27,
+        german: "Oliviana City",
+        english: "Olivine City",
+      },
+      {
+        name: "Route 40",
+        value: 28,
+      },
+      {
+        name: "Route 41",
+        value: 29,
+      },
+      {
+        name: "Whirl Islands",
+        value: 30,
+        german: "Strudelinseln",
+        english: "Whirl Islands",
+      },
+      {
+        name: "Cianwood City",
+        value: 31,
+        german: "Anemonia City",
+        english: "Cianwood City",
+      },
+      {
+        name: "Cliff Edge Gate",
+        value: 32,
+        german: "Felsklippentor",
+        english: "Cliff Edge Gate",
+      },
+      {
+        name: "Route 47",
+        value: 33,
+        german: "Route 47",
+        english: "Route 47",
+      },
+      {
+        name: "Cliff Cave",
+        value: 34,
+        german: "Felsschlundhöhle",
+        english: "Cliff Cave",
+      },
+      {
+        name: "Route 48",
+        value: 35,
+        german: "Route 48",
+        english: "Route 48",
+      },
+      {
+        name: "Safari Zone Gate",
+        value: 36,
+        german: "Safari-Eingang",
+        english: "Safari Zone Gate",
+      },
+      {
+        name: "Safari Zone",
+        value: 37,
+        german: "Safari-Zone",
+        english: "Safari Zone",
+      },
+      {
+        name: "Route 42",
+        value: 38,
+        german: "Route 42",
+        english: "Route 42",
+      },
+      {
+        name: "Mt. Mortar",
+        value: 39,
+        german: "Kesselberg",
+        english: "Mt. Mortar",
+      },
+      {
+        name: "Mahogany Town",
+        value: 40,
+        german: "Mahagonia City",
+        english: "Mahogany Town",
+      },
+      {
+        name: "Rocket Hideout",
+        value: 41,
+      },
+      {
+        name: "Route 43",
+        value: 42,
+        german: "Route 43",
+        english: "Route 43",
+      },
+      {
+        name: "Lake of Rage",
+        value: 43,
+        german: "See des Zorns",
+        english: "Lake of Rage",
+      },
+      {
+        name: "Route 44",
+        value: 44,
+        german: "Route 44",
+        english: "Route 44",
+      },
+      {
+        name: "Ice Path",
+        value: 45,
+        german: "Eispfad",
+        english: "Ice Path",
+      },
+      {
+        name: "Blackthorn City",
+        value: 46,
+        german: "Ebenholz City",
+        english: "Blackthorn City",
+      },
+      {
+        name: "Dragon's Den",
+        value: 47,
+        german: "Drachenhöhle",
+        english: "Dragon's Den",
+      },
+      {
+        name: "Route 45",
+        value: 48,
+        german: "Route 45",
+        english: "Route 45",
+      },
+      {
+        name: "Dark Cave 2",
+        value: 49,
+      },
+      {
+        name: "Route 46",
+        value: 50,
+        german: "Route 46",
+        english: "Route 46",
+      },
+      {
+        name: "Route 27",
+        value: 51,
+        german: "Route 27",
+        english: "Route 27",
+      },
+      {
+        name: "Tohjo Falls",
+        value: 52,
+        german: "Tohjo-Fälle",
+        english: "Tohjo Falls",
+      },
+      {
+        name: "Route 26",
+        value: 53,
+        german: "Route 26",
+        english: "Route 26",
+      },
+      {
+        name: "Victory Road",
+        value: 54,
+        german: "Siegesstraße",
+        english: "Victory Road",
+      },
+      {
+        name: "Indigo Plateau",
+        value: 55,
+        german: "Indigo Plateau",
+        english: "Indigo Plateau",
+      },
+      {
+        name: "Vermillion City",
+        value: 56,
+      },
+      {
+        name: "Route 6",
+        value: 57,
+        german: "Route 6",
+        english: "Route 6",
+      },
+      {
+        name: "Saffron City",
+        value: 58,
+        german: "Saffronia City",
+        english: "Saffron City",
+      },
+      {
+        name: "Route 5",
+        value: 59,
+        german: "Route 5",
+        english: "Route 5",
+      },
+      {
+        name: "Route 7",
+        value: 60,
+        german: "Route 7",
+        english: "Route 7",
+      },
+      {
+        name: "Route 8",
+        value: 61,
+        german: "Route 8",
+        english: "Route 8",
+      },
+      {
+        name: "Route 10",
+        value: 62,
+        german: "Route 10",
+        english: "Route 10",
+      },
+      {
+        name: "Power Plant",
+        value: 63,
+        german: "Kraftwerk",
+        english: "Power Plant",
+      },
+      {
+        name: "Rock Tunnel",
+        value: 64,
+        german: "Felstunnel",
+        english: "Rock Tunnel",
+      },
+      {
+        name: "Route 9",
+        value: 65,
+        german: "Route 9",
+        english: "Route 9",
+      },
+      {
+        name: "Cerulean City",
+        value: 66,
+        german: "Azuria City",
+        english: "Cerulean City",
+      },
+      {
+        name: "Route 24",
+        value: 67,
+        german: "Route 24",
+        english: "Route 24",
+      },
+      {
+        name: "Route 25",
+        value: 68,
+        german: "Route 25",
+        english: "Route 25",
+      },
+      {
+        name: "Route 4",
+        value: 69,
+        german: "Route 4",
+        english: "Route 4",
+      },
+      {
+        name: "Route 16",
+        value: 70,
+        german: "Route 16",
+        english: "Route 16",
+      },
+      {
+        name: "Route 17",
+        value: 71,
+        german: "Route 17",
+        english: "Route 17",
+      },
+      {
+        name: "Route 18",
+        value: 72,
+        german: "Route 18",
+        english: "Route 18",
+      },
+      {
+        name: "Fuschia City",
+        value: 73,
+      },
+      {
+        name: "Route 15",
+        value: 74,
+        german: "Route 15",
+        english: "Route 15",
+      },
+      {
+        name: "Route 14",
+        value: 75,
+        german: "Route 14",
+        english: "Route 14",
+      },
+      {
+        name: "Route 13",
+        value: 76,
+        german: "Route 13",
+        english: "Route 13",
+      },
+      {
+        name: "Route 12",
+        value: 77,
+        german: "Route 12",
+        english: "Route 12",
+      },
+      {
+        name: "Route 11",
+        value: 78,
+        german: "Route 11",
+        english: "Route 11",
+      },
+      {
+        name: "Diglett's Cave",
+        value: 79,
+        german: "Digdas Höhle",
+        english: "Diglett's Cave",
+      },
+      {
+        name: "Route 2",
+        value: 80,
+        german: "Route 2",
+        english: "Route 2",
+      },
+      {
+        name: "Pewter City",
+        value: 81,
+        german: "Marmoria City",
+        english: "Pewter City",
+      },
+      {
+        name: "Route 3",
+        value: 82,
+        german: "Route 3",
+        english: "Route 3",
+      },
+      {
+        name: "Mt. Moon",
+        value: 83,
+        german: "Mondberg",
+        english: "Mt. Moon",
+      },
+      {
+        name: "Viridian City",
+        value: 84,
+        german: "Vertania City",
+        english: "Viridian City",
+      },
+      {
+        name: "Route 1",
+        value: 85,
+        german: "Route 1",
+        english: "Route 1",
+      },
+      {
+        name: "Pallet Town",
+        value: 86,
+        german: "Alabastia",
+        english: "Pallet Town",
+      },
+      {
+        name: "Route 21",
+        value: 87,
+        german: "Route 21",
+        english: "Route 21",
+      },
+      {
+        name: "Cinnabar Island",
+        value: 88,
+        german: "Zinnoberinsel",
+        english: "Cinnabar Island",
+      },
+      {
+        name: "Route 20",
+        value: 89,
+        german: "Route 20",
+        english: "Route 20",
+      },
+      {
+        name: "Route 19",
+        value: 90,
+        german: "Route 19",
+        english: "Route 19",
+      },
+      {
+        name: "Route 22",
+        value: 91,
+        german: "Route 22",
+        english: "Route 22",
+      },
+      {
+        name: "Route 28",
+        value: 92,
+        german: "Route 28",
+        english: "Route 28",
+      },
+      {
+        name: "Mt. Silver",
+        value: 93,
+        german: "Silberberg",
+        english: "Mt. Silver",
+      },
+      {
+        name: "Cerulean Cave",
+        value: 94,
+        german: "Azuria-Höhle",
+        english: "Cerulean Cave",
+      },
+    ],
+  },
+  bw: {
+    id: "bw",
+    title: "Black and White",
+    nameLimit: 10,
+    dexLimit: 649,
+    loaded: false,
+    locations: [
+      {
+        name: "Starter",
+        value: 0,
+      },
+      {
+        name: "Nuvema Town",
+        value: 1,
+        german: "Avenitia",
+        english: "Nuvema Town",
+      },
+      {
+        name: "Route 1",
+        value: 2,
+        german: "Route 1",
+        english: "Route 1",
+      },
+      {
+        name: "Accumula Town",
+        value: 3,
+        german: "Gavina",
+        english: "Accumula Town",
+      },
+      {
+        name: "Route 2",
+        value: 4,
+        german: "Route 2",
+        english: "Route 2",
+      },
+      {
+        name: "Striaton City",
+        value: 5,
+        german: "Orion City",
+        english: "Striaton City",
+      },
+      {
+        name: "Dreamyard",
+        value: 6,
+        german: "Traumbrache",
+        english: "Dreamyard",
+      },
+      {
+        name: "Route 3",
+        value: 7,
+        german: "Route 3",
+        english: "Route 3",
+      },
+      {
+        name: "Wellspring Cave",
+        value: 8,
+        german: "Grundwassersenke",
+        english: "Wellspring Cave",
+      },
+      {
+        name: "Nacrene City",
+        value: 9,
+        german: "Septerna City",
+        english: "Nacrene City",
+      },
+      {
+        name: "Pinwheel Forest",
+        value: 10,
+        german: "Ewigenwald",
+        english: "Pinwheel Forest",
+      },
+      {
+        name: "Castelia City",
+        value: 11,
+        german: "Stratos City",
+        english: "Castelia City",
+      },
+      {
+        name: "Route 4",
+        value: 12,
+        german: "Route 4",
+        english: "Route 4",
+      },
+      {
+        name: "Desert Resort",
+        value: 13,
+        german: "Wüstenresort",
+        english: "Desert Resort",
+      },
+      {
+        name: "Relic Castle",
+        value: 14,
+        german: "Alter Palast",
+        english: "Relic Castle",
+      },
+      {
+        name: "Route 16",
+        value: 15,
+        german: "Route 16",
+        english: "Route 16",
+      },
+      {
+        name: "Route 5",
+        value: 16,
+        german: "Route 5",
+        english: "Route 5",
+      },
+      {
+        name: "Driftveil Drawbridge",
+        value: 17,
+        german: "Marea-Zugbrücke",
+        english: "Driftveil Drawbridge",
+      },
+      {
+        name: "Driftveil City",
+        value: 18,
+        german: "Marea City",
+        english: "Driftveil City",
+      },
+      {
+        name: "Cold Storage",
+        value: 19,
+        german: "Tiefkühlcontainer",
+        english: "Cold Storage",
+      },
+      {
+        name: "Route 6",
+        value: 20,
+        german: "Route 6",
+        english: "Route 6",
+      },
+      {
+        name: "Mistralton Cave",
+        value: 21,
+        german: "Panaero-Höhle",
+        english: "Mistralton Cave",
+      },
+      {
+        name: "Chargestone Cave",
+        value: 22,
+        german: "Elektrolithhöhle",
+        english: "Chargestone Cave",
+      },
+      {
+        name: "Route 7",
+        value: 23,
+        german: "Route 7",
+        english: "Route 7",
+      },
+      {
+        name: "Celestial Tower",
+        value: 24,
+        german: "Turm des Himmels",
+        english: "Celestial Tower",
+      },
+      {
+        name: "Twist Mountain",
+        value: 25,
+        german: "Wendelberg",
+        english: "Twist Mountain",
+      },
+      {
+        name: "Iccirus City",
+        value: 26,
+      },
+      {
+        name: "Dragonspiral Tower",
+        value: 27,
+        german: "Drachenstiege",
+        english: "Dragonspiral Tower",
+      },
+      {
+        name: "Route 8",
+        value: 28,
+        german: "Route 8",
+        english: "Route 8",
+      },
+      {
+        name: "Moor of Icirrus",
+        value: 29,
+        german: "Moor von Nevaio",
+        english: "Moor of Icirrus",
+      },
+      {
+        name: "Route 9",
+        value: 30,
+        german: "Route 9",
+        english: "Route 9",
+      },
+      {
+        name: "Route 10",
+        value: 31,
+        german: "Route 10",
+        english: "Route 10",
+      },
+      {
+        name: "Victory Road",
+        value: 32,
+        german: "Siegesstraße",
+        english: "Victory Road",
+      },
+      {
+        name: "Route 11",
+        value: 33,
+        german: "Route 11",
+        english: "Route 11",
+      },
+      {
+        name: "Village Bridge",
+        value: 34,
+        german: "Dorfbrücke",
+        english: "Village Bridge",
+      },
+      {
+        name: "Route 12",
+        value: 35,
+        german: "Route 12",
+        english: "Route 12",
+      },
+      {
+        name: "Route 13",
+        value: 36,
+        german: "Route 13",
+        english: "Route 13",
+      },
+      {
+        name: "Undella Town",
+        value: 37,
+        german: "Ondula",
+        english: "Undella Town",
+      },
+      {
+        name: "Undella Bay",
+        value: 38,
+        german: "Bucht von Ondula",
+        english: "Undella Bay",
+      },
+      {
+        name: "Route 14",
+        value: 39,
+        german: "Route 14",
+        english: "Route 14",
+      },
+      {
+        name: "Abundant Shrine",
+        value: 40,
+        german: "Schrein der Ernte",
+        english: "Abundant Shrine",
+      },
+      {
+        name: "White Forest",
+        value: 41,
+        german: "Weiße Wald",
+        english: "White Forest",
+      },
+      {
+        name: "Route 15",
+        value: 42,
+        german: "Route 15",
+        english: "Route 15",
+      },
+      {
+        name: "Marvelous Bridge",
+        value: 43,
+        german: "Wunderbrücke",
+        english: "Marvelous Bridge",
+      },
+      {
+        name: "Lostlorn Forest",
+        value: 44,
+        german: "Hain der Täuschung",
+        english: "Lostlorn Forest",
+      },
+      {
+        name: "Route 17",
+        value: 45,
+        german: "Route 17",
+        english: "Route 17",
+      },
+      {
+        name: "Route 18",
+        value: 46,
+        german: "Route 18",
+        english: "Route 18",
+      },
+      {
+        name: "P2 Laboratory",
+        value: 47,
+        german: "P2-Labor",
+        english: "P2 Laboratory",
+      },
+      {
+        name: "Liberty Garden",
+        value: 48,
+        german: "Freiheitsgarten",
+        english: "Liberty Garden",
+      },
+    ],
+  },
+  bw2: {
+    id: "bw2",
+    title: "Black 2 and White 2",
+    nameLimit: 10,
+    dexLimit: 649,
+    loaded: false,
+    locations: [
+      {
+        name: "Starter",
+        value: 0,
+      },
+      {
+        name: "Aspertia City",
+        value: 1,
+        german: "Eventura City",
+        english: "Aspertia City",
+      },
+      {
+        name: "Route 19",
+        value: 2,
+        german: "Route 19",
+        english: "Route 19",
+      },
+      {
+        name: "Floccesy Town",
+        value: 3,
+        german: "Dausing",
+        english: "Floccesy Town",
+      },
+      {
+        name: "Route 20",
+        value: 4,
+        german: "Route 20",
+        english: "Route 20",
+      },
+      {
+        name: "Floccesy Ranch",
+        value: 5,
+        german: "Dausing-Hof",
+        english: "Floccesy Ranch",
+      },
+      {
+        name: "Aspertia Gym",
+        value: 6,
+      },
+      {
+        name: "Virbank City",
+        value: 7,
+        german: "Vapydro City",
+        english: "Virbank City",
+      },
+      {
+        name: "Virbank Complex",
+        value: 8,
+        german: "Vapydro-Werke",
+        english: "Virbank Complex",
+      },
+      {
+        name: "Castelia City",
+        value: 9,
+        german: "Stratos City",
+        english: "Castelia City",
+      },
+      {
+        name: "Castelia Sewers",
+        value: 10,
+        german: "Stratos-Kanalisation",
+        english: "Castelia Sewers",
+      },
+      {
+        name: "Relic Passage",
+        value: 11,
+        german: "Alter Fluchtweg",
+        english: "Relic Passage",
+      },
+      {
+        name: "Route 4",
+        value: 12,
+        german: "Route 4",
+        english: "Route 4",
+      },
+      {
+        name: "Desert Resort",
+        value: 13,
+        german: "Wüstenresort",
+        english: "Desert Resort",
+      },
+      {
+        name: "Relic Castle",
+        value: 14,
+        german: "Alter Palast",
+        english: "Relic Castle",
+      },
+      {
+        name: "Route 16",
+        value: 15,
+        german: "Route 16",
+        english: "Route 16",
+      },
+      {
+        name: "Lostlorn Forest",
+        value: 16,
+        german: "Hain der Täuschung",
+        english: "Lostlorn Forest",
+      },
+      {
+        name: "Route 5",
+        value: 17,
+        german: "Route 5",
+        english: "Route 5",
+      },
+      {
+        name: "Driftveil Drawbridge",
+        value: 18,
+        german: "Marea-Zugbrücke",
+        english: "Driftveil Drawbridge",
+      },
+      {
+        name: "Driftveil City",
+        value: 19,
+        german: "Marea City",
+        english: "Driftveil City",
+      },
+      {
+        name: "Route 6",
+        value: 20,
+        german: "Route 6",
+        english: "Route 6",
+      },
+      {
+        name: "Mistralton Cave",
+        value: 21,
+        german: "Panaero-Höhle",
+        english: "Mistralton Cave",
+      },
+      {
+        name: "Chargestone Cave",
+        value: 22,
+        german: "Elektrolithhöhle",
+        english: "Chargestone Cave",
+      },
+      {
+        name: "Route 7",
+        value: 23,
+        german: "Route 7",
+        english: "Route 7",
+      },
+      {
+        name: "Celestial Tower",
+        value: 24,
+        german: "Turm des Himmels",
+        english: "Celestial Tower",
+      },
+      {
+        name: "Reversal Mountain",
+        value: 25,
+        german: "Janusberg",
+        english: "Reversal Mountain",
+      },
+      {
+        name: "Strange House",
+        value: 26,
+        german: "Bizarro-Haus",
+        english: "Strange House",
+      },
+      {
+        name: "Undella Town",
+        value: 27,
+        german: "Ondula",
+        english: "Undella Town",
+      },
+      {
+        name: "Undella Bay",
+        value: 28,
+        german: "Bucht von Ondula",
+        english: "Undella Bay",
+      },
+      {
+        name: "Route 13",
+        value: 29,
+        german: "Route 13",
+        english: "Route 13",
+      },
+      {
+        name: "Route 12",
+        value: 30,
+        german: "Route 12",
+        english: "Route 12",
+      },
+      {
+        name: "Village Bridge",
+        value: 31,
+        german: "Dorfbrücke",
+        english: "Village Bridge",
+      },
+      {
+        name: "Route 11",
+        value: 32,
+        german: "Route 11",
+        english: "Route 11",
+      },
+      {
+        name: "Route 9",
+        value: 33,
+        german: "Route 9",
+        english: "Route 9",
+      },
+      {
+        name: "Seaside Cave",
+        value: 34,
+        german: "Strandgrotte",
+        english: "Seaside Cave",
+      },
+      {
+        name: "Route 21",
+        value: 35,
+        german: "Route 21",
+        english: "Route 21",
+      },
+      {
+        name: "Humilau City",
+        value: 36,
+        german: "Abidaya City",
+        english: "Humilau City",
+      },
+      {
+        name: "Route 22",
+        value: 37,
+        german: "Route 22",
+        english: "Route 22",
+      },
+      {
+        name: "Giant Chasm",
+        value: 38,
+        german: "Riesengrotte",
+        english: "Giant Chasm",
+      },
+      {
+        name: "Route 23",
+        value: 39,
+        german: "Route 23",
+        english: "Route 23",
+      },
+      {
+        name: "Victory Road",
+        value: 40,
+        german: "Siegesstraße",
+        english: "Victory Road",
+      },
+      {
+        name: "Old Victory Road",
+        value: 41,
+      },
+      {
+        name: "Marvelous Bridge",
+        value: 42,
+        german: "Wunderbrücke",
+        english: "Marvelous Bridge",
+      },
+      {
+        name: "Route 15",
+        value: 43,
+        german: "Route 15",
+        english: "Route 15",
+      },
+      {
+        name: "Route 14",
+        value: 44,
+        german: "Route 14",
+        english: "Route 14",
+      },
+      {
+        name: "Abundant Shrine",
+        value: 45,
+        german: "Schrein der Ernte",
+        english: "Abundant Shrine",
+      },
+      {
+        name: "Moor of Icirrus",
+        value: 46,
+        german: "Moor von Nevaio",
+        english: "Moor of Icirrus",
+      },
+      {
+        name: "Icirrus City",
+        value: 47,
+        german: "Nevaio City",
+        english: "Icirrus City",
+      },
+      {
+        name: "Dragonspiral Tower",
+        value: 48,
+        german: "Drachenstiege",
+        english: "Dragonspiral Tower",
+      },
+      {
+        name: "Twist Mountain",
+        value: 49,
+        german: "Wendelberg",
+        english: "Twist Mountain",
+      },
+      {
+        name: "Clay Tunnel",
+        value: 50,
+        german: "Turner-Pfad",
+        english: "Clay Tunnel",
+      },
+      {
+        name: "Underground Ruins",
+        value: 51,
+        german: "Unterirdische Ruine",
+        english: "Underground Ruins",
+      },
+      {
+        name: "Pinwheel Forest",
+        value: 52,
+        german: "Ewigenwald",
+        english: "Pinwheel Forest",
+      },
+      {
+        name: "Nacrene City",
+        value: 53,
+        german: "Septerna City",
+        english: "Nacrene City",
+      },
+      {
+        name: "Route 3",
+        value: 54,
+        german: "Route 3",
+        english: "Route 3",
+      },
+      {
+        name: "Wellspring Cave",
+        value: 55,
+        german: "Grundwassersenke",
+        english: "Wellspring Cave",
+      },
+      {
+        name: "Striaton City",
+        value: 56,
+        german: "Orion City",
+        english: "Striaton City",
+      },
+      {
+        name: "Dreamyard",
+        value: 57,
+        german: "Traumbrache",
+        english: "Dreamyard",
+      },
+      {
+        name: "Route 2",
+        value: 58,
+        german: "Route 2",
+        english: "Route 2",
+      },
+      {
+        name: "Accumula Town",
+        value: 59,
+        german: "Gavina",
+        english: "Accumula Town",
+      },
+      {
+        name: "Route 1",
+        value: 60,
+        german: "Route 1",
+        english: "Route 1",
+      },
+      {
+        name: "Route 17",
+        value: 61,
+        german: "Route 17",
+        english: "Route 17",
+      },
+      {
+        name: "Route 18",
+        value: 62,
+        german: "Route 18",
+        english: "Route 18",
+      },
+      {
+        name: "P2 Laboratory",
+        value: 63,
+        german: "P2-Labor",
+        english: "P2 Laboratory",
+      },
+      {
+        name: "Nature Preserve",
+        value: 64,
+      },
+    ],
+  },
+  xy: {
+    id: "xy",
+    title: "X and Y",
+    nameLimit: 12,
+    dexLimit: 721,
+    loaded: false,
+    locations: [
+      {
+        name: "Starter",
+        value: 0,
+      },
+      {
+        name: "Aquacorde Town",
+        value: 1,
+        german: "Aquarellia",
+        english: "Aquacorde Town",
+      },
+      {
+        name: "Route 2",
+        value: 2,
+        german: "Route 2",
+        english: "Route 2",
+      },
+      {
+        name: "Santalune Forest",
+        value: 3,
+        german: "Nouvaria-Wald",
+        english: "Santalune Forest",
+      },
+      {
+        name: "Route 3",
+        value: 4,
+        german: "Route 3",
+        english: "Route 3",
+      },
+      {
+        name: "Route 22",
+        value: 5,
+        german: "Route 22",
+        english: "Route 22",
+      },
+      {
+        name: "Route 4",
+        value: 6,
+        german: "Route 4",
+        english: "Route 4",
+      },
+      {
+        name: "Lumiose City",
+        value: 7,
+        german: "Illumina City",
+        english: "Lumiose City",
+      },
+      {
+        name: "Route 5",
+        value: 8,
+        german: "Route 5",
+        english: "Route 5",
+      },
+      {
+        name: "Route 6",
+        value: 9,
+        german: "Route 6",
+        english: "Route 6",
+      },
+      {
+        name: "Parfum Palace",
+        value: 10,
+        german: "Magnum-Opus-Palast",
+        english: "Parfum Palace",
+      },
+      {
+        name: "Route 7",
+        value: 11,
+        german: "Route 7",
+        english: "Route 7",
+      },
+      {
+        name: "Battle Chateau",
+        value: 12,
+        german: "Kampfschloss",
+        english: "Battle Chateau",
+      },
+      {
+        name: "Connecting Cave",
+        value: 13,
+        german: "Geolinkhöhle",
+        english: "Connecting Cave",
+      },
+      {
+        name: "Route 8",
+        value: 14,
+        german: "Route 8",
+        english: "Route 8",
+      },
+      {
+        name: "Ambrette Town",
+        value: 15,
+        german: "Petrophia",
+        english: "Ambrette Town",
+      },
+      {
+        name: "Route 9",
+        value: 16,
+        german: "Route 9",
+        english: "Route 9",
+      },
+      {
+        name: "Glittering Cave",
+        value: 17,
+        german: "Leuchthöhle",
+        english: "Glittering Cave",
+      },
+      {
+        name: "Cyllage City",
+        value: 18,
+        german: "Relievera City",
+        english: "Cyllage City",
+      },
+      {
+        name: "Route 10",
+        value: 19,
+        german: "Route 10",
+        english: "Route 10",
+      },
+      {
+        name: "Route 11",
+        value: 20,
+        german: "Route 11",
+        english: "Route 11",
+      },
+      {
+        name: "Reflection Cave",
+        value: 21,
+        german: "Spiegelhöhle",
+        english: "Reflection Cave",
+      },
+      {
+        name: "Shalour City",
+        value: 22,
+        german: "Yantara City",
+        english: "Shalour City",
+      },
+      {
+        name: "Tower of Mystery",
+        value: 23,
+      },
+      {
+        name: "Route 12",
+        value: 24,
+        german: "Route 12",
+        english: "Route 12",
+      },
+      {
+        name: "Azure Bay",
+        value: 25,
+        german: "Azurbucht",
+        english: "Azure Bay",
+      },
+      {
+        name: "Route 13",
+        value: 26,
+        german: "Route 13",
+        english: "Route 13",
+      },
+      {
+        name: "Route 14",
+        value: 27,
+        german: "Route 14",
+        english: "Route 14",
+      },
+      {
+        name: "Laverre City",
+        value: 28,
+        german: "Romantia City",
+        english: "Laverre City",
+      },
+      {
+        name: "Route 15",
+        value: 29,
+        german: "Route 15",
+        english: "Route 15",
+      },
+      {
+        name: "Lost Hotel",
+        value: 30,
+        german: "Hotelruine",
+        english: "Lost Hotel",
+      },
+      {
+        name: "Route 16",
+        value: 31,
+        german: "Route 16",
+        english: "Route 16",
+      },
+      {
+        name: "Frost Cavern",
+        value: 32,
+        german: "Frosthöhle",
+        english: "Frost Cavern",
+      },
+      {
+        name: "Route 17",
+        value: 33,
+        german: "Route 17",
+        english: "Route 17",
+      },
+      {
+        name: "Team Flare Secret HQ",
+        value: 34,
+        german: "Flare-Geheimbasis",
+        english: "Team Flare Secret HQ",
+      },
+      {
+        name: "Route 18",
+        value: 35,
+        german: "Route 18",
+        english: "Route 18",
+      },
+      {
+        name: "Couriway Town",
+        value: 36,
+        german: "Mosaia",
+        english: "Couriway Town",
+      },
+      {
+        name: "Route 19",
+        value: 37,
+        german: "Route 19",
+        english: "Route 19",
+      },
+      {
+        name: "Route 20",
+        value: 38,
+        german: "Route 20",
+        english: "Route 20",
+      },
+      {
+        name: "Pokémon Village",
+        value: 39,
+        german: "Pokémon Village",
+        english: "Pokémon Village",
+      },
+      {
+        name: "Route 21",
+        value: 40,
+        german: "Route 21",
+        english: "Route 21",
+      },
+      {
+        name: "Victory Road",
+        value: 41,
+        german: "Siegesstraße",
+        english: "Victory Road",
+      },
+      {
+        name: "Terminus Cave",
+        value: 42,
+        german: "Omega-Höhle",
+        english: "Terminus Cave",
+      },
+      {
+        name: "Sea Spirit's Den",
+        value: 43,
+      },
+      {
+        name: "Friend Safari",
+        value: 44,
+        german: "Kontaktsafari",
+        english: "Friend Safari",
+      },
+    ],
+  },
+  oras: {
+    id: "oras",
+    title: "Omega Ruby and Alpha Sapphire",
+    nameLimit: 12,
+    dexLimit: 721,
+    loaded: false,
+    locations: [
+      {
+        name: "Starter",
+        value: 0,
+      },
+      {
+        name: "Littleroot Town",
+        value: 1,
+        german: "Wurzelheim",
+        english: "Littleroot Town",
+      },
+      {
+        name: "Route 101",
+        value: 2,
+        german: "Route 101",
+        english: "Route 101",
+      },
+      {
+        name: "Route 102",
+        value: 3,
+        german: "Route 102",
+        english: "Route 102",
+      },
+      {
+        name: "Route 103",
+        value: 4,
+        german: "Route 103",
+        english: "Route 103",
+      },
+      {
+        name: "Petalburg City",
+        value: 5,
+        german: "Blütenburg City",
+        english: "Petalburg City",
+      },
+      {
+        name: "Route 104",
+        value: 6,
+        german: "Route 104",
+        english: "Route 104",
+      },
+      {
+        name: "Petalburg Woods",
+        value: 7,
+        german: "Blütenburgwald",
+        english: "Petalburg Woods",
+      },
+      {
+        name: "Rustboro City",
+        value: 8,
+        german: "Metarost City",
+        english: "Rustboro City",
+      },
+      {
+        name: "Route 115",
+        value: 9,
+        german: "Route 115",
+        english: "Route 115",
+      },
+      {
+        name: "Route 116",
+        value: 10,
+        german: "Route 116",
+        english: "Route 116",
+      },
+      {
+        name: "Rusturf Tunnel",
+        value: 11,
+        german: "Metaflurtunnel",
+        english: "Rusturf Tunnel",
+      },
+      {
+        name: "Dewford Town",
+        value: 12,
+        german: "Faustauhaven",
+        english: "Dewford Town",
+      },
+      {
+        name: "Route 106",
+        value: 13,
+        german: "Route 106",
+        english: "Route 106",
+      },
+      {
+        name: "Granite Cave",
+        value: 14,
+        german: "Granithöhle",
+        english: "Granite Cave",
+      },
+      {
+        name: "Route 107",
+        value: 15,
+        german: "Route 107",
+        english: "Route 107",
+      },
+      {
+        name: "Slateport City",
+        value: 16,
+        german: "Graphitport City",
+        english: "Slateport City",
+      },
+      {
+        name: "Route 110",
+        value: 17,
+        german: "Route 110",
+        english: "Route 110",
+      },
+      {
+        name: "Altering Cave",
+        value: 18,
+        german: "Wandelhöhle",
+        english: "Altering Cave",
+      },
+      {
+        name: "New Mauville",
+        value: 19,
+        german: "Neu Malvenfroh",
+        english: "New Mauville",
+      },
+      {
+        name: "Route 117",
+        value: 20,
+        german: "Route 117",
+        english: "Route 117",
+      },
+      {
+        name: "Route 111",
+        value: 21,
+        german: "Route 111",
+        english: "Route 111",
+      },
+      {
+        name: "Route 112",
+        value: 22,
+        german: "Route 112",
+        english: "Route 112",
+      },
+      {
+        name: "Fiery Path",
+        value: 23,
+        german: "Feuriger Pfad",
+        english: "Fiery Path",
+      },
+      {
+        name: "Route 113",
+        value: 24,
+        german: "Route 113",
+        english: "Route 113",
+      },
+      {
+        name: "Route 114",
+        value: 25,
+        german: "Route 114",
+        english: "Route 114",
+      },
+      {
+        name: "Meteor Falls",
+        value: 26,
+        german: "Meteorfälle",
+        english: "Meteor Falls",
+      },
+      {
+        name: "Jagged Pass",
+        value: 27,
+        german: "Steilpass",
+        english: "Jagged Pass",
+      },
+      {
+        name: "Lavaridge Town",
+        value: 28,
+        german: "Bad Lavastadt",
+        english: "Lavaridge Town",
+      },
+      {
+        name: "Route 118",
+        value: 29,
+        german: "Route 118",
+        english: "Route 118",
+      },
+      {
+        name: "Southern Island",
+        value: 30,
+        german: "Insel im Süden",
+        english: "Southern Island",
+      },
+      {
+        name: "Route 119",
+        value: 31,
+        german: "Route 119",
+        english: "Route 119",
+      },
+      {
+        name: "Fortree City",
+        value: 32,
+        german: "Baumhausen City",
+        english: "Fortree City",
+      },
+      {
+        name: "Route 120",
+        value: 33,
+        german: "Route 120",
+        english: "Route 120",
+      },
+      {
+        name: "Route 121",
+        value: 34,
+        german: "Route 121",
+        english: "Route 121",
+      },
+      {
+        name: "Safari Zone",
+        value: 35,
+        german: "Safari-Zone",
+        english: "Safari Zone",
+      },
+      {
+        name: "Lilycove City",
+        value: 36,
+        german: "Seegrasulb City",
+        english: "Lilycove City",
+      },
+      {
+        name: "Route 122",
+        value: 37,
+        german: "Route 122",
+        english: "Route 122",
+      },
+      {
+        name: "Mt. Pyre",
+        value: 38,
+        german: "Pyroberg",
+        english: "Mt. Pyre",
+      },
+      {
+        name: "Route 123",
+        value: 39,
+        german: "Route 123",
+        english: "Route 123",
+      },
+      {
+        name: "Team Aqua/Magma Hideout Entrance",
+        value: 40,
+      },
+      {
+        name: "Route 124",
+        value: 41,
+        german: "Route 124",
+        english: "Route 124",
+      },
+      {
+        name: "Mossdeep City",
+        value: 42,
+        german: "Moosbach City",
+        english: "Mossdeep City",
+      },
+      {
+        name: "Route 125",
+        value: 43,
+        german: "Route 125",
+        english: "Route 125",
+      },
+      {
+        name: "Shoal Cave",
+        value: 44,
+        german: "Küstenhöhle",
+        english: "Shoal Cave",
+      },
+      {
+        name: "Route 127",
+        value: 45,
+        german: "Route 127",
+        english: "Route 127",
+      },
+      {
+        name: "Route 128",
+        value: 46,
+        german: "Route 128",
+        english: "Route 128",
+      },
+      {
+        name: "Seafloor Cavern",
+        value: 47,
+        german: "Tiefseehöhle",
+        english: "Seafloor Cavern",
+      },
+      {
+        name: "Route 126",
+        value: 48,
+        german: "Route 126",
+        english: "Route 126",
+      },
+      {
+        name: "Sootopolis City",
+        value: 49,
+        german: "Xeneroville",
+        english: "Sootopolis City",
+      },
+      {
+        name: "Cave of Origin",
+        value: 50,
+        german: "Urzeithöhle",
+        english: "Cave of Origin",
+      },
+      {
+        name: "Soaring",
+        value: 51,
+      },
+      {
+        name: "Route 129",
+        value: 52,
+        german: "Route 129",
+        english: "Route 129",
+      },
+      {
+        name: "Route 130",
+        value: 53,
+        german: "Route 130",
+        english: "Route 130",
+      },
+      {
+        name: "Route 131",
+        value: 54,
+        german: "Route 131",
+        english: "Route 131",
+      },
+      {
+        name: "Sky Pillar",
+        value: 55,
+        german: "Himmelturm",
+        english: "Sky Pillar",
+      },
+      {
+        name: "Pacifidlog Town",
+        value: 56,
+        german: "Floßbrunn",
+        english: "Pacifidlog Town",
+      },
+      {
+        name: "Mirage Island",
+        value: 57,
+        german: "Wundereiland",
+        english: "Mirage Island",
+      },
+      {
+        name: "Route 105",
+        value: 58,
+        german: "Route 105",
+        english: "Route 105",
+      },
+      {
+        name: "Route 108",
+        value: 59,
+        german: "Route 108",
+        english: "Route 108",
+      },
+      {
+        name: "Abandoned Ship",
+        value: 60,
+        german: "Schiffswrack",
+        english: "Abandoned Ship",
+      },
+      {
+        name: "Route 109",
+        value: 61,
+        german: "Route 109",
+        english: "Route 109",
+      },
+      {
+        name: "Route 132",
+        value: 62,
+        german: "Route 132",
+        english: "Route 132",
+      },
+      {
+        name: "Route 133",
+        value: 63,
+        german: "Route 133",
+        english: "Route 133",
+      },
+      {
+        name: "Route 134",
+        value: 64,
+        german: "Route 134",
+        english: "Route 134",
+      },
+      {
+        name: "Ever Grande City",
+        value: 65,
+        german: "Prachtpolis City",
+        english: "Ever Grande City",
+      },
+      {
+        name: "Victory Road",
+        value: 66,
+        german: "Siegesstraße",
+        english: "Victory Road",
+      },
+      {
+        name: "S.S. Tidal",
+        value: 67,
+        german: "MS Tide",
+        english: "S.S. Tidal",
+      },
+      {
+        name: "Pathless Plain",
+        value: 68,
+        german: "Namenlose Ebene",
+        english: "Pathless Plain",
+      },
+      {
+        name: "Nameless Cavern",
+        value: 69,
+        german: "Unerforschte Höhle",
+        english: "Nameless Cavern",
+      },
+      {
+        name: "Fabled Cave",
+        value: 70,
+        german: "Rätselhafte Höhle",
+        english: "Fabled Cave",
+      },
+      {
+        name: "Gnarled Den",
+        value: 71,
+        german: "Höhle der Spaltung",
+        english: "Gnarled Den",
+      },
+      {
+        name: "Trackless Forest",
+        value: 72,
+        german: "Wilder Wald",
+        english: "Trackless Forest",
+      },
+      {
+        name: "Crescent Isle",
+        value: 73,
+        german: "Sichelinsel",
+        english: "Crescent Isle",
+      },
+      {
+        name: "Battle Resort",
+        value: 74,
+        german: "Battle Resort",
+        english: "Battle Resort",
+      },
+      {
+        name: "Mirage Cave",
+        value: 75,
+        german: "Wunderhöhle",
+        english: "Mirage Cave",
+      },
+      {
+        name: "Mirage Forest",
+        value: 76,
+        german: "Wunderwald",
+        english: "Mirage Forest",
+      },
+      {
+        name: "Mirage Island",
+        value: 77,
+        german: "Wundereiland",
+        english: "Mirage Island",
+      },
+      {
+        name: "Mirage Mountain",
+        value: 78,
+        german: "Wunderberg",
+        english: "Mirage Mountain",
+      },
+    ],
+  },
+  sm: {
+    id: "sm",
+    title: "Sun and Moon",
+    nameLimit: 12,
+    dexLimit: 802,
+    loaded: false,
+    locations: [
+      {
+        name: "Starter",
+        value: 0,
+      },
+      {
+        name: "Hau'oli Outskirts",
+        value: 1,
+      },
+      {
+        name: "Iki Town",
+        value: 2,
+        german: "Lili'i",
+        english: "Iki Town",
+      },
+      {
+        name: "Route 1",
+        value: 3,
+        german: "Route 1",
+        english: "Route 1",
+      },
+      {
+        name: "Melemele Sea",
+        value: 4,
+        german: "Meer von Mele-Mele",
+        english: "Melemele Sea",
+      },
+      {
+        name: "Hau'oli City",
+        value: 5,
+      },
+      {
+        name: "Route 2",
+        value: 6,
+        german: "Route 2",
+        english: "Route 2",
+      },
+      {
+        name: "Berry Fields",
+        value: 7,
+        german: "Beerenfelder",
+        english: "Berry Fields",
+      },
+      {
+        name: "Verdant Cavern",
+        value: 8,
+        german: "Vegetationshöhle",
+        english: "Verdant Cavern",
+      },
+      {
+        name: "Hau'oli Cemetery",
+        value: 9,
+      },
+      {
+        name: "Route 3",
+        value: 10,
+        german: "Route 3",
+        english: "Route 3",
+      },
+      {
+        name: "Melemele Meadow",
+        value: 11,
+        german: "Mele-Mele-Blumenmeer",
+        english: "Melemele Meadow",
+      },
+      {
+        name: "Seaward Cave",
+        value: 12,
+        german: "Meereshöhle",
+        english: "Seaward Cave",
+      },
+      {
+        name: "Kala'e Bay",
+        value: 13,
+      },
+      {
+        name: "Ten Carat Hill",
+        value: 14,
+        german: "Tenkarat-Hügel",
+        english: "Ten Carat Hill",
+      },
+      {
+        name: "Hano Beach",
+        value: 15,
+        german: "Hanohano-Strand",
+        english: "Hano Beach",
+      },
+      {
+        name: "Route 4",
+        value: 16,
+        german: "Route 4",
+        english: "Route 4",
+      },
+      {
+        name: "Paniola Town",
+        value: 17,
+        german: "Ohana",
+        english: "Paniola Town",
+      },
+      {
+        name: "Paniola Ranch",
+        value: 18,
+        german: "Ohana-Farm",
+        english: "Paniola Ranch",
+      },
+      {
+        name: "Route 5",
+        value: 19,
+        german: "Route 5",
+        english: "Route 5",
+      },
+      {
+        name: "Brooklet Hill",
+        value: 20,
+        german: "Plätscherhügel",
+        english: "Brooklet Hill",
+      },
+      {
+        name: "Route 6",
+        value: 21,
+        german: "Route 6",
+        english: "Route 6",
+      },
+      {
+        name: "Route 7",
+        value: 22,
+        german: "Route 7",
+        english: "Route 7",
+      },
+      {
+        name: "Wela Volcano Park",
+        value: 23,
+        german: "Wela-Vulkanpark",
+        english: "Wela Volcano Park",
+      },
+      {
+        name: "Route 8",
+        value: 24,
+        german: "Route 8",
+        english: "Route 8",
+      },
+      {
+        name: "Fossil Restoration Center",
+        value: 25,
+      },
+      {
+        name: "Lush Jungle",
+        value: 26,
+        german: "Schattendschungel",
+        english: "Lush Jungle",
+      },
+      {
+        name: "Diglett's Tunnel",
+        value: 27,
+      },
+      {
+        name: "Route 9",
+        value: 28,
+        german: "Route 9",
+        english: "Route 9",
+      },
+      {
+        name: "Konikoni City",
+        value: 29,
+        german: "Konikoni City",
+        english: "Konikoni City",
+      },
+      {
+        name: "Memorial Hill",
+        value: 30,
+        german: "Hügel des Gedenkens",
+        english: "Memorial Hill",
+      },
+      {
+        name: "Akala Outskirts",
+        value: 31,
+        german: "Akala-Küstenstreifen",
+        english: "Akala Outskirts",
+      },
+      {
+        name: "Malie City",
+        value: 32,
+        german: "Malihe City",
+        english: "Malie City",
+      },
+      {
+        name: "Malie Garden",
+        value: 33,
+        german: "Malihe-Ziergarten",
+        english: "Malie Garden",
+      },
+      {
+        name: "Route 10",
+        value: 34,
+        german: "Route 10",
+        english: "Route 10",
+      },
+      {
+        name: "Mount Hokulani",
+        value: 35,
+        german: "Hokulani-Berg",
+        english: "Mount Hokulani",
+      },
+      {
+        name: "Route 11",
+        value: 36,
+        german: "Route 11",
+        english: "Route 11",
+      },
+      {
+        name: "Route 12",
+        value: 37,
+        german: "Route 12",
+        english: "Route 12",
+      },
+      {
+        name: "Secluded Shore",
+        value: 38,
+        german: "Küste von Ula-Ula",
+        english: "Secluded Shore",
+      },
+      {
+        name: "Blush Mountain",
+        value: 39,
+        german: "Glühberg",
+        english: "Blush Mountain",
+      },
+      {
+        name: "Route 13",
+        value: 40,
+        german: "Route 13",
+        english: "Route 13",
+      },
+      {
+        name: "Haina Desert",
+        value: 41,
+        german: "Haina-Wüste",
+        english: "Haina Desert",
+      },
+      {
+        name: "Tapu Village",
+        value: 42,
+        german: "Dorf der Kapu",
+        english: "Tapu Village",
+      },
+      {
+        name: "Route 15",
+        value: 43,
+        german: "Route 15",
+        english: "Route 15",
+      },
+      {
+        name: "Aether House",
+        value: 44,
+      },
+      {
+        name: "Route 14",
+        value: 45,
+        german: "Route 14",
+        english: "Route 14",
+      },
+      {
+        name: "Thrifty Megamart",
+        value: 46,
+        german: "Schnäppchenparadies",
+        english: "Thrifty Megamart",
+      },
+      {
+        name: "Route 16",
+        value: 47,
+        german: "Route 16",
+        english: "Route 16",
+      },
+      {
+        name: "Ula'ula Meadow",
+        value: 48,
+      },
+      {
+        name: "Lake of the Moone/Sunne",
+        value: 49,
+      },
+      {
+        name: "Route 17",
+        value: 50,
+        german: "Route 17",
+        english: "Route 17",
+      },
+      {
+        name: "Shady House",
+        value: 51,
+        german: "Lottervilla",
+        english: "Shady House",
+      },
+      {
+        name: "Seafolk Village",
+        value: 52,
+        german: "Dorf des Seevolkes",
+        english: "Seafolk Village",
+      },
+      {
+        name: "Poni Wilds",
+        value: 53,
+        german: "Wildnis von Poni",
+        english: "Poni Wilds",
+      },
+      {
+        name: "Ancient Poni Path",
+        value: 54,
+        german: "Alter Pfad von Poni",
+        english: "Ancient Poni Path",
+      },
+      {
+        name: "Poni Breaker Coast",
+        value: 55,
+        german: "Felsenküste von Poni",
+        english: "Poni Breaker Coast",
+      },
+      {
+        name: "Exeggutor Island",
+        value: 56,
+        german: "Kokowei-Eiland",
+        english: "Exeggutor Island",
+      },
+      {
+        name: "Vast Poni Canyon",
+        value: 57,
+        german: "Canyon von Poni",
+        english: "Vast Poni Canyon",
+      },
+      {
+        name: "Altar of the Moone/Sunne",
+        value: 58,
+      },
+      {
+        name: "Mount Lanakila",
+        value: 59,
+        german: "Mount Lanakila",
+        english: "Mount Lanakila",
+      },
+      {
+        name: "Poni Grove",
+        value: 60,
+        german: "Wald von Poni",
+        english: "Poni Grove",
+      },
+      {
+        name: "Poni Plains",
+        value: 61,
+        german: "Ebene von Poni",
+        english: "Poni Plains",
+      },
+      {
+        name: "Poni Meadow",
+        value: 62,
+        german: "Poni-Blumenmeer",
+        english: "Poni Meadow",
+      },
+      {
+        name: "Resolution Cave",
+        value: 63,
+        german: "Finalhöhle",
+        english: "Resolution Cave",
+      },
+      {
+        name: "Poni Coast",
+        value: 64,
+        german: "Küste von Poni",
+        english: "Poni Coast",
+      },
+      {
+        name: "Poni Gauntlet",
+        value: 65,
+        german: "Beschwerlicher Pfad",
+        english: "Poni Gauntlet",
+      },
+      {
+        name: "Ruins of Conflict",
+        value: 66,
+        german: "Ruinen des Krieges",
+        english: "Ruins of Conflict",
+      },
+      {
+        name: "Ruins of Life",
+        value: 67,
+        german: "Ruinen des Lebens",
+        english: "Ruins of Life",
+      },
+      {
+        name: "Ruins of Abundance",
+        value: 68,
+        german: "Ruinen des Gedeihens",
+        english: "Ruins of Abundance",
+      },
+      {
+        name: "Ruins of Hope",
+        value: 69,
+        german: "Ruinen der Heimkehr",
+        english: "Ruins of Hope",
+      },
+    ],
+  },
+  usum: {
+    id: "usum",
+    title: "Ultra Sun and Ultra Moon",
+    nameLimit: 12,
+    dexLimit: 807,
+    loaded: false,
+    locations: [
+      {
+        name: "Starter",
+        value: 0,
+      },
+      {
+        name: "Hau'oli Outskirts",
+        value: 1,
+      },
+      {
+        name: "Iki Town",
+        value: 2,
+        german: "Lili'i",
+        english: "Iki Town",
+      },
+      {
+        name: "Route 1",
+        value: 3,
+        german: "Route 1",
+        english: "Route 1",
+      },
+      {
+        name: "Melemele Sea",
+        value: 4,
+        german: "Meer von Mele-Mele",
+        english: "Melemele Sea",
+      },
+      {
+        name: "Hau'oli City",
+        value: 5,
+      },
+      {
+        name: "Route 2",
+        value: 6,
+        german: "Route 2",
+        english: "Route 2",
+      },
+      {
+        name: "Berry Fields",
+        value: 7,
+        german: "Beerenfelder",
+        english: "Berry Fields",
+      },
+      {
+        name: "Verdant Cavern",
+        value: 8,
+        german: "Vegetationshöhle",
+        english: "Verdant Cavern",
+      },
+      {
+        name: "Hau'oli Cemetery",
+        value: 9,
+      },
+      {
+        name: "Route 3",
+        value: 10,
+        german: "Route 3",
+        english: "Route 3",
+      },
+      {
+        name: "Melemele Meadow",
+        value: 11,
+        german: "Mele-Mele-Blumenmeer",
+        english: "Melemele Meadow",
+      },
+      {
+        name: "Seaward Cave",
+        value: 12,
+        german: "Meereshöhle",
+        english: "Seaward Cave",
+      },
+      {
+        name: "Kala'e Bay",
+        value: 13,
+      },
+      {
+        name: "Ten Carat Hill",
+        value: 14,
+        german: "Tenkarat-Hügel",
+        english: "Ten Carat Hill",
+      },
+      {
+        name: "Hano Beach",
+        value: 15,
+        german: "Hanohano-Strand",
+        english: "Hano Beach",
+      },
+      {
+        name: "Route 4",
+        value: 16,
+        german: "Route 4",
+        english: "Route 4",
+      },
+      {
+        name: "Paniola Town",
+        value: 17,
+        german: "Ohana",
+        english: "Paniola Town",
+      },
+      {
+        name: "Paniola Ranch",
+        value: 18,
+        german: "Ohana-Farm",
+        english: "Paniola Ranch",
+      },
+      {
+        name: "Route 5",
+        value: 19,
+        german: "Route 5",
+        english: "Route 5",
+      },
+      {
+        name: "Brooklet Hill",
+        value: 20,
+        german: "Plätscherhügel",
+        english: "Brooklet Hill",
+      },
+      {
+        name: "Route 6",
+        value: 21,
+        german: "Route 6",
+        english: "Route 6",
+      },
+      {
+        name: "Route 7",
+        value: 22,
+        german: "Route 7",
+        english: "Route 7",
+      },
+      {
+        name: "Wela Volcano Park",
+        value: 23,
+        german: "Wela-Vulkanpark",
+        english: "Wela Volcano Park",
+      },
+      {
+        name: "Dividing Peak Tunnel",
+        value: 24,
+      },
+      {
+        name: "Route 8",
+        value: 25,
+        german: "Route 8",
+        english: "Route 8",
+      },
+      {
+        name: "Fossil Restoration Center",
+        value: 26,
+      },
+      {
+        name: "Lush Jungle",
+        value: 27,
+        german: "Schattendschungel",
+        english: "Lush Jungle",
+      },
+      {
+        name: "Diglett's Tunnel",
+        value: 28,
+      },
+      {
+        name: "Route 9",
+        value: 29,
+        german: "Route 9",
+        english: "Route 9",
+      },
+      {
+        name: "Konikoni City",
+        value: 30,
+        german: "Konikoni City",
+        english: "Konikoni City",
+      },
+      {
+        name: "Memorial Hill",
+        value: 31,
+        german: "Hügel des Gedenkens",
+        english: "Memorial Hill",
+      },
+      {
+        name: "Akala Outskirts",
+        value: 32,
+        german: "Akala-Küstenstreifen",
+        english: "Akala Outskirts",
+      },
+      {
+        name: "Malie City",
+        value: 33,
+        german: "Malihe City",
+        english: "Malie City",
+      },
+      {
+        name: "Malie Garden",
+        value: 34,
+        german: "Malihe-Ziergarten",
+        english: "Malie Garden",
+      },
+      {
+        name: "Route 10",
+        value: 35,
+        german: "Route 10",
+        english: "Route 10",
+      },
+      {
+        name: "Mount Hokulani",
+        value: 36,
+        german: "Hokulani-Berg",
+        english: "Mount Hokulani",
+      },
+      {
+        name: "Route 11",
+        value: 37,
+        german: "Route 11",
+        english: "Route 11",
+      },
+      {
+        name: "Route 12",
+        value: 38,
+        german: "Route 12",
+        english: "Route 12",
+      },
+      {
+        name: "Secluded Shore",
+        value: 39,
+        german: "Küste von Ula-Ula",
+        english: "Secluded Shore",
+      },
+      {
+        name: "Blush Mountain",
+        value: 40,
+        german: "Glühberg",
+        english: "Blush Mountain",
+      },
+      {
+        name: "Route 13",
+        value: 41,
+        german: "Route 13",
+        english: "Route 13",
+      },
+      {
+        name: "Haina Desert",
+        value: 42,
+        german: "Haina-Wüste",
+        english: "Haina Desert",
+      },
+      {
+        name: "Tapu Village",
+        value: 43,
+        german: "Dorf der Kapu",
+        english: "Tapu Village",
+      },
+      {
+        name: "Route 15",
+        value: 44,
+        german: "Route 15",
+        english: "Route 15",
+      },
+      {
+        name: "Aether House",
+        value: 45,
+      },
+      {
+        name: "Route 14",
+        value: 46,
+        german: "Route 14",
+        english: "Route 14",
+      },
+      {
+        name: "Thrifty Megamart",
+        value: 47,
+        german: "Schnäppchenparadies",
+        english: "Thrifty Megamart",
+      },
+      {
+        name: "Route 16",
+        value: 48,
+        german: "Route 16",
+        english: "Route 16",
+      },
+      {
+        name: "Ula'ula Meadow",
+        value: 49,
+      },
+      {
+        name: "Lake of the Moone/Sunne",
+        value: 50,
+      },
+      {
+        name: "Route 17",
+        value: 51,
+        german: "Route 17",
+        english: "Route 17",
+      },
+      {
+        name: "Shady House",
+        value: 52,
+        german: "Lottervilla",
+        english: "Shady House",
+      },
+      {
+        name: "Seafolk Village",
+        value: 53,
+        german: "Dorf des Seevolkes",
+        english: "Seafolk Village",
+      },
+      {
+        name: "Poni Wilds",
+        value: 54,
+        german: "Wildnis von Poni",
+        english: "Poni Wilds",
+      },
+      {
+        name: "Ancient Poni Path",
+        value: 55,
+        german: "Alter Pfad von Poni",
+        english: "Ancient Poni Path",
+      },
+      {
+        name: "Poni Breaker Coast",
+        value: 56,
+        german: "Felsenküste von Poni",
+        english: "Poni Breaker Coast",
+      },
+      {
+        name: "Exeggutor Island",
+        value: 57,
+        german: "Kokowei-Eiland",
+        english: "Exeggutor Island",
+      },
+      {
+        name: "Vast Poni Canyon",
+        value: 58,
+        german: "Canyon von Poni",
+        english: "Vast Poni Canyon",
+      },
+      {
+        name: "Altar of the Moone/Sunne",
+        value: 59,
+      },
+      {
+        name: "Mount Lanakila",
+        value: 60,
+        german: "Mount Lanakila",
+        english: "Mount Lanakila",
+      },
+      {
+        name: "Poni Grove",
+        value: 61,
+        german: "Wald von Poni",
+        english: "Poni Grove",
+      },
+      {
+        name: "Poni Plains",
+        value: 62,
+        german: "Ebene von Poni",
+        english: "Poni Plains",
+      },
+      {
+        name: "Poni Meadow",
+        value: 63,
+        german: "Poni-Blumenmeer",
+        english: "Poni Meadow",
+      },
+      {
+        name: "Resolution Cave",
+        value: 64,
+        german: "Finalhöhle",
+        english: "Resolution Cave",
+      },
+      {
+        name: "Poni Coast",
+        value: 65,
+        german: "Küste von Poni",
+        english: "Poni Coast",
+      },
+      {
+        name: "Poni Gauntlet",
+        value: 66,
+        german: "Beschwerlicher Pfad",
+        english: "Poni Gauntlet",
+      },
+      {
+        name: "Ruins of Conflict",
+        value: 67,
+        german: "Ruinen des Krieges",
+        english: "Ruins of Conflict",
+      },
+      {
+        name: "Ruins of Life",
+        value: 68,
+        german: "Ruinen des Lebens",
+        english: "Ruins of Life",
+      },
+      {
+        name: "Ruins of Abundance",
+        value: 69,
+        german: "Ruinen des Gedeihens",
+        english: "Ruins of Abundance",
+      },
+      {
+        name: "Ruins of Hope",
+        value: 70,
+        german: "Ruinen der Heimkehr",
+        english: "Ruins of Hope",
+      },
+    ],
+  },
+  swsh: {
+    id: "swsh",
+    title: "Sword and Shield",
+    nameLimit: 12,
+    dexLimit: 898,
+    loaded: false,
+    locations: [
+      {
+        name: "Starter",
+        value: 0,
+      },
+      {
+        name: "Slumbering Weald",
+        value: 1,
+      },
+      {
+        name: "Route 1",
+        value: 2,
+        german: "Route 1",
+        english: "Route 1",
+      },
+      {
+        name: "Wedgehurst",
+        value: 3,
+      },
+      {
+        name: "Route 2",
+        value: 4,
+        german: "Route 2",
+        english: "Route 2",
+      },
+      {
+        name: "Wild Area: Rolling Fields",
+        value: 5,
+      },
+      {
+        name: "Wild Area: Dappled Grove",
+        value: 6,
+      },
+      {
+        name: "Wild Area: West Lake Axewell",
+        value: 7,
+      },
+      {
+        name: "Wild Area: Watchtower Ruins",
+        value: 8,
+      },
+      {
+        name: "Wild Area: East Lake Axewell",
+        value: 9,
+      },
+      {
+        name: "Wild Area: South Lake Miloch",
+        value: 10,
+      },
+      {
+        name: "Wild Area: Giant's Seat",
+        value: 11,
+      },
+      {
+        name: "Wild Area: North Lake Miloch",
+        value: 12,
+      },
+      {
+        name: "Motostoke",
+        value: 13,
+      },
+      {
+        name: "Route 3",
+        value: 14,
+        german: "Route 3",
+        english: "Route 3",
+      },
+      {
+        name: "Galar Mine",
+        value: 15,
+      },
+      {
+        name: "Route 4",
+        value: 16,
+        german: "Route 4",
+        english: "Route 4",
+      },
+      {
+        name: "Route 5",
+        value: 17,
+        german: "Route 5",
+        english: "Route 5",
+      },
+      {
+        name: "Hulbury",
+        value: 18,
+      },
+      {
+        name: "Galar Mine No. 2",
+        value: 19,
+      },
+      {
+        name: "Motostoke Outskirts",
+        value: 20,
+      },
+      {
+        name: "Motostoke Stadium",
+        value: 21,
+      },
+      {
+        name: "Wild Area: Motostoke Riverbank",
+        value: 22,
+      },
+      {
+        name: "Wild Area: Bridge Field",
+        value: 23,
+      },
+      {
+        name: "Wild Area: Stony Wilderness",
+        value: 24,
+      },
+      {
+        name: "Wild Area: Giant's Mirror",
+        value: 25,
+      },
+      {
+        name: "Wild Area: Dusty Bowl",
+        value: 26,
+      },
+      {
+        name: "Wild Area: Giant's Cap",
+        value: 27,
+      },
+      {
+        name: "Wild Area: Hammerlocke Hills",
+        value: 28,
+      },
+      {
+        name: "Wild Area: Lake of Outrage",
+        value: 29,
+      },
+      {
+        name: "Route 6",
+        value: 30,
+        german: "Route 6",
+        english: "Route 6",
+      },
+      {
+        name: "Glimwood Tangle",
+        value: 31,
+      },
+      {
+        name: "Router 7",
+        value: 32,
+      },
+      {
+        name: "Route 8",
+        value: 33,
+        german: "Route 8",
+        english: "Route 8",
+      },
+      {
+        name: "Route 9",
+        value: 34,
+        german: "Route 9",
+        english: "Route 9",
+      },
+      {
+        name: "Wild Area: Axew's Eye",
+        value: 35,
+      },
+      {
+        name: "Isle of Armor: Fields of Honor",
+        value: 36,
+      },
+      {
+        name: "Isle of Armor: Soothing Wetlands",
+        value: 37,
+      },
+      {
+        name: "Isle of Armor: Forest of Focus",
+        value: 38,
+      },
+      {
+        name: "Isle of Armor: Challenge Beach",
+        value: 39,
+      },
+      {
+        name: "Isle of Armor: Brawlers' Cave",
+        value: 40,
+      },
+      {
+        name: "Isle of Armor: Challenge Road",
+        value: 41,
+      },
+      {
+        name: "Isle of Armor: Courageous Cavern",
+        value: 42,
+      },
+      {
+        name: "Isle of Armor: Loop Lagoon",
+        value: 43,
+      },
+      {
+        name: "Isle of Armor: Training Lowlands",
+        value: 44,
+      },
+      {
+        name: "Isle of Armor: Warm-Up Tunnel",
+        value: 45,
+      },
+      {
+        name: "Isle of Armor: Potbottom Desert",
+        value: 46,
+      },
+      {
+        name: "Isle of Armor: Workout Sea",
+        value: 47,
+      },
+      {
+        name: "Isle of Armor: Stepping-Stone Sea",
+        value: 48,
+      },
+      {
+        name: "Isle of Armor: Insular Sea",
+        value: 49,
+      },
+      {
+        name: "Isle of Armor: Honeycalm Sea",
+        value: 50,
+      },
+      {
+        name: "Isle of Armor: Honeycalm Island",
+        value: 51,
+      },
+      {
+        name: "Crown Tundra: Slippery Slope",
+        value: 52,
+      },
+      {
+        name: "Crown Tundra: Freezington",
+        value: 53,
+      },
+      {
+        name: "Crown Tundra: Max Lair",
+        value: 54,
+      },
+      {
+        name: "Crown Tundra: Frostpoint Field",
+        value: 55,
+      },
+      {
+        name: "Crown Tundra: Giant's Bed",
+        value: 56,
+      },
+      {
+        name: "Crown Tundra: Old Cemetery",
+        value: 57,
+      },
+      {
+        name: "Crown Tundra: Snowslide Slope",
+        value: 58,
+      },
+      {
+        name: "Crown Tundra: Tunnel to the Top",
+        value: 59,
+      },
+      {
+        name: "Crown Tundra: Path to the Peak",
+        value: 60,
+      },
+      {
+        name: "Crown Tundra: Crown Shrine",
+        value: 61,
+      },
+      {
+        name: "Crown Tundra: Giant's Foot",
+        value: 62,
+      },
+      {
+        name: "Crown Tundra: Roaring-Sea Caves",
+        value: 63,
+      },
+      {
+        name: "Crown Tundra: Frigrid Sea",
+        value: 64,
+      },
+      {
+        name: "Crown Tundra: Three-Point Pass",
+        value: 65,
+      },
+      {
+        name: "Crown Tundra: Ballimere Lake",
+        value: 66,
+      },
+      {
+        name: "Crown Tundra: Lakeside Cave",
+        value: 67,
+      },
+      {
+        name: "Crown Tundra: Dyna Tree Hill",
+        value: 68,
+      },
+      {
+        name: "Crown Tundra: Rock Peak Ruins",
+        value: 69,
+      },
+      {
+        name: "Crown Tundra: Iceberg Ruins",
+        value: 70,
+      },
+      {
+        name: "Crown Tundra: Iron Ruins",
+        value: 71,
+      },
+      {
+        name: "Crown Tundra: Split-Decision Ruins",
+        value: 72,
+      },
+    ],
+  },
+  sv: {
+    id: "sv",
+    title: "Scarlet and Violet",
+    nameLimit: 12,
+    dexLimit: 1008,
+    loaded: false,
+    locations: [
+      {
+        name: "Starter",
+        value: 0,
+      },
+      {
+        name: "Poco Path",
+        value: 1,
+      },
+      {
+        name: "Inlet Grotto",
+        value: 2,
+      },
+      {
+        name: "South Province: Area One",
+        value: 3,
+      },
+      {
+        name: "Pokémon League",
+        value: 4,
+        german: "Pokémon League",
+        english: "Pokémon League",
+      },
+      {
+        name: "South Province: Area Two",
+        value: 5,
+      },
+      {
+        name: "South Province: Area Three",
+        value: 6,
+      },
+      {
+        name: "East Province: Area One",
+        value: 7,
+      },
+      {
+        name: "East Province: Area Two",
+        value: 8,
+      },
+      {
+        name: "South Province: Area Four",
+        value: 9,
+      },
+      {
+        name: "South Province: Area Five",
+        value: 10,
+      },
+      {
+        name: "West Province: Area One",
+        value: 11,
+      },
+      {
+        name: "Asado Desert",
+        value: 12,
+      },
+      {
+        name: "West Paldean Sea",
+        value: 13,
+      },
+      {
+        name: "West Province: Area Two",
+        value: 14,
+      },
+      {
+        name: "West Province: Area Three",
+        value: 15,
+      },
+      {
+        name: "East Province: Area Three",
+        value: 16,
+      },
+      {
+        name: "East Paldean Sea",
+        value: 17,
+      },
+      {
+        name: "Tagtree Thicket",
+        value: 18,
+      },
+      {
+        name: "South Province: Area Six",
+        value: 19,
+      },
+      {
+        name: "Alfornada Cavern",
+        value: 20,
+      },
+      {
+        name: "South Paldean Sea",
+        value: 21,
+      },
+      {
+        name: "Dalizapa Passage",
+        value: 22,
+      },
+      {
+        name: "Glaseado Mountain",
+        value: 23,
+      },
+      {
+        name: "North Province: Area Three",
+        value: 24,
+      },
+      {
+        name: "North Paldean Sea",
+        value: 25,
+      },
+      {
+        name: "North Province: Area One",
+        value: 26,
+      },
+      {
+        name: "North Province: Area Two",
+        value: 27,
+      },
+      {
+        name: "Socarrat Trail",
+        value: 28,
+      },
+      {
+        name: "Casseroya Lake",
+        value: 29,
+      },
+      {
+        name: "Area Zero",
+        value: 30,
+      },
+    ],
+  },
+  custom: {
+    id: "custom",
+    title: "Custom Game",
+    nameLimit: 12,
+    dexLimit: 1008,
+    loaded: false,
+    locations: [
+      {
+        name: "Starter",
+        value: 0,
+      },
+    ],
+  },
 };

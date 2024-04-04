@@ -430,6 +430,49 @@ function toggleDexLimit(tab) {
   }
 }
 
+function translatePage() {
+  const language = localStorage.getItem("language");
+
+  if (language) {
+    translatePokemon(language);
+    translateLocations(language);
+  }
+}
+
+function translatePokemon(language) {
+  pkmnData.forEach((pokemon) => {
+    if (
+      pokemon === undefined ||
+      nameTranslations == undefined ||
+      nameTranslations[pokemon.id] == undefined ||
+      nameTranslations[pokemon.id][language] == undefined
+    ) {
+      return;
+    }
+    pokemon.name = nameTranslations[pokemon.id][language];
+  });
+}
+
+function translateLocations(language) {
+  if (games == undefined) {
+    return;
+  }
+  gamesKeys = Object.keys(games);
+  gamesKeys.forEach((game) => {
+    games[game].locations.forEach((location) => {
+      if (
+        location === undefined ||
+        location[language] === undefined ||
+        location[language] === ""
+      ) {
+        return;
+      }
+      location.name = location[language];
+    });
+  });
+}
+
+translatePage();
 /* function togglePokemonAddition(tab) {
 	const value = $('#allowCustomPokemon').prop('checked');
 
@@ -830,16 +873,14 @@ $(() => {
     $("#importModal").modal("show");
   });
 
-  $("#languageOptions").dropdown();
 
   $("#languageOptions").dropdown({
-    onChange: function (value) {
-      pkmnData.forEach((pokemon) => {
-		if (pokemon === undefined || nameTranslations == undefined || nameTranslations[pokemon.id] == undefined || nameTranslations[pokemon.id][value] == undefined) {
-			return;
-		}
-        pokemon.name = nameTranslations[pokemon.id][value];
-      });
+    onChange: function (value, text, $choice) {
+      if (value) {
+        $("#languageOptions").val(value);
+        localStorage.setItem("language", value);
+        translatePage();
+      }
     },
   });
 
